@@ -7,19 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LycokatConexion
 {
-    public partial class Form1 : Form
+    public partial class index : Form
     {
-        public Form1()
+        public index()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            conexionBD conexion=new conexionBD();
+            Form formulario = new clientes();
+            formulario.Show();
+
+        }
+
+        private void index_Load(object sender, EventArgs e)
+        {
+            conexionBD conexion = new conexionBD();
             conexion.abrir();
         }
     }
