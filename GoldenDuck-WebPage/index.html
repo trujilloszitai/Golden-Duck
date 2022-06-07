@@ -5,227 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Sources/img/GDicon.png">
-    <script src="Sources/js/chart.js"></script>
-    <link rel="stylesheet" href="Sources/css/style.css">    
+    <link rel="stylesheet" href="Sources/css/globalStyle.css">    
+    <link rel="stylesheet" href="Sources/css/indexStyle.css">    
     <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <title>Golden Duck</title>
+    <title>Inicio</title>
 </head>
 <body>
-  <div class="container">
-
-    <!---------------------------------- Fin Aside ---------------------------------->
-
-    <aside class="navbar">
-      <div class="top">
-        <div class="logo">
-          <img src="Sources/img/GDicon.png">
-          <h2><span class="primary">Golden Duck</span></h2>
-        </div>
-        <div class="close">
-          <span class="material-icons">close</span>
-        </div>
-      </div>
-      <div class="sidebar">
-        <a class="active" href="#">
-          <span class="material-icons">wallet</span>
-          <h3>Billetera</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">savings</span>
-          <h3>Plazo Fijo</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">history</span>
-          <h3>Gastos</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">payment</span>
-          <h3>Pagar Servicio</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">volunteer_activism</span>
-          <h3>Transferir</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">trending_up</span>
-          <h3>Invetir</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">attach_money</span>
-          <h3>Prestamo</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">help</span>
-          <h3>Soporte</h3>
-          <span class="notf-count">1</span>
-        </a>
-        <a href="#">
-          <span class="material-icons">settings</span>
-          <h3>Configuración</h3>
-        </a>
-        <a href="#">
-          <span class="material-icons">logout</span>
-          <h3>Salir</h3>
-        </a>
-      </div>
-    </aside>
-
-    <!---------------------------------- Main ---------------------------------->
-
-    <main>
-      <div class="billetera">
-        <h1>Billetera</h1>
-      </div>
-      <div class="moneyPanel">
-        <div class="moneyCont">
-          <h2>Tu dinero actual:</h2>
-          <h1>$10.000</h1>
-        </div>
-        <span class="material-icons">payments</span>
-      </div>
-      <div class="graph-sec">
-        <div class="infoGasto">
-          <h2>Gastos Promedios</h2>
-          <div class="data">
-            <h3 class="money">$2.000</h3>
-            <small>Ingresos Recientes</small>
-            <h3 class="danger">$2.000</h3>
-            <small>Gasto Recientes</small>
-          </div>
-        </div>
-        <div class="graph">
-          <canvas id="gasto"></canvas>
-        </div>
-      </div>
-    </main>
-
-    <!---------------------------------- Right Menu ---------------------------------->
-
-      <div class="right">
+    <!---------------------------------- Menu ---------------------------------->
+    <nav class="menu">
         <div class="top">
-          <button class="menu-btn">
-            <span class="material-icons">menu</span>
-          </button>
-          <div class="theme-toggle">
-            <span class="material-icons active">light_mode</span>
-            <span class="material-icons">dark_mode</span>
-          </div>
-          <div class="profile">
-            <div class="info">
-              <p>Hola, <b>Eugenio</b></p>
-              <small class="text-muted">Usuario</small>
-            </div>
-            <div class="profie-photo">
-              <img class="profile-photo" src="Sources/img/sr-x.jpg">
-            </div>
-          </div>
+            <img src="Sources/img/GDicon.png" id="top">
+            <h1>Golden Duck</h1>
         </div>
-        <div class="depositsCard">
-          <h2>Ingresos</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Fecha</th>
-                <th>Emisor</th>
-                <th>Cantidad</th>
-              </tr>
-              <tbody>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-                <tr>
-                  <td>00-00-0000</td>
-                  <td>Cuenta</td>
-                  <td class="money">$8.888</td>
-                </tr>
-              </tbody>
-            </thead>
-          </table>
-          <a href="#">Ver más</a>
+        <div class="links">
+            <div class="options">
+                <a href="#section">Sobre Nosotros</a>
+            </div>
+            <div class="options">
+                <a href="#unete">Únete a GoldenDuck</a>
+            </div>
+            <div class="options">
+                <a href="#sucursal">Sucursal</a>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="ingresar">
+            <span>
+                <a href="panel.html">Ingresar</a>
+            </span>
+        </div>
+    </nav>
+    <main>
+        <!---------------------------------- Background ---------------------------------->
+        <div class="background">
+            <h2>¡Bienvenid@!</h2>
+            <a href="#section">
+                <span class="material-icons">vertical_align_bottom</span>
+            </a>
+        </div>
+        <!---------------------------------- Contenido ---------------------------------->
+        <section id="section">
+            <div class="about">
+                <h2 id="about">Sobre Nosotros</h2>
+                <div class="presentacion">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam autem sunt illum ratione alias tenetur veniam, iure atque rem perspiciatis animi tempora culpa eos omnis velit voluptas modi sed, sint odit officia minus neque commodi expedita numquam. Possimus asperiores ratione architecto! Recusandae, expedita laborum rerum molestiae facere alias delectus. Quae, libero veritatis vero tempore neque excepturi perferendis aut dolor blanditiis corporis quam magni provident explicabo inventore cumque eius aliquid minus velit eaque quisquam soluta animi ducimus pariatur a? Blanditiis fugiat et, magni iure architecto deleniti velit magnam autem sit repudiandae nesciunt molestias, ipsum eaque sequi consequatur cumque. Perferendis odio quos labore, modi, provident tenetur rerum consequuntur quod minima, tempore vel? Totam voluptatibus aperiam est nemo assumenda optio, odio, voluptate nesciunt veniam a maiores rerum quibusdam illo numquam vero, cupiditate doloremque sint cum corporis voluptates aut sequi? Quae cumque illo quod minus veritatis provident dolor aliquid corrupti sapiente perspiciatis labore aut nam possimus distinctio eveniet, nulla ab consectetur eum unde. Voluptate mollitia nihil enim quae totam eaque praesentium, rem vel rerum dicta omnis impedit maiores reiciendis ea quisquam asperiores officiis ratione! Provident omnis, nesciunt impedit veniam ipsum enim beatae aliquam! Velit, fuga ad eveniet in fugit ducimus nobis officia voluptates doloribus.</p>
+                    <img src="Sources/gif/psyduck.gif">
+                </div>
+            </div>
+            <div class="unete" id="unete">
+                <div class="wallpaper">
+                    <div class="registerSec">
+                        <h1>Únetenos</h1>
+                        <span>
+                            <a href="#">Registrarse</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="sucursal" id="sucursal">
+                <h1>Sucursales</h1>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1sni_xoB_1kANcbzPeHafmQjJZilwKFU&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
+        </section>
+        <footer>
+            <div class="siguenos">
+                <h1>Siguenos en Nuestras Redes</h1>
+                <div class="redes">
+                    <a href="#" id="facebook" title="Facebook"></a>
+                    <a href="#" id="instagram" title="Instagram"></a>
+                    <a href="#" id="tiktok" title="Tiktok"></a>
+                    <a href="#" id="twitter" title="Twitter"></a>
+                </div>
+            </div>
+            <div class="contacto">
+                <h1>Contacto</h1>
+                <input name="asunto" placeholder="Ingrese Asunto" type="text">
+                <textarea name="contenido" placeholder="Ingrese Mensaje" cols="30" rows="10"></textarea>
+                <input type="submit">
+            </div>
+        </footer>
+    </main>
+    <a href="#background" class="ir-arriba"  javascript:void(0) title="Volver arriba">
+        <span class="material-icons">arrow_upward</span>
+    </a>
 </body>
+<script src="Sources/js/jquery-3.6.0.min.js"></script>
+<script src="Sources/js/indexScript.js"></script>
 <script>
-  var ctx1 = document.getElementById('gasto').getContext('2d');
-  var chart = new Chart(ctx1, {
-      type: 'line',
-      data: {
-          labels: [ "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
-          datasets: [{
-              label: 'Ingresos',
-              backgroundColor: '#85bb65',
-              borderColor: 'gray',
-              data: [200, 700, 1000, 2000, 3000, 3500, 3500]
-          },
-          {
-              label: 'Gastos',
-              backgroundColor: '#ff7782',
-              borderColor: 'gray',
-              data: [500, 200, 100, 1000, 700, 1000, 2000]
-          }
-      ]},
-      options: {
-          scales: {
-              yAxes: [{
-                  ticks: {
-                      beginAtZero: true
-                  }
-              }],
-          },
-      }
-  });
-  </script>
+</script>
 </html>
+
+
+<!-- 
+    Cosas que no convencen:
+        -Boton ingresar
+        -Boton zona unetenos
+        -Fondo o estilo del mapa de sucursales
+        -Fondo de footer
+        -Diseño de input footer
+ -->
