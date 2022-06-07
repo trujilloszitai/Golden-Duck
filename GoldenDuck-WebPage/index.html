@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Sources/img/GDicon.png">
-    <link rel="stylesheet" href="Sources/css/style.css">
-    <!--     <link rel="stylesheet" href="Sources/css/bootstrap.css">
-      <script src="Sources/js/bootstrap.js"></script> -->
+    <script src="Sources/js/chart.js"></script>
+    <link rel="stylesheet" href="Sources/css/style.css">    
     <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     <title>Golden Duck</title>
 </head>
@@ -84,50 +83,19 @@
         </div>
         <span class="material-icons">payments</span>
       </div>
-      <div class="depositsCard">
-        <h2>Ingresos</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Fecha</th>
-              <th>Emisor</th>
-              <th>Cantidad</th>
-            </tr>
-            <tbody>
-              <tr>
-                <td>00-00-0000</td>
-                <td>Cuenta</td>
-                <td class="money">$8.888</td>
-              </tr>
-              <tr>
-                <td>00-00-0000</td>
-                <td>Cuenta</td>
-                <td class="money">$8.888</td>
-              </tr>
-              <tr>
-                <td>00-00-0000</td>
-                <td>Cuenta</td>
-                <td class="money">$8.888</td>
-              </tr>
-              <tr>
-                <td>00-00-0000</td>
-                <td>Cuenta</td>
-                <td class="money">$8.888</td>
-              </tr>
-              <tr>
-                <td>00-00-0000</td>
-                <td>Cuenta</td>
-                <td class="money">$8.888</td>
-              </tr>
-              <tr>
-                <td>00-00-0000</td>
-                <td>Cuenta</td>
-                <td class="money">$8.888</td>
-              </tr>
-            </tbody>
-          </thead>
-        </table>
-        <a href="#">Ver más</a>
+      <div class="graph-sec">
+        <div class="infoGasto">
+          <h2>Gastos Promedios</h2>
+          <div class="data">
+            <h3 class="money">$2.000</h3>
+            <small>Ingresos Recientes</small>
+            <h3 class="danger">$2.000</h3>
+            <small>Gasto Recientes</small>
+          </div>
+        </div>
+        <div class="graph">
+          <canvas id="gasto"></canvas>
+        </div>
       </div>
     </main>
 
@@ -152,11 +120,112 @@
             </div>
           </div>
         </div>
-        <div class="ad">
-          <a href="https://www.webtoons.com/es/challenge/vigilantes/list?title_no=730159&page=1" target="_blank"></a>
-          <small>Leé Vigilantes</small>
+        <div class="depositsCard">
+          <h2>Ingresos</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Emisor</th>
+                <th>Cantidad</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+                <tr>
+                  <td>00-00-0000</td>
+                  <td>Cuenta</td>
+                  <td class="money">$8.888</td>
+                </tr>
+              </tbody>
+            </thead>
+          </table>
+          <a href="#">Ver más</a>
         </div>
       </div>
     </div>
 </body>
+<script>
+  var ctx1 = document.getElementById('gasto').getContext('2d');
+  var chart = new Chart(ctx1, {
+      type: 'line',
+      data: {
+          labels: [ "Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+          datasets: [{
+              label: 'Ingresos',
+              backgroundColor: '#85bb65',
+              borderColor: 'gray',
+              data: [200, 700, 1000, 2000, 3000, 3500, 3500]
+          },
+          {
+              label: 'Gastos',
+              backgroundColor: '#ff7782',
+              borderColor: 'gray',
+              data: [500, 200, 100, 1000, 700, 1000, 2000]
+          }
+      ]},
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }],
+          },
+      }
+  });
+  </script>
 </html>
