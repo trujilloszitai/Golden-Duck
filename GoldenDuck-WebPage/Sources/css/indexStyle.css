@@ -1,37 +1,12 @@
-/* ---------------------------------- Colores ---------------------------------- */
+/* ---------------------------------- Normalize ---------------------------------- */
 
-:root{
-    --color-primary: #ffc04f;
-    --color-danger: #ff7782;
-    --color-succes: #41f1b6;
-    --color-warning: #ffbb55;
-    --color-white: #fff;
-    --color-info-dark: #7d8da1;
-    --color-info-light: #dce1eb;
-    --color-dark: #363949;
-    --color-light: rgba(132, 139, 200, 0.18);
-    --color-primary-variant: #111e88;
-    --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
-    
-    --color-money: #85bb65;
-    --color-graph: #00aae4;
-    --color-black: #1c1c1c;
-    --color-menu-bluedark: #212529;
-
-    --card-border-radius: 2rem;
-    --border-radius-1: .4rem;
-    --border-radius-2: .8rem;
-    --border-radius-3: 1.2rem;
-
-    --card-padding: 1.8rem;
-    --padding-1: 1.2rem;
-
-    --box-shadow: 0 2rem 3rem var(var(--color-light))
-}
 body{
     font-family: 'nevis';
 }
+::-webkit-scrollbar {background-color:rgba(255, 255, 255, 0);height:4px}
+::-webkit-scrollbar-track {background-color:#fff}
+::-webkit-scrollbar-thumb {background-color:#babac0;border-radius:4px}
+
 /* ---------------------------------- Nav ---------------------------------- */
 
 nav{
@@ -57,6 +32,7 @@ nav .top h1{
 }
 nav .top img{
     width: 5rem;
+    margin-right: 1rem;
 }
 nav .links{
     width: 100%;
@@ -161,8 +137,8 @@ main .background a{
     bottom: 0;
 }
 main .background span{
-    color: #ffffff50;
-    font-size: 4rem;
+    color: #ffffff83;
+    font-size: 5rem;
 }
 main section{
     display: flex;
