@@ -14,7 +14,9 @@ namespace LycokatConexion
     public partial class clientes : Form
     {
         
-        public SqlConnection conectarBD = new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
+        public SqlConnection conectarBD = new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; " +
+            "Initial Catalog = Homebanking; " +
+            "Integrated Security = True");
         
         public clientes()
         {
