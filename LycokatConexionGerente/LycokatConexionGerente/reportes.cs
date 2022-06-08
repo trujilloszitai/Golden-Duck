@@ -9,21 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace LycokatConexion
+namespace LycokatConexionGerente
 {
-    public partial class clientes : Form
+    public partial class reportes : Form
     {
-        
         public SqlConnection conectarBD = new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; " +
             "Initial Catalog = Homebanking; " +
             "Integrated Security = True");
-        
-        public clientes()
+        public reportes()
         {
             InitializeComponent();
         }
 
-        private void clientes_Load(object sender, EventArgs e)
+        private void reportes_Load(object sender, EventArgs e)
         {
             try
             {
@@ -34,25 +32,17 @@ namespace LycokatConexion
             {
                 Console.WriteLine(ex.Message);
             }
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            
-
             SqlCommand comand = new SqlCommand("Select * from categorias", conectarBD);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = comand;
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+
         }
     }
 }
