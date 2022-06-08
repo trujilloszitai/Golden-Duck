@@ -17,6 +17,7 @@
     --color-money: #85bb65;
     --color-graph: #00aae4;
     --color-black: #1c1c1c;
+    --color-menu-bluedark: #212529;
 
     --card-border-radius: 2rem;
     --border-radius-1: .4rem;
@@ -27,6 +28,9 @@
     --padding-1: 1.2rem;
 
     --box-shadow: 0 2rem 3rem var(var(--color-light))
+}
+body{
+    font-family: 'nevis';
 }
 /* ---------------------------------- Nav ---------------------------------- */
 
@@ -79,7 +83,7 @@ nav .links .options a{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--color-white);
 }
 nav .links .options:hover a{
@@ -94,12 +98,12 @@ nav .ingresar{
 nav .ingresar span{
     cursor: pointer;
     font-size: 1.3rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
+    font-family: sans-serif;
+    font-weight: 800;
     padding: .22rem 1rem .44rem 1rem;
-    background-color: var(--color-primary-dark);
+    background-color: #ffd90061;
     margin-right: 1rem;
-    border-radius: .75rem;
+    border-radius: .2rem;
     transition: all 300ms ease;
 }
 nav .ingresar span:hover{
@@ -113,7 +117,19 @@ nav .ingresar span:hover a{
 }
 nav.active {
     position: fixed;
-    background-color: var(--color-black);
+    background-color: var(--color-menu-bluedark);
+}
+nav.active .ingresar span{
+    background-color: var(--color-white);
+}
+nav.active .ingresar span:hover{
+    background-color: var(--color-primary-dark);
+}
+nav.active span a{
+    color: var(--color-primary);
+}
+nav.active span:hover a{
+    color: #e3e6ea;
 }
   
 /* ---------------------------------- Section ---------------------------------- */
@@ -206,7 +222,7 @@ main section .unete .wallpaper{
     }
 }
 main section .unete .wallpaper::before{
-    content: 'a';
+    content: '';
     width: 100%;
     height: 100%;
     background-color: rgba(55, 54, 55, 0.429);
@@ -227,24 +243,21 @@ main section .unete .wallpaper .registerSec h1{
     color: #ffc04fcf;
     font-size: 5rem;
     margin-bottom: 5rem;
+    font-family: poppins, sans-serif;
 }
 main section .unete .wallpaper .registerSec span{
-    font-size: 2rem;
+    font-size: 2.5rem;
     background-color: #ffffff13;
     margin: 0 auto;
     margin-bottom: 5rem;
     padding: 0.6rem;
+    border-radius: 0.2rem;
 }
 main section .unete .wallpaper .registerSec span:hover{
     background-color: #ffffff41;
 }
 main section .unete .wallpaper .registerSec span a{
     color: #dcdcdcc0;
-}
-main section .unete .wallpaper .registerSec span:hover a{
-    color: #e3e6ea36;
-    background: url(../gif/background-text.gif);
-    -webkit-background-clip: text;
 }
 main section .sucursal{
     padding-top: 10rem;
@@ -265,96 +278,89 @@ footer{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50rem;
-    background-color: var(--color-primary-dark);
+    height: 25rem;
+    background-color: var(--color-menu-bluedark);
     margin-top: 10rem;
+    padding-top: 3rem;
+}
+footer .siguenos::after{
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #cbd3df;
+    margin: 0 auto;
 }
 footer .siguenos{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     align-items: center;
 }
-footer .siguenos h1{
-    color: var(--color-white);
-    margin: 3rem 0 2rem 0;
+footer .siguenos::before{
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #cbd3df;
+    margin: 0 auto;
 }
 footer .siguenos .redes{
     display: flex;
     flex-direction: row;
-    gap: 7rem;
+    gap: 1rem;
+    justify-content: center;
 }
 footer .siguenos .redes img, footer .siguenos .redes a{
     display: flex;
-    border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
-    background-color: red;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin: 0 .82rem;
+    border-radius: 20%;
 }
 footer .siguenos .redes img, footer .siguenos .redes a#facebook{
-    background: url(../img/Facebook.png);
+    background: url(../img/facebook.svg);
     background-position: center;
-    background-size: 5rem;
+    background-size: 3.4rem;
+    background-repeat: no-repeat;
 }
 footer .siguenos .redes img, footer .siguenos .redes a#instagram{
-    background: url(../img/Instagram.png);
+    background: url(../img/instagram.svg);
     background-position: center;
-    background-size: 5rem;
+    background-size: 3rem;
+    background-repeat: no-repeat;
 }
-footer .siguenos .redes img, footer .siguenos .redes a#tiktok{
-    background: url(../img/Tiktok.png);
+footer .siguenos .redes img, footer .siguenos .redes a#mail{
+    background: url(../img/at-sign.svg);
     background-position: center;
-    background-size: 5rem;
+    background-size: 3.4rem;
+    background-repeat: no-repeat;
+}
+footer .siguenos .redes img, footer .siguenos .redes a#linkedin{
+    background: url(../img/linkedin.svg);
+    background-position: center;
+    background-size: 2.8rem;
+    background-repeat: no-repeat;
 }
 footer .siguenos .redes img, footer .siguenos .redes a#twitter{
-    background: url(../img/Twitter.png);
+    background: url(../img/twitter.svg);
     background-position: center;
-    background-size: 5rem;
+    background-size: 2.7rem;
+    background-repeat: no-repeat;
 }
 footer .siguenos .redes a:hover::before{
     content: '';
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 50%;
+    border-radius: 20%;
 }
-footer .contacto{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
+footer img{
+    width: 12rem;
+    margin: 1rem auto;
 }
-footer .contacto::before{
-    content: '';
-    width: 75%;
-    height: 2px;
-    background-color: rgba(110, 109, 109, 0.108);
-    margin-top: 7rem;
-}
-footer .contacto h1{
-    font-size: 5rem;
-    color: var(--color-white);
-}
-footer .contacto input{
-    padding: .5rem;
-}
-footer .contacto textarea{
-    padding: .5rem;
-    border-radius: var(--border-radius-1);
-    border: 2px solid var(--color-white);
-}
-footer .contacto textarea::placeholder, footer .contacto input::placeholder{
-    text-align: center;
-    align-items: center;
-}
-footer .contacto input[type="submit"]{
-    width: 7rem;
-    height: 2rem;
-    border-radius: var(--border-radius-2);
-}
-footer .contacto input[type="submit"]:hover{
-    background: #d1d1d1;
+footer small{
+    font-size: 1rem;
+    color: #cbd3df;
+    margin: 0 auto;
 }
 
 /* ---------------------------------- btnTop ---------------------------------- */

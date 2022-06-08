@@ -4,6 +4,10 @@
     font-family: boldLetter;
     src: url(../ttf/AzeretMono-Black.ttf);
 }
+@font-face {
+    font-family: nevis;
+    src: url(../ttf/nevis.ttf);
+}
 
 /* ---------------------------------- Colores ---------------------------------- */
 
