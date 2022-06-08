@@ -10,14 +10,15 @@ namespace LycokatConexion
     internal class conexionBD
     {
         //HAY QUE INDICAR EL NOMBRE DEL DISPOSITIVO AL CUAL SE CONECTARA, EN ESTE CASO ES BABYFACE (COMPU EITAN)
-        string cadena = "Data Source=BABYFACE\\SQLEXPRESS;Initial Catalog=Homebanking; Integrated Security=True";
-        public SqlConnection conectarBD = new SqlConnection();
+        //string cadena = "Data Source=BABYFACE\\SQLEXPRESS;Initial Catalog=Homebanking; Integrated Security=True";
+        //public SqlConnection conectarBD = new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
 
-        public conexionBD()
+       /* public conexionBD()
         {
+
             conectarBD.ConnectionString = cadena;
-        }
-        public void abrir()
+        }*/
+        public void abrir(SqlConnection conectarBD)
         {
             try
             {
@@ -29,7 +30,7 @@ namespace LycokatConexion
                 Console.WriteLine(ex.Message);
             }
         }
-        public void cerrar()
+        public void cerrar(SqlConnection conectarBD)
         {
             conectarBD.Close();
         }

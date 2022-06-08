@@ -27,8 +27,7 @@ namespace LycokatConexion
 
         private void index_Load(object sender, EventArgs e)
         {
-            conexionBD conexion = new conexionBD();
-            conexion.abrir();
+            
         }
     }
 }
