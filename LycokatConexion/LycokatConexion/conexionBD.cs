@@ -17,8 +17,8 @@ namespace LycokatConexion
          {
              public SqlConnection conectarBD = new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
              //conectarBD.ConnectionString = cadena;
-         }*/
-        public void abrir(SqlConnection conectarBD)
+         }
+        public void abrir()
         {
             try
             {
@@ -30,9 +30,9 @@ namespace LycokatConexion
                 Console.WriteLine(ex.Message);
             }
         }
-        public void cerrar()
+        public void cerrar(SqlConnection conectarBD)
         {
             conectarBD.Close();
-        }
+        }*/
     }
 }
