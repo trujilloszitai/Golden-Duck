@@ -114,8 +114,9 @@ main .background{
     width: 100%;
     height: 100vh;
     background: url(../img/backgroundMain.jpg);
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -305,7 +306,7 @@ footer .siguenos .redes img, footer .siguenos .redes a#instagram{
     background-repeat: no-repeat;
 }
 footer .siguenos .redes img, footer .siguenos .redes a#mail{
-    background: url(../img/at-sign.svg);
+    background: url(../img/mail.svg);
     background-position: center;
     background-size: 3.4rem;
     background-repeat: no-repeat;

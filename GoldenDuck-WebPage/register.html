@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sources/css/globalStyle.css">
+    <link rel="stylesheet" href="Sources/css/nav.css">    
+    <link rel="stylesheet" href="Sources/css/registerStyle.css">    
+    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Registrarse</title>
+</head>
+<body>
+    <!---------------------------------- Menu ---------------------------------->
+    <nav class="menu">
+        <a href="index.html">
+            <span class="material-icons" title="Volver">arrow_back</span>
+        </a>
+        <div class="top">
+            <img src="Sources/img/GDicon.png" id="top">
+            <h1>GoldenDuck</h1>
+        </div>
+    </nav>
+    <!---------------------------------- Background ---------------------------------->
+    <main>
+        <section>
+            <div class="progressBar">
+                <div class="line"></div>
+                <span class="points pass" id="1">1</span>
+                <span class="points active" id="2">2</span>
+                <span class="points" id="3">3</span>
+            </div>
+            <h1>Registrarse</h1>
+
+            <!-- Paso 1: Nombre, Apellido y DNI -->
+            <div class="pasos" id="NAD">
+                <form action="#">
+                    <div class="input">
+                        <img src="Sources/img/users.svg">
+                        <input type="text" name="firstName" placeholder="Nombre" autofocus required>
+                    </div>
+                    <div class="input">
+                        <img src="Sources/img/user.svg">
+                        <input type="text" name="lastName" placeholder="Apellido" required>
+                    </div>
+                    <div class="input">
+                        <img src="Sources/img/credit-card.svg">
+                        <input type="text" name="dni" placeholder="DNI" required>
+                    </div>
+                    <small>Si ya tienes una cuenta, ingresa haciendo <a href="login.html">click aquí</a></small>
+                    <input type="submit" value="Siguiente">
+                </form>
+            </div>
+
+            <!-- Paso 2: Telefono, Correo electronico y Contraseña -->
+            <div class="pasos active" id="TCC">
+                <form action="#">
+                    <div class="input">
+                        <img src="Sources/img/phone.svg">
+                        <input type="text" name="phoneNumber" placeholder="Teléfono" autofocus required/>
+                    </div>
+                    <div class="input">
+                        <img src="Sources/img/at-sign.svg">
+                        <input type="email" name="email" placeholder="Correo" required>
+                    </div>
+                    <div class="input">
+                        <img src="Sources/img/lock.svg">
+                        <input type="text" name="password" placeholder="Contraseña" required>
+                    </div>
+                    <small>Si ya tienes una cuenta, ingresa haciendo <a href="login.html">click aquí</a></small>
+                    <input type="submit" value="Siguiente">
+                </form>
+            </div>
+
+            <!-- Paso 3: Codigo de verificacion enviado a correo (1234 [con diseño de input con numero separado xd]) -->
+            <div class="pasos code" id="Confirm">
+                <form action="#">
+                    <small>Si ya tienes una cuenta, ingresa haciendo <a href="login.html">click aquí</a></small>
+                    <div class="input code">
+                        <img src="Sources/img/send.svg">
+                        <input type="text" name="phoneNumber" placeholder="###" autofocus required>
+                        <span>-</span>
+                        <input type="text" name="phoneNumber" placeholder="###" autofocus required>
+                    </div>
+                    <small>Si ya tienes una cuenta, ingresa haciendo <a href="#">click aquí</a></small>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+<!-- Verificar inputs por js -->
