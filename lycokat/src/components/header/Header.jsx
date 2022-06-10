@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './header.scss'
 import logo from '../../assets/img/logo.svg'
-import Bubble from './bubble_floating/Bubble'
+import Background from './animated_background/Background'
 import $ from 'jquery'
 
 const Header = () => {
@@ -51,7 +51,7 @@ const Header = () => {
         }
       })
     });
-  });
+    });
 
   return (
     <div className="header d-flex  w-100 h-100">
@@ -101,7 +101,7 @@ const Header = () => {
       <div className="logo-mask">
         <img src={logo} alt='Background image' />
       </div>
-      <Bubble />
+      <Background />
     </div>
   )
 }

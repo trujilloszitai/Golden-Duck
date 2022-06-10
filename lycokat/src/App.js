@@ -24,8 +24,10 @@ const debounce = (fn) => {
 const storeScroll = () => {
   document.documentElement.dataset.scroll = window.scrollY;
 }
+
 document.addEventListener('scroll', debounce(storeScroll), { passive: true });
 storeScroll();
+
   return (
     <div className="App">
       <Navbar />
@@ -34,7 +36,6 @@ storeScroll();
       <Features />
       <Story />
       <Contact />
-      <script src='./components/header/functions.js'></script>
     </div>
   );
 }
