@@ -27,8 +27,8 @@
         <section>
             <div class="progressBar">
                 <div class="line"></div>
-                <span class="points pass" id="1">1</span>
-                <span class="points active" id="2">2</span>
+                <span class="points active" id="1">1</span>
+                <span class="points" id="2">2</span>
                 <span class="points" id="3">3</span>
             </div>
             <h1>Registrarse</h1>
@@ -36,15 +36,19 @@
             <!-- Paso 1: Nombre, Apellido y DNI -->
             <div class="pasos" id="NAD">
                 <form action="#">
-                    <div class="input">
-                        <img src="Sources/img/users.svg">
-                        <input type="text" name="firstName" placeholder="Nombre" autofocus required>
+                    <div class="input form-cont" id="cont-name">
+                        <label for="firstName" class="form-label">Usuario</label>
+                        <div>
+                            <img src="Sources/img/users.svg">
+                            <input type="text" name="firstName" class="form-input" placeholder="Nombre" autofocus required id="firstName">
+                            <i class="form-validation-state fas fa-times-circle"></i>
+                        </div>
                     </div>
-                    <div class="input">
+                    <div class="input form-cont" id="cont-surname">
                         <img src="Sources/img/user.svg">
                         <input type="text" name="lastName" placeholder="Apellido" required>
                     </div>
-                    <div class="input">
+                    <div class="input form-cont" id="cont-dni">
                         <img src="Sources/img/credit-card.svg">
                         <input type="text" name="dni" placeholder="DNI" required>
                     </div>
