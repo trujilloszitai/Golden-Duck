@@ -14,30 +14,17 @@ namespace LycokatConexion
     internal class conexionBD
     {
         //HAY QUE INDICAR EL NOMBRE DEL DISPOSITIVO AL CUAL SE CONECTARA, EN ESTE CASO ES BABYFACE (COMPU EITAN)
-        
-        public SqlConnection sqlConnection= new SqlConnection("Data Source = DESKTOP-3OV0RG8\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
 
-       
-    }
-    /* public void Consulta(string consulta, SqlConnection conexion, DataGridView nombreVistaBD)
-    {
-        SqlCommand comand = new SqlCommand(consulta, conexion);
-        SqlDataAdapter adapter = new SqlDataAdapter();
-        adapter.SelectCommand = comand;
-        DataTable table = new DataTable();
-        adapter.Fill(table);
-        nombreVistaBD.DataSource = table;
+        public SqlConnection sqlConnection; 
 
 
-    }
-        public void Abrir(SqlConnection conexion)
+        public conexionBD(string SQLCONECTION)
         {
-            //conexionBD conexion = new conexionBD();
-            
-        
+
+            sqlConnection = new SqlConnection(SQLCONECTION);
             try
             {
-            conexion.Open();
+               sqlConnection.Open();
                 Console.WriteLine("conexion abierta");
             }
             catch (Exception ex)
@@ -45,10 +32,18 @@ namespace LycokatConexion
                 Console.WriteLine(ex.Message);
             }
         }
-        public void Cerrar()
+        public SqlDataAdapter Consulta(string consulta)
         {
-            conexionBD conexion = new conexionBD();
-            conexion.sqlConnection.Close();
-        }*/
+
+           SqlCommand comand = new SqlCommand(consulta, sqlConnection);
+           SqlDataAdapter adapter = new SqlDataAdapter();
+           adapter.SelectCommand = comand;
+            return adapter;
+
+
+        }
+        
+    }
 }
+
 
