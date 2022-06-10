@@ -15,7 +15,7 @@ namespace LycokatConexion
     {
         //HAY QUE INDICAR EL NOMBRE DEL DISPOSITIVO AL CUAL SE CONECTARA, EN ESTE CASO ES BABYFACE (COMPU EITAN)
         
-        public SqlConnection sqlConnection= new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
+        public SqlConnection sqlConnection= new SqlConnection("Data Source = DESKTOP-3OV0RG8\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
 
        
     }
