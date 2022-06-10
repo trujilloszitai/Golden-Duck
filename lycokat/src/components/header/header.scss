@@ -24,6 +24,8 @@
 
           .shapy{
               transition: transform .10s;
+              opacity: 71%;
+              filter: blur(1px);
           }
 
           .layer1 {
@@ -109,14 +111,13 @@
 
       .brand{
           width: 95%;
-          z-index: 5;
           .main-text{
               position: absolute;
               top: 50%;
               transform: translateY(-50%);
               left: 0;
               width: 100%;
-              z-index: 11;
+              z-index: 50;
 
               .content{
                   width: fit-content;
@@ -153,8 +154,11 @@
           
                 .etp-slogan {
                     font-family: 'Share Tech Mono';
+                    background: transparent;
+                    border: none;
                     font-size: 30px;
                     width: fit-content;
+                    height: fit-content;
                     font-weight: 500;
                     color: v.$text-color;
                     overflow: hidden;
@@ -187,10 +191,10 @@
         top: 40%;
         transform: translateY(-50%);
         left: 50%;
-        z-index: 5;
+        z-index: 50;
         img {
             filter: v.$svg-filter;
-            opacity: 75%;
+            opacity: 85%;
             width: 100%;
         }
     }
@@ -199,7 +203,8 @@
   @keyframes typing {
     0% { width: 0 }
     15% { width: 0; }
-    100% { width: 100% }
+    100% { width: 100%;
+    }
   }
   
   /* Efecto de máquina de escrbir */
