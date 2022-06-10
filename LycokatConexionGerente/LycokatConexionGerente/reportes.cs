@@ -13,9 +13,7 @@ namespace LycokatConexionGerente
 {
     public partial class reportes : Form
     {
-        public SqlConnection conectarBD = new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; " +
-            "Initial Catalog = Homebanking; " +
-            "Integrated Security = True");
+        conexionBD conexion = new conexionBD();
         public reportes()
         {
             InitializeComponent();
@@ -25,7 +23,7 @@ namespace LycokatConexionGerente
         {
             try
             {
-                conectarBD.Open();
+                conexion.sqlConnection.Open();
                 Console.WriteLine("conexion abierta");
             }
             catch (Exception ex)
@@ -36,7 +34,7 @@ namespace LycokatConexionGerente
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand comand = new SqlCommand("Select * from categorias", conectarBD);
+            SqlCommand comand = new SqlCommand("Select * from categorias", conexion.sqlConnection);
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = comand;
             DataTable table = new DataTable();
