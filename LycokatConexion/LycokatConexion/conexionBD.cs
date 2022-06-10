@@ -7,48 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Data.SqlClient;//neceario para las funciones de SQL
 
 namespace LycokatConexion
 {
-    internal class conexionBD
+    internal class BaseDeDatos
     {
-        //HAY QUE INDICAR EL NOMBRE DEL DISPOSITIVO AL CUAL SE CONECTARA, EN ESTE CASO ES BABYFACE (COMPU EITAN)
         
-        public SqlConnection sqlConnection= new SqlConnection("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
-
-       
-    }
-    /* public void Consulta(string consulta, SqlConnection conexion, DataGridView nombreVistaBD)
-    {
-        SqlCommand comand = new SqlCommand(consulta, conexion);
-        SqlDataAdapter adapter = new SqlDataAdapter();
-        adapter.SelectCommand = comand;
-        DataTable table = new DataTable();
-        adapter.Fill(table);
-        nombreVistaBD.DataSource = table;
-
-
-    }
-        public void Abrir(SqlConnection conexion)
+        public SqlConnection conexionBD; 
+        public BaseDeDatos(string nombreBD)//nombreBD es para ponerle el nombre y asi el sqlconnection conecta con la BD.
         {
-            //conexionBD conexion = new conexionBD();
-            
-        
-            try
+            conexionBD = new SqlConnection(nombreBD);
+            try //abrimos conexion
             {
-            conexion.Open();
+                conexionBD.Open();
                 Console.WriteLine("conexion abierta");
             }
-            catch (Exception ex)
+            catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
                 Console.WriteLine(ex.Message);
             }
         }
-        public void Cerrar()
+        public SqlDataAdapter Consulta(string consulta)//hacer el query
         {
-            conexionBD conexion = new conexionBD();
-            conexion.sqlConnection.Close();
-        }*/
+           SqlCommand comand = new SqlCommand(consulta, conexionBD);
+           SqlDataAdapter adapter = new SqlDataAdapter();
+           adapter.SelectCommand = comand;
+            return adapter;//se devuelve el adapter que seria para compilar todo los datos ingresados
+        }
+    }
 }
+
 

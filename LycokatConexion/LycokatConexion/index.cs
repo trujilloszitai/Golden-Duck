@@ -13,18 +13,12 @@ namespace LycokatConexion
 {
     public partial class index : Form
     {
-        public index()
-        {
-            InitializeComponent();
-        }
-
+        public index()=>InitializeComponent();
         private void button1_Click(object sender, EventArgs e)
         {
-            Form formulario = new clientes();
+            Form formulario = new clientes();//new opciones();
             formulario.Show();
-
         }
-
-       
+        private void index_Load(object sender, EventArgs e){}
     }
 }

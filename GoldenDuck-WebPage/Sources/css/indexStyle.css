@@ -210,6 +210,11 @@ main section .unete .wallpaper:hover::before{
     height: 100%;
     background-color: rgb(55, 54, 55, 65%);
 }
+main section .unete .wallpaper a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
 main section .unete .wallpaper .registerSec{
     display: flex;
     flex-direction: column;
@@ -229,11 +234,14 @@ main section .unete .wallpaper .registerSec span{
     margin-bottom: 5rem;
     padding: 0.6rem;
     border-radius: 0.2rem;
+    color: #dcdcdcc0;
+    transition: all 500ms ease;
+}
+main section .unete .wallpaper:hover span{
+    color: #ffffffc0;
+    font-size: 3rem;
 }
 main section .unete .wallpaper .registerSec span:hover{
-    background-color: #ffffff41;
-}
-main section .unete .wallpaper .registerSec span a{
     color: #dcdcdcc0;
 }
 main section .sucursal{

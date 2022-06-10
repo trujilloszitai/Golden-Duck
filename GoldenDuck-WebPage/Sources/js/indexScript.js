@@ -11,6 +11,7 @@ $(document).ready(function(){
         }
     })
 });
+
 function irArriba(){
     $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },0); });
     $(window).scroll(function(){
