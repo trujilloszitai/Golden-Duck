@@ -66,7 +66,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(16, 460);
             this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            
             // 
             // label1
             // 
@@ -77,7 +77,7 @@
             this.label1.Size = new System.Drawing.Size(131, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Golden Duck";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // pictureBox1
             // 
@@ -114,7 +114,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "index";
             this.Text = "index";
-            this.Load += new System.EventHandler(this.index_Load);
+           
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
