@@ -32,3 +32,16 @@ C:\Users\Alumno\Desktop\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug
 C:\Users\Alumno\Desktop\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\Desktop\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 C:\Users\Alumno\Desktop\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.exe.config
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.exe
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.pdb
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.clientes.resources
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.index.resources
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.Properties.Resources.resources
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
+C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources

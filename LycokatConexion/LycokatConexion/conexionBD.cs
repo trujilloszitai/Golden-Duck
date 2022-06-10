@@ -7,42 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Data.SqlClient;//neceario para las funciones de SQL
 
 namespace LycokatConexion
 {
-    internal class conexionBD
+    internal class BaseDeDatos
     {
-        //HAY QUE INDICAR EL NOMBRE DEL DISPOSITIVO AL CUAL SE CONECTARA, EN ESTE CASO ES BABYFACE (COMPU EITAN)
-
-        public SqlConnection sqlConnection; 
-
-
-        public conexionBD(string SQLCONECTION)
+        
+        public SqlConnection conexionBD; 
+        public BaseDeDatos(string nombreBD)//nombreBD es para ponerle el nombre y asi el sqlconnection conecta con la BD.
         {
-
-            sqlConnection = new SqlConnection(SQLCONECTION);
-            try
+            conexionBD = new SqlConnection(nombreBD);
+            try //abrimos conexion
             {
-               sqlConnection.Open();
+                conexionBD.Open();
                 Console.WriteLine("conexion abierta");
             }
-            catch (Exception ex)
+            catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
                 Console.WriteLine(ex.Message);
             }
         }
-        public SqlDataAdapter Consulta(string consulta)
+        public SqlDataAdapter Consulta(string consulta)//hacer el query
         {
-
-           SqlCommand comand = new SqlCommand(consulta, sqlConnection);
+           SqlCommand comand = new SqlCommand(consulta, conexionBD);
            SqlDataAdapter adapter = new SqlDataAdapter();
            adapter.SelectCommand = comand;
-            return adapter;
-
-
+            return adapter;//se devuelve el adapter que seria para compilar todo los datos ingresados
         }
-        
     }
 }
 

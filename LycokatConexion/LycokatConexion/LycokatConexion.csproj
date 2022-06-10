@@ -50,6 +50,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,6 +75,12 @@
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
     </Compile>
+    <Compile Include="opciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opciones.Designer.cs">
+      <DependentUpon>opciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="clientes.resx">
@@ -81,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opciones.resx">
+      <DependentUpon>opciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

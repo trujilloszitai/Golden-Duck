@@ -7,37 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Data.SqlClient; //necesario para las funciones de SQL
 
 namespace LycokatConexion
 {
     public partial class clientes : Form
     {
-
-        conexionBD conexion = new conexionBD("Data Source = DESKTOP-3OV0RG8\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True");
+        BaseDeDatos conexion = new BaseDeDatos("Data Source = DESKTOP-3OV0RG8\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True"); //le ponemos el nombre de la BD
         SqlDataAdapter adapter;
-
-        public clientes()
-        {
-            InitializeComponent();
-        }
-
-        private void clientes_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
+        public clientes()=>InitializeComponent();
+        private void clientes_Load(object sender, EventArgs e){}
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e){}
         private void button1_Click(object sender, EventArgs e)
         {
-            adapter = conexion.Consulta("Select * from categorias");
+            adapter = conexion.Consulta("Select * from categorias"); //hacemos el query
             DataTable table = new DataTable();
             adapter.Fill(table);
-            dataGridView1.DataSource = table;
+            dataGridView1.DataSource = table; //le decimos a donde se enviara la informacion 
+        }
+        private void chart1_Click(object sender, EventArgs e){}
+        private void textBox3_TextChanged(object sender, EventArgs e){}
+        private void textBox2_TextChanged(object sender, EventArgs e){}
+        private void textBox1_TextChanged(object sender, EventArgs e){}
+        private void button2_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
