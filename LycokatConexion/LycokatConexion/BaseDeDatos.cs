@@ -35,6 +35,12 @@ namespace LycokatConexion
            adapter.SelectCommand = comand;
             return adapter;//se devuelve el adapter que seria para compilar todo los datos ingresados
         }
+        public SqlCommand Comando(string consulta)
+        {
+            SqlCommand comand = new SqlCommand(consulta, conexionBD);
+            return comand;
+
+        }
     }
 }
 

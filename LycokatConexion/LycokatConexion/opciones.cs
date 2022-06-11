@@ -17,6 +17,7 @@ namespace LycokatConexion
         {
             Form formulario = new clientes();
             formulario.Show();
+            this.Close();
         }
 
         private void opciones_Load(object sender, EventArgs e)

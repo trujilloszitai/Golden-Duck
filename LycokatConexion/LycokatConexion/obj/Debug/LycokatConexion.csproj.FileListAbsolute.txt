@@ -45,3 +45,5 @@ C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\
 C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
 C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.reportes.resources
