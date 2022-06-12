@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Sources/img/GDicon.png">
     <link rel="stylesheet" href="Sources/css/globalStyle.css">
-    <link rel="stylesheet" href="Sources/css/nav.css">    
-    <link rel="stylesheet" href="Sources/css/registerStyle.css">    
-    <link rel="stylesheet"href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="Sources/css/nav.css">
+    <link rel="stylesheet" href="Sources/css/registerStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <title>Registrarse</title>
 </head>
+
 <body>
     <!---------------------------------- Menu ---------------------------------->
     <nav class="menu">
@@ -31,44 +33,62 @@
                 <span class="points" id="2">2</span>
                 <span class="points" id="3">3</span>
             </div>
-            <h1>Registrarse</h1>
+            <h1>Regístrate:</h1>
 
             <!-- Paso 1: Nombre, Apellido y DNI -->
-            <div class="pasos" id="NAD">
-                <form action="#">
-                    <div class="input form-cont" id="cont-name">
-                        <label for="firstName" class="form-label">Usuario</label>
-                        <div>
+            <div class="pasos active" id="NAD">
+                <form action="#" id="form">
+                    <div class="form-cont" id="cont-name">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <div class="form-cont-input">
                             <img src="Sources/img/users.svg">
-                            <input type="text" name="firstName" class="form-input" placeholder="Nombre" autofocus required id="firstName">
+                            <input type="text" name="name" class="form-input" autofocusrequired id="name"
+                                autocomplete="off">
                             <i class="form-validation-state fas fa-times-circle"></i>
                         </div>
+                        <p class="form-input-error">El nombre solo puede contener letras.</p>
                     </div>
-                    <div class="input form-cont" id="cont-surname">
-                        <img src="Sources/img/user.svg">
-                        <input type="text" name="lastName" placeholder="Apellido" required>
+
+                    <div class="form-cont" id="cont-surname">
+                        <label for="surname" class="form-label">Apellido:</label>
+                        <div class="form-cont-input">
+                            <img src="Sources/img/user.svg">
+                            <input type="text" name="surname" class="form-input" required autocomplete="off">
+                            <i class="form-validation-state fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">El apellido solo puede contener letras.</p>
                     </div>
-                    <div class="input form-cont" id="cont-dni">
-                        <img src="Sources/img/credit-card.svg">
-                        <input type="text" name="dni" placeholder="DNI" required>
+
+                    <div class="form-cont" id="cont-dni">
+                        <label for="dni" class="form-label">DNI (8 cifras):</label>
+                        <div class="form-cont-input">
+                            <img src="Sources/img/credit-card.svg">
+                            <input type="text" name="dni" class="form-input" required autocomplete="off">
+                            <i class="form-validation-state fas fa-times-circle"></i>
+                        </div>
+                        <p class="form-input-error">El DNI solo puede contener 8 números.</p>
                     </div>
+
                     <small>Si ya tienes una cuenta, ingresa haciendo <a href="login.html">click aquí</a></small>
-                    <input type="submit" value="Siguiente">
+                    <div class="form-cont form-cont-btn-submit">
+                        <button type="submit" class="form-btn">Enviar</button>
+                        <p class="form-message-success" id="form-menssage-success">Formulario enviado exitosamente!</p>
+                    </div>
                 </form>
             </div>
 
             <!-- Paso 2: Telefono, Correo electronico y Contraseña -->
-            <div class="pasos active" id="TCC">
+            <div class="pasos" id="TCC">
                 <form action="#">
-                    <div class="input">
+                    <div class="form-cont">
                         <img src="Sources/img/phone.svg">
-                        <input type="text" name="phoneNumber" placeholder="Teléfono" autofocus required/>
+                        <input type="text" name="phoneNumber" placeholder="Teléfono" autofocus required />
                     </div>
-                    <div class="input">
+                    <div class="form-cont">
                         <img src="Sources/img/at-sign.svg">
                         <input type="email" name="email" placeholder="Correo" required>
                     </div>
-                    <div class="input">
+                    <div class="form-cont">
                         <img src="Sources/img/lock.svg">
                         <input type="text" name="password" placeholder="Contraseña" required>
                     </div>
@@ -81,7 +101,7 @@
             <div class="pasos code" id="Confirm">
                 <form action="#">
                     <small>Si ya tienes una cuenta, ingresa haciendo <a href="login.html">click aquí</a></small>
-                    <div class="input code">
+                    <div class="form-cont code">
                         <img src="Sources/img/send.svg">
                         <input type="text" name="phoneNumber" placeholder="###" autofocus required>
                         <span>-</span>
@@ -93,7 +113,11 @@
             </div>
         </section>
     </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="Sources/js/jquery-3.6.0.min.js"></script>
+    <script src="Sources/js/register.js"></script>
 </body>
+
 </html>
 
 

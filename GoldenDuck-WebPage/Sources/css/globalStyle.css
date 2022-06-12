@@ -1,5 +1,5 @@
 /* ---------------------------------- Funtes ---------------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: boldLetter;
     src: url(../ttf/AzeretMono-Black.ttf);
@@ -15,7 +15,7 @@
     --color-primary: #ffc04f;
     --color-primary-dark: #cda434;
     --color-danger: #ff7782;
-    --color-succes: #41f1b6;
+    --color-success: #41f1b6;
     --color-warning: #ffbb55;
     --color-white: #fff;
     --color-info-dark: #7d8da1;
@@ -24,7 +24,7 @@
     --color-light: rgba(132, 139, 200, 0.18);
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
-    --color-background: #f6f6f9;
+    --color-background: #E5E5E5;
     
     --color-money: #85bb65;
     --color-graph: #00aae4;
@@ -32,6 +32,7 @@
     --color-menu-dark: #2c2c2c7a;
     --color-menu-option-dark: #2c2c2c7a;
     --color-menu-bluedark: #212529;
+    --bg-nav-blur: #21252920;
 
     --card-border-radius: 2rem;
     --border-radius-1: .4rem;
@@ -67,7 +68,7 @@ html, body{
 body {
     height: 100vh;
     width: 100vw;
-    font-family: poppins, sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: .88rem;
     background-color: var(--color-background);
     user-select: none;
