@@ -26,6 +26,7 @@ namespace LycokatConexionGerente
         {
             Form formulario = new reportes();
             formulario.Show();
+            this.Hide();
         }
     }
 }

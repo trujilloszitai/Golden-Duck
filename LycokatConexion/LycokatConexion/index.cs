@@ -18,7 +18,14 @@ namespace LycokatConexion
         {
             Form formulario = new clientes();//new opciones();
             formulario.Show();
+            this.Hide();   
         }
         private void index_Load(object sender, EventArgs e){}
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form formulario = new opciones();//new opciones();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }
