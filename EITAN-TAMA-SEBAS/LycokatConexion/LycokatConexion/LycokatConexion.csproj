@@ -69,11 +69,23 @@
       <DependentUpon>clientes.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="estadisticas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="estadisticas.Designer.cs">
+      <DependentUpon>estadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="index.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
     </Compile>
     <Compile Include="opciones.cs">
       <SubType>Form</SubType>
@@ -89,11 +101,23 @@
     <Compile Include="reportes.Designer.cs">
       <DependentUpon>reportes.cs</DependentUpon>
     </Compile>
+    <Compile Include="usuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="clientes.resx">
       <DependentUpon>clientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="estadisticas.resx">
+      <DependentUpon>estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="opciones.resx">
       <DependentUpon>opciones.cs</DependentUpon>
@@ -110,6 +134,9 @@
     </Compile>
     <EmbeddedResource Include="reportes.resx">
       <DependentUpon>reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuarios.resx">
+      <DependentUpon>usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -147,6 +174,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2022-06-20 at 9.39.47 PM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondos para proyecto 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo para proyecto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -14,7 +14,7 @@ namespace LycokatConexion
 {
     public partial class clientes : Form
     {
-        BaseDeDatos conexion = new BaseDeDatos("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True"); //le ponemos el nombre de la BD
+        BaseDeDatos conexion = new BaseDeDatos("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking2; Integrated Security = True"); //le ponemos el nombre de la BD
         SqlDataAdapter adapter;
         //SqlCommand command;
         public clientes()=>InitializeComponent();
@@ -54,5 +54,13 @@ namespace LycokatConexion
         private void button5_Click_1(object sender, EventArgs e) => chart1.Series["GRAFICO"].ChartType = SeriesChartType.Pie;
         private void button6_Click(object sender, EventArgs e) =>chart1.Series["GRAFICO"].ChartType = SeriesChartType.Area;
         private void button7_Click(object sender, EventArgs e) =>chart1.Series["GRAFICO"].ChartType = SeriesChartType.Line;
+        private void pictureBox1_Click(object sender, EventArgs e){ }
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.IsMdiContainer = true;
+            Form index = new Form();
+            index.MdiParent = this;
+            index.Show();
+        }
     }
 }

@@ -61,3 +61,6 @@ C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\Lyco
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menu.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.usuarios.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.estadisticas.resources

@@ -23,7 +23,7 @@ namespace LycokatConexion
         private void index_Load(object sender, EventArgs e){}
         private void button2_Click(object sender, EventArgs e)
         {
-            Form formulario = new opciones();//new opciones();
+            Form formulario = new menu();//new opciones();
             formulario.Show();
             this.Hide();
         }

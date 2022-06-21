@@ -83,6 +83,26 @@ namespace LycokatConexion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fondo_para_proyecto {
+            get {
+                object obj = ResourceManager.GetObject("Fondo para proyecto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fondos_para_proyecto_2 {
+            get {
+                object obj = ResourceManager.GetObject("Fondos para proyecto 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GDicon {
             get {
                 object obj = ResourceManager.GetObject("GDicon", resourceCulture);
