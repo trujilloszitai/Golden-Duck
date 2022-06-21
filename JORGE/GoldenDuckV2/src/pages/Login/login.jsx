@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DarkMode from '../../utils/darkMode';
 
 import './login.scss';
@@ -15,7 +16,7 @@ const Login = (top) => {
                     <h1>¿No tienes una cuenta?</h1>
                     <i>"El principio es la mitad del todo" - Pitágoras</i>
                     <p>Si todavia no tienes una cuenta, puedes empezar a crearla haciendo un click</p>
-                    <a href="#">Aquí</a>
+                    <Link to={'/Register'}>Aquí</Link>
                 </div>
             </div>
             <div className="Login">
@@ -34,7 +35,7 @@ const Login = (top) => {
                     </div>
                     <div className='check'>
                         <input type="checkbox" />
-                        <a href='#'>¿Olvidaste tu Contraseña?</a>
+                        <Link to={'/ChangePassword'}>¿Olvidaste tu Contraseña?</Link>
                     </div>
                     <input type="submit" />
                 </form>
