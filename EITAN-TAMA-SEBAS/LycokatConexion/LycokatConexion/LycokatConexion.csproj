@@ -62,17 +62,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="clientes.Designer.cs">
-      <DependentUpon>clientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="BaseDeDatos.cs" />
-    <Compile Include="estadisticas.cs">
+    <Compile Include="gerentes\ABM.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="estadisticas.Designer.cs">
+    <Compile Include="gerentes\ABM.Designer.cs">
+      <DependentUpon>ABM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="supervisores\estadisticas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="supervisores\estadisticas.Designer.cs">
       <DependentUpon>estadisticas.cs</DependentUpon>
     </Compile>
     <Compile Include="index.cs">
@@ -81,46 +81,46 @@
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
     </Compile>
-    <Compile Include="menu.cs">
+    <Compile Include="gerentes\menuG.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menu.Designer.cs">
+    <Compile Include="gerentes\menuG.Designer.cs">
+      <DependentUpon>menuG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supervisores\menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supervisores\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="opciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="opciones.Designer.cs">
-      <DependentUpon>opciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="reportes.cs">
+    <Compile Include="supervisores\reportes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reportes.Designer.cs">
+    <Compile Include="supervisores\reportes.Designer.cs">
       <DependentUpon>reportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="usuarios.cs">
+    <Compile Include="supervisores\usuarios.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="usuarios.Designer.cs">
+    <Compile Include="supervisores\usuarios.Designer.cs">
       <DependentUpon>usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="clientes.resx">
-      <DependentUpon>clientes.cs</DependentUpon>
+    <EmbeddedResource Include="gerentes\ABM.resx">
+      <DependentUpon>ABM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="estadisticas.resx">
+    <EmbeddedResource Include="supervisores\estadisticas.resx">
       <DependentUpon>estadisticas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="gerentes\menuG.resx">
+      <DependentUpon>menuG.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="opciones.resx">
-      <DependentUpon>opciones.cs</DependentUpon>
+    <EmbeddedResource Include="supervisores\menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -132,10 +132,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="reportes.resx">
+    <EmbeddedResource Include="supervisores\reportes.resx">
       <DependentUpon>reportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="usuarios.resx">
+    <EmbeddedResource Include="supervisores\usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

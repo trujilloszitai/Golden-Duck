@@ -1,6 +1,6 @@
 ﻿namespace LycokatConexion
 {
-    partial class menu
+    partial class menuG
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.usuarios1 = new LycokatConexion.usuarios();
-            this.estadisticas1 = new LycokatConexion.estadisticas();
+            this.abm1 = new LycokatConexion.ABM();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -43,6 +43,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -53,15 +54,14 @@
             this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 0;
             // 
-            // button1
+            // button3
             // 
-            this.button1.Location = new System.Drawing.Point(70, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button3.Location = new System.Drawing.Point(70, 259);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -73,14 +73,15 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // button1
             // 
-            this.button3.Location = new System.Drawing.Point(70, 259);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(70, 75);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -99,37 +100,39 @@
             this.pictureBox2.Image = global::LycokatConexion.Properties.Resources.Fondos_para_proyecto_2;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox2.Size = new System.Drawing.Size(850, 450);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // usuarios1
+            // abm1
             // 
-            this.usuarios1.Location = new System.Drawing.Point(226, 29);
-            this.usuarios1.Name = "usuarios1";
-            this.usuarios1.Size = new System.Drawing.Size(562, 385);
-            this.usuarios1.TabIndex = 4;
-            this.usuarios1.Load += new System.EventHandler(this.usuarios1_Load);
+            this.abm1.Location = new System.Drawing.Point(206, 75);
+            this.abm1.Name = "abm1";
+            this.abm1.Size = new System.Drawing.Size(626, 309);
+            this.abm1.TabIndex = 4;
             // 
-            // estadisticas1
+            // button4
             // 
-            this.estadisticas1.Location = new System.Drawing.Point(226, 29);
-            this.estadisticas1.Name = "estadisticas1";
-            this.estadisticas1.Size = new System.Drawing.Size(562, 403);
-            this.estadisticas1.TabIndex = 5;
-            this.estadisticas1.Load += new System.EventHandler(this.estadisticas1_Load);
+            this.button4.Location = new System.Drawing.Point(26, 13);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "index";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // menu
+            // menuG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.estadisticas1);
-            this.Controls.Add(this.usuarios1);
+            this.ClientSize = new System.Drawing.Size(850, 450);
+            this.Controls.Add(this.abm1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
-            this.Name = "menu";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "menuG";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -146,7 +149,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private usuarios usuarios1;
-        private estadisticas estadisticas1;
+        private ABM abm1;
+        private System.Windows.Forms.Button button4;
     }
 }

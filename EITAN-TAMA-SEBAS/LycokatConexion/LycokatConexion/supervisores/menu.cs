@@ -26,5 +26,12 @@ namespace LycokatConexion
             this.estadisticas1.Show();
             this.usuarios1.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form index = new index();
+            index.Show();
+            this.Close();
+        }
     }
 }

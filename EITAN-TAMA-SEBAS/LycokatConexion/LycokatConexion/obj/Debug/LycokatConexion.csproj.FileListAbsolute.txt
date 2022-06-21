@@ -52,9 +52,7 @@ C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\Lyco
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.pdb
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.AssemblyReference.cache
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.SuggestedBindingRedirects.cache
-C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.clientes.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.index.resources
-C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.Properties.Resources.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.reportes.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.GenerateResource.cache
@@ -64,3 +62,5 @@ C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\Lyco
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menu.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.usuarios.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.estadisticas.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuG.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.ABM.resources
