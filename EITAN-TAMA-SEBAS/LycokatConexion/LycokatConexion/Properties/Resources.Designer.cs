@@ -89,5 +89,15 @@ namespace LycokatConexion.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2022_06_20_at_9_39_47_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2022-06-20 at 9.39.47 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

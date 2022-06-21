@@ -47,3 +47,17 @@ C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\
 C:\Users\Alumno\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.reportes.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.exe.config
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.exe
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.pdb
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.AssemblyReference.cache
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.SuggestedBindingRedirects.cache
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.clientes.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.index.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.opciones.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.Properties.Resources.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.reportes.resources
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.GenerateResource.cache
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
+C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
