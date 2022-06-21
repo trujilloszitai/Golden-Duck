@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d74dfda1.css",
+    "main.js": "/static/js/main.ba494bdc.js",
+    "static/js/787.a4a41570.chunk.js": "/static/js/787.a4a41570.chunk.js",
+    "static/media/backgroundPhone.jfif": "/static/media/backgroundPhone.71814df5f62a7db348df.jfif",
+    "static/media/Laptop.svg": "/static/media/Laptop.9149b40dd5414bd437d2ed6ea1a39dca.svg",
+    "static/media/laptopDark.svg": "/static/media/laptopDark.f4810c1c5e6460b54c0d2ecc6d0b6612.svg",
+    "static/media/fontIcon.woff2": "/static/media/fontIcon.73319595f421ef8247b1.woff2",
+    "static/media/particles.png": "/static/media/particles.ecc6f38f28b6982d4ff2.png",
+    "static/media/Lycokat.png": "/static/media/Lycokat.4a90c53506f80c1f3499.png",
+    "static/media/logo512.png": "/static/media/logo512.a06cd5e587d62947ac5b.png",
+    "static/media/Mail.webp": "/static/media/Mail.a85231ae9e71a760b839.webp",
+    "static/media/Twitter.svg": "/static/media/Twitter.b1ec2956612bb69e8b85.svg",
+    "static/media/Instagram.svg": "/static/media/Instagram.a75a098d473c09d56927.svg",
+    "static/media/phone.webp": "/static/media/phone.448022f8f4bc8f5a6fbb.webp",
+    "static/media/qr-code.png": "/static/media/qr-code.33def81b20290c8cbd72.png",
+    "static/media/Linkedin.svg": "/static/media/Linkedin.1323dd18334f84ce06a0.svg",
+    "static/media/nevis.ttf": "/static/media/nevis.706a45408cbec85d3b77.ttf",
+    "static/media/Facebook.svg": "/static/media/Facebook.ad09cfcdef972665e4da.svg",
+    "static/media/blob1.svg": "/static/media/blob1.cdc252478e71368020af.svg",
+    "static/media/LycokatLogo.svg": "/static/media/LycokatLogo.03b2ad450658e4df9e15.svg",
+    "static/media/blob2.svg": "/static/media/blob2.2a8fa8fadb7f6b85b342.svg",
+    "index.html": "/index.html",
+    "static/media/topWave.svg": "/static/media/topWave.5c1a529121e0c226f8f9.svg",
+    "static/media/topWaveDark.svg": "/static/media/topWaveDark.a00033200775437246a5.svg",
+    "static/media/bottomWave.svg": "/static/media/bottomWave.1f71afe095923dd1b380.svg",
+    "static/media/bottomWaveDark.svg": "/static/media/bottomWaveDark.344a85ed494b767f5df0.svg",
+    "main.d74dfda1.css.map": "/static/css/main.d74dfda1.css.map",
+    "main.ba494bdc.js.map": "/static/js/main.ba494bdc.js.map",
+    "787.a4a41570.chunk.js.map": "/static/js/787.a4a41570.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d74dfda1.css",
+    "static/js/main.ba494bdc.js"
+  ]
+}
