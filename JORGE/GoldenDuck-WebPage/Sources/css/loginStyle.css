@@ -1,0 +1,150 @@
+
+/* ---------------------------------- Nav ---------------------------------- */
+
+nav{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition: all 300ms ease;
+    z-index: 1000;
+    background-color: var(--color-background);
+}
+nav .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 1rem;
+}
+nav .top h1{
+    color: var(--color-primary);
+}
+nav .top img{
+    width: 5rem;
+    margin-right: 1rem;
+}
+nav a{
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+}
+nav a span{
+    font-size: 2.5rem !important;
+}
+nav a span:hover{
+    color: #575b6d;
+}
+
+/* ---------------------------------- Section ---------------------------------- */
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/backgroundMain.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(4px);
+}
+main::after{
+    content: '';
+    background-color: var(--color-menu-dark);
+    width: 100%;
+    height: 100%;
+}
+section{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    top: 20vh;
+    right: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background);
+    border-radius: var(--border-radius-3);
+}
+section .line{
+    background-color: rgb(215, 215, 215);
+    width: 60%;
+    height: 2px;
+    position: absolute;
+}
+section .optionLogIn{
+    margin-top: 1rem;
+}
+section form{
+    width: 30rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section h1{
+    color: rgb(206, 206, 206);
+    font-size: 2.8rem;
+    margin-top: 3rem;
+}
+section .optionLogIn.active{
+    display: flex !important;
+}
+section form input{
+    width: 13rem;
+    height: 3rem;
+    border-bottom: 2px solid rgb(206, 206, 206);
+    border-left:none;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem 1em 1em 1em;
+}
+section form input:focus::placeholder, section form input:focus{
+    color: var(--color-primary);
+}
+section form .input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+section form .input img{
+    width: 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(206, 206, 206);
+}
+section form small{
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+section form a, main section form small span, .CoT{
+    font-weight: 600;
+    color: rgb(226, 140, 19);
+    cursor: pointer;
+}
+section form input[type='submit']{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.2rem;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 1.9rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+section form input[type='submit']:hover{
+    background-color: #f7c874;
+    cursor: pointer;
+}
+.optionLogIn{
+    display: none;
+}
