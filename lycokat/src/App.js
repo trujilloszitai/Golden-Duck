@@ -1,41 +1,48 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.scss';
-import { About, Contact, Features, Header, Navbar, Story } from './components'
+import { About, Contact, Features, Footer, Header, Navbar, Story, ContactCard } from './components'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import $ from 'jquery'
+import Fade from 'react-reveal/Fade';
 
 
 function App() {
-/* Detector de scroll */
-const debounce = (fn) => {
-  let frame;
-  return (...params) => {
-    if (frame) { 
-      cancelAnimationFrame(frame);
+  useEffect(() => {
+    const closeFormBtn = $('#close-contact-card');
+    const openFormBtn = $('.open-contact-form');
+    const contactForm = $('.contact-layout');
+
+    const openForm = () => {
+      contactForm.css('display', 'flex');
+      contactForm.css('animation', 'showForm 1000ms forwards');
     }
-    frame = requestAnimationFrame(() => {
-      fn(...params);
-    });
+    const closeForm = () => {
+      contactForm.css('animation', 'hideForm 300ms forwards');
+      setTimeout(() => {
+        contactForm.css('display', 'none');
+      }, 300)
+    }
 
-  } 
-};
-const storeScroll = () => {
-  document.documentElement.dataset.scroll = window.scrollY;
-}
+    closeFormBtn.click(closeForm);
+    openFormBtn.click(openForm);
 
-document.addEventListener('scroll', debounce(storeScroll), { passive: true });
-storeScroll();
+    return () => {
+      closeFormBtn.off('click', openForm);
+      openFormBtn.off('click', openForm);
+    }
+  }, []);
 
   return (
-    <div className="App">
-      <Navbar />
+    <div className='App'>
+        <Navbar />
       <Header />
       <About />
       <Features />
       <Story />
       <Contact />
+      <ContactCard />
+      <Footer />
     </div>
   );
 }

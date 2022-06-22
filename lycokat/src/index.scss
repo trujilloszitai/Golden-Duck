@@ -1,17 +1,63 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+
 @font-face {
-    font-family: 'Ailerons';
-    src: url('./assets/fonts/ailerons.otf') format'opentype';
+    font-family: 'Abel';
+    src: url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap') format'opentype';
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-$gradient-text: linear-gradient(0deg, rgba(141, 140, 140, 1) 0%, rgba(225, 218, 218, 1) 100%);
 $bg-color: #1c1d25;
-$nav-bg: #1C1D2590;
-$footer-color : #031B34;
-$about-color: #042c54;
+$primary-color: #4F46E5;
+$section1-bg: darken(#FFF, 10%);
+$section2-bg: darken(#FFF, 12.5%);
 $text-color: #F5F5F5;
-$color-subtext: #0066ff;
-$contact-bg: #FF482095;
+$text-sec-color: $bg-color;
+$color-subtext: $primary-color;
+$contact-bg: #2B2D3D;
+$hr-color: $primary-color;
 $svg-filter: invert(100%) sepia(85%) saturate(83%) hue-rotate(192deg) brightness(114%) contrast(92%);
+$wave-filter: invert(8%) sepia(24%) saturate(558%) hue-rotate(195deg) brightness(97%) contrast(92%);
+
+@mixin animated-underline($ul-color: $primary-color, $display: block) {
+    display: $display;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    padding: 0.2em 0;
+    margin: 0 1rem;
+    color: $text-color;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.15em;
+        background-color: $ul-color;
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    &:hover::after/* ,
+    &:focus::after */ {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@mixin nav-bg-transition(){
+    &:after, &:hover{
+        background: #2A2B36;
+        transition: background 300ms;
+    }
+    &:hover::after, &:focus::after{
+        background: #20212A;
+        transition: background 300ms;
+    }
+}

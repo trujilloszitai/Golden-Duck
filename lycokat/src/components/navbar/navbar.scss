@@ -1,86 +1,124 @@
 @use '../../index' as v;
-
-/* html:not([data-scroll='0']) {
-    .navbar {
-        background: v.$nav-bg;
-    }
-} */
-
-.navbar {
-    background: v.$nav-bg;
+%logo {
+    background-image: url('../../assets/img/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: v.$svg-filter;
+}
+.nav{
+    background-color: transparent;
     z-index: 100;
-
-    a {
-        color: v.$text-color;
+    width: 100%;
+    position: fixed;
+    transition: background-color .30s, box-shadow .30s;
+    .animated-underline {
+        @include v.animated-underline();
+        z-index: 101;
     }
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 !important;
-
-    .navbar-brand {
-        font-size: 1.75rem;
-        font-family: 'Ailerons';
+    .logo-mask {
+        .brand-name {
+            font-family: 'Abel';
+            font-weight: 300;
+            color: v.$text-color;
+            font-size: 28px;
+            text-decoration: none;
+        }
 
         .logo {
+            @extend %logo;
             width: 6rem;
             height: 4rem;
+        }
+    }
+
+    button.animated-underline {
+        @include v.animated-underline($display: flex);
+    }
+
+    .nav-content {
+        width: 100%;
+
+        nav {
+            font-family: "Manrope" !important;
+            font-weight: 500;
+
+            button {
+                text-decoration: none;
+            }
+        }
+
+        .switch-menu {
             filter: v.$svg-filter;
         }
     }
 
-    .navbar-nav {
-        font-family: "Manrope";
-        font-weight: 500;
+    .nav-responsive-content,
+    .nav-popover-panel {
+        background: v.$bg-color;
+        font-family: "Manrope" !important;
+        .logo {
+            @extend %logo;
+            width: 5rem;
+            height: 4rem;
+        }
 
         a {
-            display: block;
-            overflow: hidden;
-            position: relative;
-            padding: 0.2em 0;
-            margin: 0 1rem;
-            font-size: 18px;
-            color: v.$text-color;
-
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                height: 0.1em;
-                background-color: #959DA5;
-                opacity: 0;
-                transform: translate3d(-100%, 0, 0);
-                transition: opacity 300ms, transform 300ms;
-            }
-
-            &:hover::after,
-            &:focus::after {
-                opacity: 1;
-                transform: translate3d(0, 0, 0);
-            }
+            text-decoration: none;
         }
-    }
 
-    transition: background .30s;
-}
+        .switch-menu {
+            filter: v.$svg-filter;
+        }
 
-@media screen and (max-width: 992px) {
-    .navbar {
-        background: v.$nav-bg;
+        .nav-head {
+            background: #20212A;
+            border-radius: 1em;
 
-        .navbar-nav {
             a {
-                margin: 1rem 0;
+                @include v.nav-bg-transition();
+            }
+        }
+
+        .animated-underline {
+            @include v.animated-underline($display: flex !important);
+        }
+
+        .nav-footer {
+            background: v.$bg-color;
+            border: none;
+
+            a {
+                @include v.nav-bg-transition();
             }
         }
     }
 }
+.nav-active{
+    background-color: v.$bg-color;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+}
+@media screen and (max-width:1000px){
+    .nav-uplink{
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        text-align: center;
+    }
+    nav{
+        margin-left: 20px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        .logo-mask {
+            .logo {
+                width: 5rem;
+                height: 4rem;
+            }
 
-@media screen and (max-width: 800px) {
-    .navbar {
-        padding: 0;
+            .brand-name {
+                font-size: 20px;
+            }
+        }
     }
 }

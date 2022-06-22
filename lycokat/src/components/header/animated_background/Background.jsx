@@ -3,8 +3,8 @@ import './background.scss'
 
 const Background = () => {
     return (
-        <div>
-            <div class="area" >
+        <div className='position-relative background' >
+            <div className='area'>
                 <ul class="circles">
                     <li></li>
                     <li></li>

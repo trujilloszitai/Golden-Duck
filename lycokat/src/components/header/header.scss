@@ -4,16 +4,18 @@
   .header {
       height: 100vh;
       position: relative;
-    
+      user-select: none;
+
       #shapes-mask {
           position: absolute;
           overflow: hidden;
           top: 0;
           left: 0;
           width: 100%;
-          height: 100%;
+          height: 100vh;
+          background: v.$bg-color;
           transition: opacity 0.25s ease 0.65s;
-          z-index: 10;
+          z-index: 20;
 
           svg {
               path {
@@ -22,7 +24,7 @@
               }
           }
 
-          .shapy{
+          .shapy {
               transition: transform .10s;
               opacity: 71%;
               filter: blur(1px);
@@ -94,139 +96,367 @@
           }
 
           .pink {
-              stroke: #f06449;
+              stroke: #f06449 !important;
               fill: none;
           }
 
           .yellow {
-              stroke: #ff0;
+              stroke: #ff0 !important;
               fill: none;
           }
 
           .aqua {
-              stroke: aqua;
+              stroke: aqua !important;
               fill: none;
           }
       }
 
-      .brand{
+      .brand {
           width: 95%;
-          .main-text{
+
+          .main-text {
               position: absolute;
-              top: 50%;
+              top: 40%;
               transform: translateY(-50%);
               left: 0;
               width: 100%;
               z-index: 50;
 
-              .content{
+              .content {
+                  display: flex;
+                  flex-direction: column;
+                  flex-wrap: wrap;
                   width: fit-content;
                   padding-left: 150px;
-                .etp-name {
-                    font-family: 'Ailerons';
-                    width: fit-content;
-                    position: relative;
-                    font-size: 100px;
-                    padding: 0.1em 0;
-                    font-weight: 500;
-                    color: v.$text-color;
-                    overflow: hidden;
 
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 0.05em;
-                        background-color: #0066ff;
-                        opacity: 1;
-                        transform: translate3d(0, 0, 0);
-                        transition: opacity 300ms, transform 300ms;
-                    }
-        
-                    &:hover::after,
-                    &:focus::after {
-                        opacity: 1;
-                        transform: translate3d(0, 0, 0);
-                    }
-                }
-          
-                .etp-slogan {
-                    font-family: 'Share Tech Mono';
-                    background: transparent;
-                    border: none;
-                    font-size: 30px;
-                    width: fit-content;
-                    height: fit-content;
-                    font-weight: 500;
-                    color: v.$text-color;
-                    overflow: hidden;
-                    border-right: .15em solid orange;
-                    white-space: nowrap;
-                    letter-spacing: .15em;
-                    animation: 
-                    typing 3.5s steps(40, end),
-                    blink-caret .75s step-end infinite;
-          
-                    &:before {
-                        content: attr(data-before);
-                        word-break: break-all;
-                        opacity: 0.5;
-                    }
-          
-                    &:after {
-                        content: attr(data-after);
-                        word-break: break-all;
-                        opacity: 0.5;
-                    }
-                }
+                  .lycokat-name {
+                      width: fit-content;
+                      font-family: 'Abel';
+                      position: relative;
+                      font-weight: 300;
+                      font-size: 7.5rem;
+                      color: v.$text-color;
+                      overflow: hidden;
+
+                      &:after {
+                          content: '';
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          width: 100%;
+                          height: 0.05em;
+                          background-color: #4F46E5;
+                          opacity: 1;
+                          transform: translate3d(0, 0, 0);
+                          transition: opacity 300ms, transform 300ms;
+                      }
+
+                      &:hover::after,
+                      &:focus::after {
+                          opacity: 1;
+                          transform: translate3d(0, 0, 0);
+                      }
+                  }
+
+                  .lycokat-slogan {
+                      font-family: 'Share Tech Mono';
+                      background: transparent;
+                      border: none;
+                      font-size: 2rem;
+                      max-width: fit-content;
+                      height: fit-content;
+                      inline-size: 100%;
+                      font-weight: 500;
+                      overflow: hidden;
+                      color: v.$text-color;
+                      border-right: .15em solid transparent;
+                      white-space: nowrap;
+                      letter-spacing: .15em;
+                      animation:
+                          typing 3.5s steps(40, end),
+                          blink-caret .75s step-end infinite;
+
+                      &:before {
+                          content: attr(data-before);
+                          word-break: break-all;
+                          opacity: 0.5;
+                      }
+
+                      &:after {
+                          content: attr(data-after);
+                          word-break: break-all;
+                          opacity: 0.5;
+                      }
+                  }
+
+                  .lycokat-slogan-responsive {
+                      display: none;
+                      content-visibility: hidden;
+
+                      .slogan-2ndline {
+                          opacity: 0;
+                          visibility: hidden;
+                          transition: visibility 3.5s, opacity 3.5s;
+                      }
+                  }
               }
           }
       }
+
       .logo-mask {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 40%;
-        transform: translateY(-50%);
-        left: 50%;
-        z-index: 50;
-        img {
-            filter: v.$svg-filter;
-            opacity: 85%;
-            width: 100%;
+          position: absolute;
+          overflow: visible;
+          background-image: url('../../assets/img/logo.svg');
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100vh;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 50%;
+          z-index: 40;
+          filter: v.$svg-filter;
+          opacity: 55%;
+      }
+  }
+
+  /* Efecto de máquina de escrbir */
+  @keyframes typing {
+      0% {
+          width: 0
+      }
+
+      15% {
+          width: 0;
+      }
+
+      100% {
+          width: 100%;
+      }
+  }
+
+  @keyframes blink-caret {
+
+      from,
+      to {
+          border-color: transparent;
+      }
+
+      50% {
+          border-color: #4F46E5;
+      }
+  }
+
+  @keyframes make-visible {
+      99% {
+          visibility: hidden;
+      }
+
+      100% {
+          visibility: visible;
+      }
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1000px) {
+      .header {
+          .brand {
+              .main-text {
+                  .content {
+                      padding-left: 5%;
+
+                      .lycokat-name {
+                          font-size: 4.5rem;
+                      }
+
+                      .lycokat-slogan {
+                          font-size: 1.75rem;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 880px) {
+      .header {
+          .brand {
+              .main-text {
+                  .content {
+                      .lycokat-name {
+                          font-size: 4rem;
+                      }
+
+                      .lycokat-slogan {
+                          font-size: 1.5rem;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 768px) {
+      .header {
+          .brand {
+              .main-text {
+                  .content {
+                      .lycokat-slogan {
+                          font-size: 1.25rem;
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 550px) {
+      .header {
+          .logo-mask {
+              left: -12.5%;
+              width: 125%;
+              transform: translateY(-50%);
+              opacity: 15%;
+          }
+
+          .brand {
+              .main-text {
+                  .content {
+                      margin: auto;
+                      padding-left: 0;
+
+                      .lycokat-name {
+                          text-align: center;
+                          width: 100%;
+                      }
+
+                      .lycokat-slogan {
+                          display: none;
+                      }
+
+                      .lycokat-slogan-responsive {
+                          display: block;
+                          text-align: center;
+                          content-visibility: visible;
+
+                          .slogan-1stline {
+                              font-family: 'Share Tech Mono';
+                              background: transparent;
+                              border: none;
+                              font-size: 1.25rem;
+                              width: fit-content;
+                              height: fit-content;
+                              inline-size: 100%;
+                              font-weight: 500;
+                              overflow: hidden;
+                              color: v.$text-color;
+                              border-right: .15em solid transparent;
+                              white-space: nowrap;
+                              letter-spacing: .15em;
+                              animation:
+                                  typing 3.5s steps(40, end),
+                                  blink-caret .75s step-end 4;
+
+                              &:before {
+                                  content: attr(data-before);
+                                  word-break: break-all;
+                                  opacity: 0.5;
+                              }
+
+                              &:after {
+                                  content: attr(data-after);
+                                  word-break: break-all;
+                                  opacity: 0.5;
+                              }
+                          }
+
+                          .slogan-2ndline {
+                              font-family: 'Share Tech Mono';
+                              opacity: 0;
+                              opacity: 1;
+                              background: transparent;
+                              border: none;
+                              font-size: 1.25rem;
+                              max-width: fit-content;
+                              height: fit-content;
+                              margin: auto;
+                              inline-size: 100%;
+                              font-weight: 500;
+                              overflow: hidden;
+                              color: v.$text-color;
+                              border-right: .15em solid transparent;
+                              white-space: nowrap;
+                              letter-spacing: .15em;
+                              animation:
+                                  make-visible 0s forwards,
+                                  typing 3.5s steps(40, end),
+                                  blink-caret .75s step-end infinite;
+                              visibility: hidden;
+                              animation-delay: 3.3s;
+
+                              &:before {
+                                  content: attr(data-before);
+                                  word-break: break-all;
+                                  opacity: 0.5;
+                              }
+
+                              &:after {
+                                  content: attr(data-after);
+                                  word-break: break-all;
+                                  opacity: 0.5;
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 300px) {
+      .header {
+          .brand {
+              .main-text {
+                  .content {
+                      .lycokat-name {
+                          font-size: 3rem;
+                      }
+
+                      .lycokat-slogan-responsive {
+                          .slogan-1stline {
+                              font-size: 1rem;
+                          }
+
+                          .slogan-2ndline {
+                              font-size: 1rem;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+  @media screen and (max-width: 230px) {
+    .header {
+        .brand {
+            .main-text {
+                .content {
+                    .lycokat-name {
+                        font-size: 2rem;
+                    }
+
+                    .lycokat-slogan-responsive {
+                        .slogan-1stline {
+                            font-size: 0.85rem;
+                        }
+
+                        .slogan-2ndline {
+                            font-size: 0.85rem;
+                        }
+                    }
+                }
+            }
         }
     }
-  }
-
-  @keyframes typing {
-    0% { width: 0 }
-    15% { width: 0; }
-    100% { width: 100%;
-    }
-  }
-  
-  /* Efecto de máquina de escrbir */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #0066ff; }
-  }
-
-  @media only screen and (max-height: 29.9375em) {
-      .header {
-          height: 380px;
-      }
-  }
-
-  @media only screen and (max-height: 36.1875em) {
-      .header {
-          height: 480px;
-      }
-  }
-
-  @media only screen and (max-height: 40.5625em) {
-      .header {
-          height: 580px;
-      }
-  }
+}
