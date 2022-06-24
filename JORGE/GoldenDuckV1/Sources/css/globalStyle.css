@@ -1,0 +1,139 @@
+/* ---------------------------------- Funtes ---------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: boldLetter;
+    src: url(../ttf/AzeretMono-Black.ttf);
+}
+@font-face {
+    font-family: nevis;
+    src: url(../ttf/nevis.ttf);
+}
+
+/* ---------------------------------- Colores ---------------------------------- */
+
+:root{
+    --color-primary: #ffc04f;
+    --color-primary-dark: #cda434;
+    --color-danger: #ff7782;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #E5E5E5;
+    
+    --color-money: #85bb65;
+    --color-graph: #00aae4;
+    --color-black: #1c1c1c;
+    --color-menu-dark: #2c2c2c7a;
+    --color-menu-option-dark: #2c2c2c7a;
+    --color-menu-bluedark: #212529;
+    --bg-nav-blur: #21252920;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: .4rem;
+    --border-radius-2: .8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(var(--color-light))
+}
+
+/* ---------------------------------- Normalize ---------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+html, body{
+    height:100%;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Poppins, sans-serif;
+    font-size: .88rem;
+    background-color: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+}
+.container {
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
+a {
+    color: var(--color-dark);
+}
+img {
+    display: block;
+    width: 100%;
+}
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: .87rem;
+}
+h4 {
+    font-size: .8rem;
+}
+h5 {
+    font-size: .77rem;
+}
+small {
+    font-size: .75rem;
+}
+.profile-photo {
+    width: 2.8rem;
+    height: 2.87rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-muted {
+    color: var(--color-info-dark);
+}
+p {
+    color: var(--color-dark-variant);
+}
+b {
+    color: var(--color-dark);
+}
+.primary{
+    color: var(--color-primary);
+}
+.danger{
+    color: var(--color-danger);
+}
+.success{
+    color: var(--color-success);
+}
+.warning{
+    color: var(--color-warning);
+}
+.money{
+    color: var(--color-money) !important;
+}

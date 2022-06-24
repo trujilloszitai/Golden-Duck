@@ -1,0 +1,63 @@
+/* 
+
+    Estilos generales para la web
+
+*/
+
+
+/* Tamaño de Fuente y Scroll Suave */
+
+html {
+    font-size: 9px;
+    scroll-behavior: smooth;
+}
+
+/* Fuentes */
+
+@font-face {
+    font-family: nevis;
+    src: url(assets/font/nevis.ttf);
+}
+*{
+    font-family: 'nevis';
+}
+
+/* Transicion general */
+
+body{
+    transition: all 0.3s ease;
+}
+
+/* Definó Colores */
+
+:root{
+    --white: #F0F3F4;
+    --primaryColor: #F1C40F;
+    --primaryColorDark: #d1ac1a;
+    --backColor: #5268f2;
+    --backColorDark: #3d4685;
+    --dark: #1f1f1f;
+}
+
+/* Estilo para Scrollbar */
+
+* {
+scrollbar-width: none;
+scrollbar-color: #b3b6b7 transparent;
+}
+*::-webkit-scrollbar {
+width: 10px;
+height: 100%;
+}
+*::-webkit-scrollbar-track {
+background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+background-color: #b3b6b7;
+border-radius: 10px;
+border: none;
+}
+*::-webkit-scrollbar-track-piece{
+background-color: transparent;
+color: transparent;
+}

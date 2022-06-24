@@ -1,0 +1,124 @@
+@use '../../index' as v;
+%logo {
+    background-image: url('../../assets/img/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: v.$svg-filter;
+}
+.nav{
+    background-color: transparent;
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+    transition: background-color .30s, box-shadow .30s;
+    .animated-underline {
+        @include v.animated-underline();
+        z-index: 101;
+    }
+
+    .logo-mask {
+        .brand-name {
+            font-family: 'Abel';
+            font-weight: 300;
+            color: v.$text-color;
+            font-size: 28px;
+            text-decoration: none;
+        }
+
+        .logo {
+            @extend %logo;
+            width: 6rem;
+            height: 4rem;
+        }
+    }
+
+    button.animated-underline {
+        @include v.animated-underline($display: flex);
+    }
+
+    .nav-content {
+        width: 100%;
+
+        nav {
+            font-family: "Manrope" !important;
+            font-weight: 500;
+
+            button {
+                text-decoration: none;
+            }
+        }
+
+        .switch-menu {
+            filter: v.$svg-filter;
+        }
+    }
+
+    .nav-responsive-content,
+    .nav-popover-panel {
+        background: v.$bg-color;
+        font-family: "Manrope" !important;
+        .logo {
+            @extend %logo;
+            width: 5rem;
+            height: 4rem;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .switch-menu {
+            filter: v.$svg-filter;
+        }
+
+        .nav-head {
+            background: #20212A;
+            border-radius: 1em;
+
+            a {
+                @include v.nav-bg-transition();
+            }
+        }
+
+        .animated-underline {
+            @include v.animated-underline($display: flex !important);
+        }
+
+        .nav-footer {
+            background: v.$bg-color;
+            border: none;
+
+            a {
+                @include v.nav-bg-transition();
+            }
+        }
+    }
+}
+.nav-active{
+    background-color: v.$bg-color;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+}
+@media screen and (max-width:1000px){
+    .nav-uplink{
+        margin-left: 8px !important;
+        margin-right: 8px !important;
+        text-align: center;
+    }
+    nav{
+        margin-left: 20px !important;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav {
+        .logo-mask {
+            .logo {
+                width: 5rem;
+                height: 4rem;
+            }
+
+            .brand-name {
+                font-size: 20px;
+            }
+        }
+    }
+}

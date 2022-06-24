@@ -1,0 +1,118 @@
+@use '../../index' as v;
+
+.story {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    .timeline, .story-intro{
+        width: 50%;
+    }
+    .timeline {
+        color: v.$text-sec-color;
+        padding: 0 20px;
+
+        ul {
+            list-style-type: none;
+            border-left: 2px solid v.$bg-color;
+            padding: 10px 5px;
+
+            li {
+                padding: 20px 20px;
+                position: relative;
+                border-radius: 1em;
+                transition: .5s;
+
+                span {
+                    display: inline-block;
+                    background-color: v.$primary-color;
+                    border-radius: 25px;
+                    padding: 2px 5px;
+                    font-size: 15px;
+                    text-align: center;
+                    color: v.$text-color;
+                }
+
+                .timeline-content {
+                    h3 {
+                        color: v.$primary-color;
+                        font-size: 20px;
+                        padding-top: 5px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        padding: 5px 0px 15px 0px;
+                        font-size: 1em;
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background-color: v.$bg-color;
+                    border-radius: 50%;
+                    left: -11px;
+                    top: 28px;
+                    transition: .5s;
+                }
+
+                &:hover {
+                    background-color: v.$section2-bg;
+
+                    &:before {
+                        background-color: v.$primary-color;
+                        box-shadow: 0px 0px 10px 2px v.$primary-color;
+                    }
+                }
+            }
+        }
+    }
+    .story-intro{
+        padding-top: 20px;
+        font-size: 1.5rem;
+        .story-vector{
+            background-image: url('../../assets/img/team.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 1rem;
+            height: 400px;
+        }   
+    }
+}
+
+@media (max-width:1000px) {
+    .story {
+        flex-direction: column-reverse;
+        .timeline, .story-intro{
+            width: 100%;
+        }
+        .story-intro{
+            .flex-column{
+                text-align: center;
+                p{
+                    text-align: start;
+                    font-size: 1.25rem !important;
+                }
+            }
+        }
+        .timeline {
+            padding: 30px 5px 30px 10px;
+            ul {
+                li {
+                    .timeline-content {
+                        h3 {
+                            color: v.$primary-color;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

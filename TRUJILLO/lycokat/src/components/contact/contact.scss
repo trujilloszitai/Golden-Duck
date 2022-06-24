@@ -1,0 +1,40 @@
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    .contact-vector, .contact-message{
+        width: 50%;
+    }
+    .contact-vector{
+        height: 500px;
+        background: url('../../assets/img/rocket.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 550px){
+    .contact{
+        flex-direction: column;
+        .contact-vector, .contact-message{
+            width: 100%;
+            align-items: center !important;
+        }
+        .contact-vector{
+            height: 350px;
+        }
+        .contact-message{
+            text-align: center;
+            span{
+                width: 100%;
+            }
+            .contact-button{
+                justify-content: center;
+            }
+        }
+    }
+}
