@@ -1,14 +1,11 @@
 main.logSec{
     display: flex;
-    background-color: var(--backColor);
-    .particles{
+    #particles{
         position: fixed;
-        width: 70%;
-        height: 200%;
+        width: 100%;
+        height: 100%;
         z-index: 1;
-        background: url(assets/particles.png);
-        background-position: left;
-        animation: backgroundParticles 3s linear infinite alternate;
+        background: url(assets/particles.png), var(--backColor);
         filter: blur(0.2rem);
     }
     #bg{
@@ -169,16 +166,6 @@ main.logSec{
         }
     }
 }
-@keyframes backgroundParticles {
-    0%{
-        top: -5%;
-        left: -2%;
-    }
-    100%{
-        top: 0;
-        left: 0;
-    }
-}
 
 
 /* Modo oscuro */
@@ -203,6 +190,87 @@ body.dark{
                     margin-left: 2.5rem;
                     color: white;
                 }
+            }
+        }
+    }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+    main.logSec{
+        display: flex;
+        flex-direction: column;
+        .particles{
+            position: fixed;
+            width: 100%;
+            height: 200%;
+            z-index: 1;
+            background: url(assets/particles.png);
+            background-position: left;
+            animation: backgroundParticles 3s linear infinite alternate;
+            filter: blur(0.2rem);
+        }
+        #bg{
+            order: 2;
+            width: 100%;
+            height: 50vh;
+            .text{
+                width: 100%;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .Login{
+            order: 1;
+            width: 100%;
+            height: 50vh;
+            background-color: white;
+            z-index: 4;
+            .background{
+                display: none;
+            }
+            h1{
+                font-size: 5rem;
+                margin-bottom: 2.5rem;
+                z-index: 3;
+            }
+        }
+    }
+    body.dark{
+        main.logSec{
+            .Login{
+                background-color: #1f1f1f;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------- TEMPORAL ---------------------------------- */
+
+main.logSec{
+    .Login{
+        form{
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
             }
         }
     }

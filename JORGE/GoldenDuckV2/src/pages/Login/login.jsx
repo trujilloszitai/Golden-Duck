@@ -1,15 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import DarkMode from '../../utils/darkMode';
+import { isMobile} from 'react-device-detect';
+
+import MoveBGFuntion from '../../utils/bgMove';
+
+import Mobile from '../../components/mobile/mobile';
 
 import './login.scss';
 import Nav from '../../components/navbar/nav'
 
-const Login = (top) => {
+const Login = () => {
+    useEffect(() => {
+        MoveBGFuntion('particles');
+      }, []);
+    if (isMobile) {
+        return <Mobile/>;
+    }
     return(
         <main className='logSec'>
             <DarkMode/>
-            <div className="particles"/>
+            <div id="particles"/>
             <div id='bg'>
                 <Nav/>
                 <div className='text'>
@@ -24,20 +35,20 @@ const Login = (top) => {
                 <h1>Iniciar Sesión</h1>
                 <form>
                     <label>Usuario o Telefono</label>
-                    <div class="input">
+                    <div className="input">
                         <input type="email" name="email" placeholder="Usuario o Telefono" required/>
-                        <span class="material-icons-outlined">account_circle</span>
+                        <span className="material-icons-outlined">account_circle</span>
                     </div>
                     <label>Contraseña</label>
-                    <div class="input">
+                    <div className="input">
                         <input type="text" name="password" placeholder="Contraseña" required/>
-                        <span class="material-icons-outlined">lock</span>
+                        <span className="material-icons-outlined">lock</span>
                     </div>
                     <div className='check'>
                         <input type="checkbox" />
                         <Link to={'/ChangePassword'}>¿Olvidaste tu Contraseña?</Link>
                     </div>
-                    <input type="submit" />
+                    <Link to={'/Panel'}><input type="submit" /></Link>
                 </form>
             </div>
         </main>

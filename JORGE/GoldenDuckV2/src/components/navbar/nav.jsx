@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Logo from '../../assets/img/logo512.png';
 import './nav.scss';
 
-const Navbar = (top) => {
+const Navbar = () => {
     return(
         <nav>
-            <img src={Logo}/>
+            <img src={Logo} alt='GoldenDuck-Logo'/>
             <div className='homeCont' tooltip="Volver" flow="down">
-                <Link to={'/'} class="material-icons-outlined home">home</Link>
+                <Link to={'/'} className="material-icons-outlined home">home</Link>
             </div>
         </nav>
     )
