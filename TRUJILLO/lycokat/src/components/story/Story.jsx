@@ -16,7 +16,7 @@ const projects = [
   {
     date: '15 de Febrero de 2022',
     name: 'Papope Sports',
-    description: 'Sebastián Díaz, el prestigioso director de marketing y diseñador gráfico, logró que el gestor de turnos de centros deportivos, Papope Sports, arrase a la competencia gracias a la popularidad que éste logró. Mientras que Eitan Mohorade, programador back-end, y Federico Delgado, administrador de bases de datos, mostraron un manejo sobresaliente de lenguajes de programación a nivel servidor y alcanzaron una optimización sobresaliente del código.'
+    description: 'Sebastián Díaz, el prestigioso director de marketing y diseñador gráfico, logró que el gestor de turnos de centros deportivos, Papope Sports, arrase a la competencia gracias a la popularidad que éste logró. Mientras que Eitan Mohorade, programador back-end, y Federico Delgado, administrador de bases de datos, mostraron un manejo fuera de serie de lenguajes de programación a nivel servidor y alcanzaron una optimización sublime del código.'
   }
 ]
 
