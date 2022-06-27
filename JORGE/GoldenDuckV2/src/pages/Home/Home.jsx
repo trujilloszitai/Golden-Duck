@@ -1,22 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Navbar from './components/navbar/nav';
 import Footer from '../../components/footer/footer';
 import Header from './components/Header/Header';
-import QR from './assets/qr-code.png';
+import QR from '../../assets/img/qr-code.png';
 
 import './Home.scss';
 
 const Home = () => {
     return(
-        <div className='Home'>
+        <main className='Home'>
             <Navbar/>
             <Header/>
-            <section>
+            <section className='Home'>
                 <div id='LycoKat'>
                     <div className="LycoKatIco"/>
                     <p>
-                        <a href="https://xdmoment.netlify.app/" target='_blank'>Lycokat<span class="material-icons-outlined">open_in_new</span> </a>
+                        <Link to={'/lol'}>Lycokat<span className="material-icons-outlined">open_in_new</span></Link>
                         es una empresa enfocada a la producción de software del más alto prestigio dentro del mercado de IT, en donde buscamos las necesidades del cliente y planificamos el proceso de elaboración del proyecto. Aplicamos la dosis justa y necesaria de personalidad propia, siempre cumpliendo las expectativas del cliente, e incluso superándolas.  Siempre contando con el apoyo y asistencia posterior para el mantenimiento del proyecto, teniendo contacto directo con nosotros, los desarrolladores directo; Una de las características que nos hace destacar por encima de los demás.</p>
                 </div>
                 <div id="AboutUs">
@@ -29,44 +30,56 @@ const Home = () => {
                     <div id="AppMobile">
                         <div className="blob">
                             <div className='phone'/>
-                            <span className='contentPhone'>a</span>
+                            <span className='contentPhone'></span>
                         </div>
                         <div className="text">
                             <h1>¡Tenemos una app para Móvil!</h1>
                             <p>Descarga GoldenDuck en tu celular y maneja tu dinero con un 200% de eficiencia, lleva tu cartera online a donde sea que vayas para pagar servicios o incluso tomar un café.</p>
-                            <img src={QR} />
+                            <Link to={'/Mobile'}>
+                                <img src={QR} alt='AppQR'/>
+                            </Link>
                         </div>
                     </div>
                     <div className="bottomWave"/>
                 </div>
                 <div id="Possibilities">
                     <h1>Con <span>Golden Duck</span> Podrás Hacer:</h1>
-                    <div className="lineCards">
+                    <div className="cardsContainer">
                         <div className="card">
-                            <span class="material-icons-outlined">savings</span>
-                            <h2>Ingresos</h2>
+                            <div className='textCard'>
+                                <span className="material-icons-outlined">savings</span>
+                                <h2>Ingresos</h2>
+                            </div>
                         </div>
                         <div className="card">
-                            <span class="material-icons-outlined">currency_exchange</span>
-                            <h2>Traferencias</h2>
+                            <div className='textCard'>
+                                <span className="material-icons-outlined">currency_exchange</span>
+                                <h2>Traferencias</h2>
+                            </div>
                         </div>
                         <div className="card">
-                            <span class="material-icons-outlined">shopping_bag</span>
-                            <h2>Consumos</h2>
-                        </div>
-                    </div>
-                    <div className="lineCards">
-                        <div className="card">
-                            <span class="material-icons-outlined">credit_score</span>
-                            <h2>Prestamos</h2>
+                            <div className='textCard'>
+                                <span className="material-icons-outlined">shopping_bag</span>
+                                <h2>Consumos</h2>
+                            </div>
                         </div>
                         <div className="card">
-                            <span class="material-icons-outlined">insights</span>
-                            <h2>Inversiones</h2>
+                            <div className='textCard'>
+                                <span className="material-icons-outlined">credit_score</span>
+                                <h2>Prestamos</h2>
+                            </div>
                         </div>
                         <div className="card">
-                            <span class="material-icons-outlined">trending_up</span>
-                            <h2>Plazos Fijos</h2>
+                            <div className='textCard'>
+                                <span className="material-icons-outlined">insights</span>
+                                <h2>Inversiones</h2>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className='textCard'>
+                                <span className="material-icons-outlined">trending_up</span>
+                                <h2>Plazos Fijos</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,12 +91,12 @@ const Home = () => {
                     </div>
                     <div className="blob"/>
                     <div className="map">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1sni_xoB_1kANcbzPeHafmQjJZilwKFU&ehbc=2E312F" width="640" height="480"></iframe>
+                        <iframe title='SedeLycoKat' src="https://www.google.com/maps/d/u/0/embed?mid=1sni_xoB_1kANcbzPeHafmQjJZilwKFU&ehbc=2E312F"/>
                     </div>
                 </div>
             </section>
             <Footer/>
-        </div>
+        </main>
     )
 }
 

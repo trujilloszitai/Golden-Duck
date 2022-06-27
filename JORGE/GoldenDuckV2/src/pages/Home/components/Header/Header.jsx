@@ -21,8 +21,8 @@ const Home = () => {
                     </p>
                 </div>
                 <div className="img">
-                    <img className='light' src={Laptop}/>
-                    <img className='dark' src={LaptopDark}/>
+                    <img className='light' src={Laptop} alt='LaptopWithPanel'/>
+                    <img className='dark' src={LaptopDark} alt='LaptopWithPanel'/>
                     <div className='blob'></div>
                 </div>
                 <div className='Wave Wave1'/>

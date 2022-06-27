@@ -6,7 +6,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     color: white;
     padding-top: 5rem;
@@ -25,6 +25,7 @@ footer{
         margin: 2rem auto;
         p{
             font-size: 1.4rem;
+            font-family: 'Poppins-Regular';
             margin: 0;
             color: #D0D3D4;
             width: 100%;
@@ -56,6 +57,8 @@ footer{
             border-radius: 50%;
             transition: all 300ms ease;
             font-size: 3rem;
+            font-size: 0;
+            color: transparent;
         }
         a[title='Facebook']{
             background: url(assets/Facebook.svg);

@@ -1,4 +1,4 @@
-/* ------------------------------ Defino Colores Menu ------------------------------ */
+/* Defino Colores Menu */
 
 :root{
     --colorOption-Menu: #ECF0F1;
@@ -6,7 +6,7 @@
     --buttonMenuLogHover-Menu: #F7DC6F;
 }
 
-/* ------------------------------ Nav ------------------------------ */
+/* Nav */
 
 nav#home{
     user-select: none;
@@ -72,6 +72,28 @@ nav#home{
         span:hover{
             color: #1f1f1f;
             transition: all 300ms ease;
+        }
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 1001px){
+    nav#home{
+        justify-content: space-between;
+        .optionMenu{
+            display: none;
+        }
+    }
+}
+
+/* Dark Mode */
+
+body.dark{
+    nav#home{
+        .finalOptions{
+            a{
+                background-color: var(--primaryColorDark);
+            }
         }
     }
 }

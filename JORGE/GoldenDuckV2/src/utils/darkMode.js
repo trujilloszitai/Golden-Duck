@@ -33,10 +33,19 @@ const DarkMode = () => {
 
   return (
     <span
-      className={theme === "dark material-icons-outlined" ? clickedClass : "material-icons-outlined"}
+      className={(theme === "dark" ? clickedClass : "light") + ' material-icons-outlined'}
       onClick={(e) => switchTheme(e)}
     ></span>
   );
 };
+
+/* 
+
+Con useEffect(() => {
+        Funcion();
+      }, []);
+podes iniciar una funcion al cargar (efecto)
+
+*/
 
 export default DarkMode;
