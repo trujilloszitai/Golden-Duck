@@ -3,7 +3,6 @@ import './App.scss';
 import { About, Contact, Features, Footer, Header, Navbar, Story, ContactCard } from './components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import 'animate.css/animate.min.css';
 import $ from 'jquery'
 
 
