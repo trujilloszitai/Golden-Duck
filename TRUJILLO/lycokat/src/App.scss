@@ -1,4 +1,8 @@
 @use 'index' as v;
+@font-face {
+  font-family: 'Ailerons';
+  src: url('./assets/fonts/ailerons.otf');
+}
 
 * {
   box-sizing: border-box;
@@ -41,6 +45,7 @@ button {
 }
 
 .App {
+  display: none;
   overflow-x: hidden;
   background: v.$section1-bg;
   width: 100%;
@@ -63,76 +68,6 @@ button {
       color: v.$bg-color;
     }
   }
-  hr{
-  
-    border: 0;
-    height: 1px;
-    width: 30%;
-    position: relative;
-    margin: 30px auto;
-    
-    
-    &.center-ball{
-      background: v.$primary-color;
-      
-      &:before{
-        content: "";
-        width: 6px;
-        height: 6px;
-        background: v.$primary-color;
-        display: inline-block;
-        border: 2px solid v.$primary-color;
-        border-radius: 50%;
-        position: absolute;
-        top: -4px;
-        left: 50%;
-        margin: 0 0 0 -3px;
-      }
-    }
-    
-    &.center-diamond{
-      background: v.$primary-color;
-      
-      &:before{
-        content: "";
-        width: 6px;
-        height: 6px;
-        background: v.$primary-color;
-        display: inline-block;
-        border: 2px solid v.$primary-color;
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        margin: 0 0 0 -3px;
-        transform:rotate(45deg);
-        -ms-transform:rotate(45deg); /* IE 9 */
-        -webkit-transform:rotate(45deg); /* Opera, Chrome, and Safari */
-      }
-    }
-    
-    &.center-square{
-      background: v.$primary-color;
-      
-      &:before{
-        content: "";
-        width: 6px;
-        height: 6px;
-        background: v.$primary-color;
-        display: inline-block;
-        border: 2px solid v.$primary-color;
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        margin: 0 0 0 -3px;
-      }
-    }
-  }
-}
-
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
 
 @-webkit-keyframes scale-up-center {
   0% {
@@ -165,13 +100,13 @@ button {
   background:-ms-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
   background:radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }  */
-
-.ailerons {
-  font-family: 'Abel';
+.logo-font{
+  font-family: 'Ailerons', 'Anybody';
 }
 .manrope {
   font-family: 'Manrope';
 }
 .inter {
   font-family: 'Inter';
+}
 }

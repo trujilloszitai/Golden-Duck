@@ -98,7 +98,7 @@ const Header = () => {
         <div className='main-text flex-column'>
           <Fade bottom>
           <div className='content'>
-            <h1 className='lycokat-name'>LYCOKAT</h1>
+            <h1 className='lycokat-name logo-font'>LYCOKAT</h1>
             <h2 className='lycokat-slogan'>Fortuna y seguridad, en un solo lugar.</h2>
             <div className='lycokat-slogan-responsive'>
               <h2 className='slogan-1stline'>Fortuna y seguridad,</h2>

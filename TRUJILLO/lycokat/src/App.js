@@ -3,8 +3,8 @@ import './App.scss';
 import { About, Contact, Features, Footer, Header, Navbar, Story, ContactCard } from './components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'animate.css/animate.min.css';
 import $ from 'jquery'
-import Fade from 'react-reveal/Fade';
 
 
 function App() {
@@ -27,6 +27,11 @@ function App() {
     closeFormBtn.click(closeForm);
     openFormBtn.click(openForm);
 
+    setTimeout(() => {
+      $('#root').addClass('loaded')
+      $('.App').css('display', 'block')
+    }, 500)
+
     return () => {
       closeFormBtn.off('click', openForm);
       openFormBtn.off('click', openForm);
@@ -35,7 +40,7 @@ function App() {
 
   return (
     <div className='App'>
-        <Navbar />
+      <Navbar />
       <Header />
       <About />
       <Features />

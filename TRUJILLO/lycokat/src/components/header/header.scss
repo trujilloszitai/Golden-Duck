@@ -131,7 +131,6 @@
 
                   .lycokat-name {
                       width: fit-content;
-                      font-family: 'Abel';
                       position: relative;
                       font-weight: 300;
                       font-size: 7.5rem;
@@ -151,8 +150,7 @@
                           transition: opacity 300ms, transform 300ms;
                       }
 
-                      &:hover::after,
-                      &:focus::after {
+                      &:hover::after{
                           opacity: 1;
                           transform: translate3d(0, 0, 0);
                       }
@@ -217,7 +215,7 @@
           left: 50%;
           z-index: 40;
           filter: v.$svg-filter;
-          opacity: 55%;
+          opacity: 35%;
       }
   }
 

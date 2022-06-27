@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useState } from 'react'
 import './navbar.scss'
 import { Popover, Transition } from '@headlessui/react'
 import $ from 'jquery'
-import Fade from 'react-reveal/Fade';
 import {
   ChartBarIcon,
   CursorClickIcon,
@@ -71,7 +70,7 @@ export default function Navbar() {
           <div className="flex justify-start lg:w-0 lg:flex-1 logo-mask">
             <a href="#home" className="flex items-center focus:outline-none">
               <div className="logo"></div>
-              <span className="brand-name">LYCOKAT</span>
+              <span className="brand-name animated-underline logo-font mx-0">LYCOKAT</span>
               <span className="sr-only">Workflow</span>
             </a>
           </div>

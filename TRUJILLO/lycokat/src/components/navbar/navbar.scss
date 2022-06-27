@@ -11,6 +11,7 @@
     width: 100%;
     position: fixed;
     transition: background-color .30s, box-shadow .30s;
+    animation: fadeInNavbar 1s 1 ease;
     .animated-underline {
         @include v.animated-underline();
         z-index: 101;
@@ -18,17 +19,23 @@
 
     .logo-mask {
         .brand-name {
-            font-family: 'Abel';
             font-weight: 300;
             color: v.$text-color;
             font-size: 28px;
-            text-decoration: none;
+            text-decoration: none; 
+            &::after{
+                height: 0.15rem !important;
+            }
         }
 
         .logo {
             @extend %logo;
             width: 6rem;
             height: 4rem;
+
+            &:focus{
+                animation: bounce .75s;
+            }
         }
     }
 
@@ -120,5 +127,16 @@
                 font-size: 20px;
             }
         }
+    }
+}
+
+@keyframes fadeInNavbar {
+    0%{
+        transform: translate(0, -100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
     }
 }

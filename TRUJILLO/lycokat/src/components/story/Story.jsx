@@ -6,7 +6,7 @@ const projects = [
   {
     date: '30 de Noviembre de 2021',
     name: 'Meiyo',
-    description: 'El analista de sistemas Tobias Tamashiro, dejó en claro su superioridad a la hora de desarrollar sistemas que satisfagan al cliente cuando Undergroud, la empresa proveedora de movilidad como un servicio, lanzó al mercado Meiyo, la cual sorprendió a todas las personas que buscaban una forma cómoda y rápida de viajar.'
+    description: 'El analista de sistemas Tobias Tamashiro, dejó en claro su superioridad a la hora de desarrollar sistemas que satisfagan al cliente cuando Undergroud, la empresa proveedora de movilidad como un servicio, lanzó al mercado Meiyo, una aplicación que sorprendió a todas las personas que buscaban una forma cómoda y rápida de viajar.'
   },
   {
     date: '1 de Diciembre de 2021',
@@ -16,7 +16,7 @@ const projects = [
   {
     date: '15 de Febrero de 2022',
     name: 'Papope Sports',
-    description: 'Sebastián Díaz, el prestigioso director de marketing y diseñador gráfico, logró que el gestor de turnos de centros deportivos, Papope Sports, arrase a la competencia gracias a la popularidad que éste logró. Mientras que Eitan Mohorade, programador back-end, y Federico Delgado, administrador de baes de datos, mostraron un manejo sobresaliente de lenguajes de programación a nivel servidor y alcanzaron una optimización sobresaliente del código.'
+    description: 'Sebastián Díaz, el prestigioso director de marketing y diseñador gráfico, logró que el gestor de turnos de centros deportivos, Papope Sports, arrase a la competencia gracias a la popularidad que éste logró. Mientras que Eitan Mohorade, programador back-end, y Federico Delgado, administrador de bases de datos, mostraron un manejo sobresaliente de lenguajes de programación a nivel servidor y alcanzaron una optimización sobresaliente del código.'
   }
 ]
 

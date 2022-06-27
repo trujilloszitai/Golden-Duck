@@ -1,7 +1,7 @@
 import React from 'react'
 import './features.scss'
 import Fade from 'react-reveal/Fade';
-import { ViewGridIcon, ChartBarIcon, ShieldCheckIcon, CursorClickIcon, ArrowLeftIcon } from '@heroicons/react/outline'
+import { ViewGridIcon, ChartBarIcon, ShieldCheckIcon, CursorClickIcon} from '@heroicons/react/outline'
 
 const features = [
   {
@@ -14,7 +14,7 @@ const features = [
   {
     name: 'Aplicaciones dinámicas',
     description:
-      'Nuestros desarrollados e ingenieros de software se toman el riguroso trabajo de diseñar software del más alto rango, contando con una optimización excepcional e interfaces anatómicas ante cualquier situación.',
+      'Nuestros desarrolladores e ingenieros de software se toman el riguroso trabajo de diseñar sistemas del más alto rango, contando con una optimización excepcional e interfaces anatómicas ante cualquier situación.',
     icon: CursorClickIcon,
     fadeLeft: false
   },
