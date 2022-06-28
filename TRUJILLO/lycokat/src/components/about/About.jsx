@@ -4,7 +4,7 @@ import './about.scss'
 
 const About = () => {
   return (
-    <div className='about mx-0 px-5' id='about'>
+    <div className='about section1 mx-0 px-5' id='about'>
       <Fade bottom className='position-relative section1'>
         <div className='about-vector'></div>
         <div className='about-content'>

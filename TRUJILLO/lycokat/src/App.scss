@@ -1,4 +1,5 @@
 @use 'index' as v;
+
 @font-face {
   font-family: 'Ailerons';
   src: url('./assets/fonts/ailerons.otf');
@@ -37,6 +38,7 @@ li,
 button {
   color: unset;
   text-decoration: none !important;
+  user-select: text;
 }
 
 #root {
@@ -50,63 +52,58 @@ button {
   background: v.$section1-bg;
   width: 100%;
   height: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #1c1d2575 #CCC;
-  &::-webkit-scrollbar{
-    width: 7px;
+
+.section1, .section2{
+  background-image: radial-gradient(#ababab 1.1px, transparent 1.1px), radial-gradient(#ababab 1.1px, transparent 1.1px);
+  background-size: 44px 44px;
+  background-position: 0 0, 22px 22px;
 }
-&::-webkit-scrollbar-thumb{
-    background-color: #1c1d2575;
-    border-radius: 10px;
-}
-  .section1{
+
+  .section1 {
     background-color: v.$section1-bg;
   }
-  .section2{
+
+  .section2 {
     background-color: v.$section2-bg;
-    p, dd{
+
+    p,
+    dd {
       color: v.$bg-color;
     }
   }
 
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-/* .bg-gradient{
+  /* .bg-gradient{
   background:-moz-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
   background:-webkit-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
   background:-o-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
   background:-ms-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
   background:radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }  */
-.logo-font{
-  font-family: 'Ailerons', 'Anybody';
+  .logo-font {
+    font-family: 'Ailerons', 'Anybody';
+    user-select: none;
+  }
+
+  .manrope {
+    font-family: 'Manrope';
+  }
+
+  .inter {
+    font-family: 'Inter';
+  }
 }
-.manrope {
-  font-family: 'Manrope';
-}
-.inter {
-  font-family: 'Inter';
-}
+@media (min-device-width: 916px) {
+  .App{
+    scrollbar-width: thin;
+    scrollbar-color: #1c1d2575 #CCC;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #1c1d2575;
+      border-radius: 10px;
+    }
+  }
 }

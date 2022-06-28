@@ -18,6 +18,9 @@ $hr-color: $primary-color;
 $svg-filter: invert(100%) sepia(85%) saturate(83%) hue-rotate(192deg) brightness(114%) contrast(92%);
 $wave-filter: invert(8%) sepia(24%) saturate(558%) hue-rotate(195deg) brightness(97%) contrast(92%);
 
+body.swal2-height-auto{
+  height: 100% !important;
+}
 // Pre-loader
 #loader-wrapper {
     position: fixed;
