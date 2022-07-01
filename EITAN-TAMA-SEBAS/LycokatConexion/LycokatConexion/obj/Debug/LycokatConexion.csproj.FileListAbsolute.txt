@@ -67,7 +67,6 @@ C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\Lyco
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.exe.config
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.exe
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\bin\Debug\LycokatConexion.pdb
-C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csprojAssemblyReference.cache
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.ABM.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.estadisticas.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.index.resources
@@ -80,3 +79,6 @@ C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\Lycoka
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
+C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.SuggestedBindingRedirects.cache
+C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.progressbar.resources

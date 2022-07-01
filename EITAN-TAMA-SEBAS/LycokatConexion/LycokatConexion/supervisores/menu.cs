@@ -41,7 +41,7 @@ namespace LycokatConexion
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

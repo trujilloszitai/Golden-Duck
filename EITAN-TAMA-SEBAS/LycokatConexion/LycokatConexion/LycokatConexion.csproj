@@ -69,6 +69,12 @@
       <DependentUpon>ABM.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="progressbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="progressbar.Designer.cs">
+      <DependentUpon>progressbar.cs</DependentUpon>
+    </Compile>
     <Compile Include="supervisores\estadisticas.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="gerentes\ABM.resx">
       <DependentUpon>ABM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="progressbar.resx">
+      <DependentUpon>progressbar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supervisores\estadisticas.resx">
       <DependentUpon>estadisticas.cs</DependentUpon>
