@@ -1,0 +1,109 @@
+@use 'index' as v;
+
+@font-face {
+  font-family: 'Ailerons';
+  src: url('./assets/fonts/ailerons.otf');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+html {
+  position: relative;
+  font-size: 100%;
+}
+
+body,
+html {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span,
+li,
+button {
+  color: unset;
+  text-decoration: none !important;
+  user-select: text;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.App {
+  display: none;
+  overflow-x: hidden;
+  background: v.$section1-bg;
+  width: 100%;
+  height: 100%;
+
+.section1, .section2{
+  background-image: radial-gradient(#ababab 1.1px, transparent 1.1px), radial-gradient(#ababab 1.1px, transparent 1.1px);
+  background-size: 44px 44px;
+  background-position: 0 0, 22px 22px;
+}
+
+  .section1 {
+    background-color: v.$section1-bg;
+  }
+
+  .section2 {
+    background-color: v.$section2-bg;
+
+    p,
+    dd {
+      color: v.$bg-color;
+    }
+  }
+
+  /* .bg-gradient{
+  background:-moz-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background:-webkit-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background:-o-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background:-ms-radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background:radial-gradient(circle at 8% 25%, rgba(88, 86, 86, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}  */
+  .logo-font {
+    font-family: 'Ailerons', 'Anybody';
+    user-select: none;
+  }
+
+  .manrope {
+    font-family: 'Manrope';
+  }
+
+  .inter {
+    font-family: 'Inter';
+  }
+}
+@media (min-device-width: 916px) {
+  .App{
+    scrollbar-width: thin;
+    scrollbar-color: #1c1d2575 #CCC;
+
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #1c1d2575;
+      border-radius: 10px;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$bg-color: #1c1d25;
+$primary-color: #4F46E5;
+$section1-bg: darken(#FFF, 10%);
+$section2-bg: darken(#FFF, 12.5%);
+$text-color: #F5F5F5;
+$text-sec-color: $bg-color;
+$color-subtext: $primary-color;
+$contact-bg: #2B2D3D;
+$hr-color: $primary-color;
+$svg-filter: invert(100%) sepia(85%) saturate(83%) hue-rotate(192deg) brightness(114%) contrast(92%);
+$wave-filter: invert(8%) sepia(24%) saturate(558%) hue-rotate(195deg) brightness(97%) contrast(92%);
+
+body.swal2-height-auto{
+  height: 100% !important;
+}
+// Pre-loader
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    .no-js & {
+      display: none;
+    }
+  }
+  
+  
+  #loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: $primary-color;
+    animation: spin 1.7s linear infinite;
+    z-index: 11;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      right: 5px;
+      bottom: 5px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: $section1-bg;
+      animation: spin-reverse .6s linear infinite;
+    }
+    
+    &:after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50%;
+      border: 3px solid transparent;
+      border-top-color: #575a89;
+      animation: spin 1s linear infinite;
+    }
+  }
+  
+  // Animaciones para el loader
+  @-webkit-keyframes spin {
+    0% { 
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes spin-reverse {
+    0% { 
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(-360deg);
+    }
+  }
+
+  @keyframes spin {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-reverse {
+    0% { 
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  #loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: $bg-color;
+    z-index: 10;
+  }
+  
+  #loader-wrapper .loader-section.section-left {
+    left: 0;
+  }
+  
+  #loader-wrapper .loader-section.section-right {
+    right: 0;
+  }
+  
+  /* Estilos cargados */
+  
+  .loaded #loader-wrapper .loader-section.section-left {
+    transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  }
+  
+  .loaded #loader-wrapper .loader-section.section-right {
+    transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  }
+  
+  .loaded #loader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+  }
+  
+  .loaded #loader-wrapper {
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 0.3s 1s ease-out;
+  }
+
+@mixin animated-underline($ul-color: $primary-color, $display: block) {
+    display: $display;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    padding: 0.2em 0;
+    margin: 0 1rem;
+    color: $text-color;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0.15em;
+        background-color: $ul-color;
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+        transition: opacity 300ms, transform 300ms;
+    }
+
+    &:hover::after/* ,
+    &:focus::after */ {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@mixin nav-bg-transition(){
+    &:after, &:hover{
+        background: #2A2B36;
+        transition: background 300ms;
+    }
+    &:hover::after, &:focus::after{
+        background: #20212A;
+        transition: background 300ms;
+    }
+}

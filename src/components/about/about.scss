@@ -1,0 +1,57 @@
+@use '../../index' as v;
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: v.$text-sec-color;
+
+    .about-vector, .about-content{
+        width: 48%;
+    }
+    .about-vector {
+        background-image: url('../../assets/img/about.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 1rem;
+        height: 338px;
+    }
+
+    .about-content {
+        .about-title {
+            font-family: 'Manrope';
+        }
+
+        .about-info {
+            text-align: start;
+            font-size: 1.25rem;
+            font-family: 'Inter';
+        }
+    }
+}
+
+@media screen and(max-width:768px) {
+    .about {
+        flex-direction: column-reverse;
+
+        .about-vector,
+        .about-content {
+            width: 100%;
+        }
+
+        .about-content {
+            .about-title {
+                text-align: center;
+            }
+
+            .about-info {
+                font-size: 1rem;
+            }
+        }
+    }
+}
