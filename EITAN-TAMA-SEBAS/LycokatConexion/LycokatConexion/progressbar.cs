@@ -20,8 +20,8 @@ namespace LycokatConexion
         private void progressBar1_Click(object sender, EventArgs e)
         {
             progressBar1.Value = 0 ;
-            progressBar1.Maximum = 300;
-            timer1.Interval = 40;
+            progressBar1.Maximum = 300 ;
+            timer1.Interval = 40 ;
             timer1.Enabled = true;
 
         }
@@ -36,9 +36,13 @@ namespace LycokatConexion
             else
             {
                 this.Close();
-                Form formulario = new menuG();
-                formulario.Show();
+                // Form formu = new menuG();  formulario.Show();
             }
+        }
+
+        private void progressbar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

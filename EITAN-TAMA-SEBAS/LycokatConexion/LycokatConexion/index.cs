@@ -21,14 +21,12 @@ namespace LycokatConexion
             formulario.Show();
             this.Hide();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Form formulario = new progressbar();
             formulario.Show();
             this.Hide();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -30,5 +30,10 @@ namespace LycokatConexion
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

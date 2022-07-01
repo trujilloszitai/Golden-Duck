@@ -69,6 +69,7 @@
       <DependentUpon>ABM.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="open.cs" />
     <Compile Include="progressbar.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -36,10 +36,10 @@
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.progressBar1.Location = new System.Drawing.Point(12, 156);
+            this.progressBar1.Location = new System.Drawing.Point(12, 160);
             this.progressBar1.Maximum = 300;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(540, 32);
+            this.progressBar1.Size = new System.Drawing.Size(539, 32);
             this.progressBar1.TabIndex = 0;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
@@ -54,12 +54,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(128)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(564, 227);
+            this.ClientSize = new System.Drawing.Size(563, 233);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "progressbar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "progressbar";
+            this.Load += new System.EventHandler(this.progressbar_Load);
             this.ResumeLayout(false);
 
         }
