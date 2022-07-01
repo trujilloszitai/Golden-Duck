@@ -79,6 +79,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "reportes";
             this.Text = "reportes";
             this.Load += new System.EventHandler(this.reportes_Load);
