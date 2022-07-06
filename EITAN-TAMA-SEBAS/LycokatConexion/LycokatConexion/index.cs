@@ -15,7 +15,6 @@ namespace LycokatConexion
     public partial class index : Form
     {
         BaseDeDatos conexion = new BaseDeDatos("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking2; Integrated Security = True"); //le ponemos el nombre de la BD
-        SqlCommand command;
         SqlDataAdapter adapter;
         public index()=>InitializeComponent();
         private void index_Load(object sender, EventArgs e){}
@@ -49,8 +48,7 @@ namespace LycokatConexion
                 DataTable tabla = new DataTable();
                 adapter.Fill(tabla);
                     if (tabla.Rows.Count >= 1) {
-                        MessageBox.Show("correcto");
-                        if (tabla.Rows[0][1].ToString() == "gerente")
+                        if (tabla.Rows[0][1].ToString() == "gerente")//autentifica si es que en el lugar 0, 1 (email_us del comando en este caso) es gerente
                         {
                             Form formulario = new menuGerentes();
                             formulario.Show();
@@ -66,7 +64,7 @@ namespace LycokatConexion
                         {
                             MessageBox.Show("Datos incorrectos");
                         }
-                }
+                    }
             }
             catch(Exception ex)
             {

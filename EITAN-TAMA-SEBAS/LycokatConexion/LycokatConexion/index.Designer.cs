@@ -46,7 +46,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Location = new System.Drawing.Point(735, 289);
+            this.button2.Location = new System.Drawing.Point(747, 382);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 38);
             this.button2.TabIndex = 4;
@@ -60,7 +60,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Location = new System.Drawing.Point(596, 289);
+            this.button3.Location = new System.Drawing.Point(624, 382);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(117, 38);
             this.button3.TabIndex = 7;
@@ -120,7 +120,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 14;
-            this.button1.Text = "lets gooo";
+            this.button1.Text = "iniciar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
