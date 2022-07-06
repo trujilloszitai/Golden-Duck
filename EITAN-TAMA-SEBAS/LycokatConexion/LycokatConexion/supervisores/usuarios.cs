@@ -25,7 +25,7 @@ namespace LycokatConexion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            adapter = conexion.Consulta("Select * from tipos_de_tarjeta"); //hacemos el query
+            adapter = conexion.Consulta("SELECT * FROM usuarios_banco "); //hacemos el query
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;

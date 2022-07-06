@@ -31,5 +31,10 @@ namespace LycokatConexion
             chart1.Series["GRAFICO"].YValueMembers = "id";
             chart1.Titles.Add("tipo de tarjetas");
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -11,12 +11,12 @@ using System.Data.SqlClient;
 
 namespace LycokatConexion
 {
-    public partial class reportes : Form
+    public partial class Reportes : UserControl
     {
         BaseDeDatos conexion = new BaseDeDatos("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking; Integrated Security = True"); //le ponemos el nombre de la BD
         SqlDataAdapter adapter;
-        public reportes()=>InitializeComponent();
-        private void reportes_Load(object sender, EventArgs e){}
+        public Reportes() => InitializeComponent();
+        private void textBox1_TextChanged(object sender, EventArgs e){}
         private void button1_Click(object sender, EventArgs e)
         {
             adapter = conexion.Consulta("");
@@ -24,10 +24,8 @@ namespace LycokatConexion
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        private void label1_Click(object sender, EventArgs e){}
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {}
+        private void Reportes_Load(object sender, EventArgs e){}
     }
 }

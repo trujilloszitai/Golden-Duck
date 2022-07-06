@@ -69,12 +69,11 @@
       <DependentUpon>ABM.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseDeDatos.cs" />
-    <Compile Include="open.cs" />
-    <Compile Include="progressbar.cs">
-      <SubType>Form</SubType>
+    <Compile Include="supervisores\Reportes.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="progressbar.Designer.cs">
-      <DependentUpon>progressbar.cs</DependentUpon>
+    <Compile Include="supervisores\Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
     <Compile Include="supervisores\estadisticas.cs">
       <SubType>UserControl</SubType>
@@ -88,26 +87,20 @@
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
     </Compile>
-    <Compile Include="gerentes\menuG.cs">
+    <Compile Include="gerentes\menuGerentes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="gerentes\menuG.Designer.cs">
-      <DependentUpon>menuG.cs</DependentUpon>
+    <Compile Include="gerentes\menuGerentes.Designer.cs">
+      <DependentUpon>menuGerentes.cs</DependentUpon>
     </Compile>
-    <Compile Include="supervisores\menu.cs">
+    <Compile Include="supervisores\menuSupervisores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="supervisores\menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
+    <Compile Include="supervisores\menuSupervisores.Designer.cs">
+      <DependentUpon>menuSupervisores.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="supervisores\reportes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="supervisores\reportes.Designer.cs">
-      <DependentUpon>reportes.cs</DependentUpon>
-    </Compile>
     <Compile Include="supervisores\usuarios.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -117,8 +110,8 @@
     <EmbeddedResource Include="gerentes\ABM.resx">
       <DependentUpon>ABM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="progressbar.resx">
-      <DependentUpon>progressbar.cs</DependentUpon>
+    <EmbeddedResource Include="supervisores\Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supervisores\estadisticas.resx">
       <DependentUpon>estadisticas.cs</DependentUpon>
@@ -126,11 +119,11 @@
     <EmbeddedResource Include="index.resx">
       <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gerentes\menuG.resx">
-      <DependentUpon>menuG.cs</DependentUpon>
+    <EmbeddedResource Include="gerentes\menuGerentes.resx">
+      <DependentUpon>menuGerentes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="supervisores\menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="supervisores\menuSupervisores.resx">
+      <DependentUpon>menuSupervisores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,9 +135,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="supervisores\reportes.resx">
-      <DependentUpon>reportes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="supervisores\usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
     </EmbeddedResource>

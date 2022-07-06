@@ -60,6 +60,7 @@
             this.chart1.TabIndex = 4;
             this.chart1.Text = "chart1";
             this.chart1.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.Normal;
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // button4
             // 

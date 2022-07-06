@@ -10,38 +10,27 @@ using System.Windows.Forms;
 
 namespace LycokatConexion
 {
-    public partial class menu : Form
+    public partial class menuGerentes : Form
     {
-        public menu() {InitializeComponent();}
-        private void usuarios2_Load(object sender, EventArgs e) {this.usuarios1.Hide();}
+        public menuGerentes() {InitializeComponent();}
+        private void usuarios2_Load(object sender, EventArgs e) {}
         private void button1_Click(object sender, EventArgs e)
         {
-            this.usuarios1.Show();
-            this.estadisticas1.Hide();
+            this.abm1.Show();
         }
         private void usuarios1_Load(object sender, EventArgs e) {}
-        private void estadisticas1_Load(object sender, EventArgs e){ this.estadisticas1.Hide();}
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.estadisticas1.Show();
-            this.usuarios1.Hide();
-        }
-
+        private void estadisticas1_Load(object sender, EventArgs e){}
+        private void button2_Click(object sender, EventArgs e){}
         private void button4_Click(object sender, EventArgs e)
         {
             Form index = new index();
             index.Show();
             this.Close();
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        private void abm1_Load(object sender, EventArgs e){}
     }
 }
