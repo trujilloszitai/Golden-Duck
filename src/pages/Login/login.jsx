@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import DarkMode from '../../utils/darkMode';
 import { isMobile} from 'react-device-detect';
-
-import MoveBGFuntion from '../../utils/bgMove';
 
 import Mobile from '../../components/mobile/mobile';
 
@@ -11,9 +9,6 @@ import './login.scss';
 import Nav from '../../components/navbar/nav'
 
 const Login = () => {
-    useEffect(() => {
-        MoveBGFuntion('particles');
-      }, []);
     if (isMobile) {
         return <Mobile/>;
     }
@@ -41,7 +36,7 @@ const Login = () => {
                     </div>
                     <label>Contraseña</label>
                     <div className="input">
-                        <input type="text" name="password" placeholder="Contraseña" required/>
+                        <input type="password" name="password" placeholder="Contraseña" required/>
                         <span className="material-icons-outlined">lock</span>
                     </div>
                     <div className='check'>

@@ -7,6 +7,7 @@ main.logSec{
         z-index: 1;
         background: url(assets/particles.png), var(--backColor);
         filter: blur(0.2rem);
+        animation: moveBGLogin 10s linear infinite alternate;
     }
     #bg{
         display: flex;
@@ -97,6 +98,7 @@ main.logSec{
                     justify-content: center;
                     color: #909497;
                     order: 1;
+                    user-select: none;
                 }
                 input{
                     width: max-content;
@@ -195,6 +197,20 @@ body.dark{
     }
 }
 
+/* Animación */
+
+@keyframes moveBGLogin {
+    0%{
+        background-position-x: 0;
+        background-position-y: 20%;
+    }
+    100%{
+        background-position-x: 50%;
+        background-position-y: 0;
+    }
+}
+
+
 /* Responsive */
 
 @media screen and (max-width: 1000px) {
@@ -275,3 +291,4 @@ main.logSec{
         }
     }
 }
+

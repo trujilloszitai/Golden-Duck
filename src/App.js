@@ -9,6 +9,7 @@ import Login from './pages/Login/login.jsx';
 import Forget from './pages/Forget/forget.jsx';
 import Panel from './pages/Panel/panel.jsx';
 import Mobile from './components/mobile/mobile.jsx';
+import A from './pages/Home/components/CarouselCards/CarouselCards';
 
 export default function App() {
     return(
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/lol" element={<LOL/>} />{/* LOL */}
             <Route path="*" element={<NotFound/>} />
             <Route path="/" element={<Home/>} />
+            <Route path="/a" element={<A/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Register" element={<Register/>} /> {/* Cambiar de pantallas juntando los form */}
             <Route path="/Panel" element={<Panel/>} /> {/* Falta */}

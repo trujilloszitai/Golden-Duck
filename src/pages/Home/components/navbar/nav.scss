@@ -29,7 +29,11 @@ nav#home{
         flex-direction: row;
         gap: 3rem;
         a{
+            display: inline;
+            position: relative;
+            overflow: hidden;
             font-size: 1.7rem;
+            padding: 0.3rem;
             color: var(--colorOption-Menu);
             transition: all 500ms ease;
             text-decoration: none;
@@ -37,6 +41,7 @@ nav#home{
         a:hover{
             text-decoration: underline;
             font-size: 1.9rem;
+            padding: 0;
         }
     }
     .finalOptions{

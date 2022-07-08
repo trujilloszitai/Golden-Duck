@@ -1,0 +1,55 @@
+:root{
+    --colorCards: #797D7F;
+    --colorCardsDark: #D0D3D4;
+}
+
+#carouselCards{
+    color: var(--colorCards);
+    width: 70%;
+    .card{
+        background-color: transparent;
+        text-align: center;
+        padding: 7rem 0;
+        transition: all 500ms ease;
+        span{
+            font-size: 8rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
+
+/* Espacio entre tarjetas */
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
+
+/* Especial centro */
+.slick-center{
+    color: var(--primaryColor);
+    span{
+        font-size: 9rem !important;
+    }
+    h2{
+        font-size: 3rem !important;
+    }
+}
+
+/* Modo Oscuro */
+body.dark{
+    #carouselCards{
+        color: var(--colorCardsDark);
+    }
+    .slick-dots li button:before{
+        color: white;
+    }
+    .slick-center{
+        color: var(--primaryColorDark);
+        span{
+            font-size: 9rem !important;
+        }
+        h2{
+            font-size: 3rem !important;
+        }
+    }
+}

@@ -35,21 +35,6 @@
     #Phone{
         margin-top: 3rem;
         height: 30rem;
-        animation: rotatePhone 2s linear infinite alternate;
-    }
-}
-@keyframes rotatePhone {
-    0%{
-        transform: rotate(0);
-    }
-    20%{
-        transform: rotate(25deg);
-    }
-    40%{
-        transform: rotate(-25deg);
-    }
-    60%{
-        transform: rotate(0);
     }
 }
 @keyframes gradient {

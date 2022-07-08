@@ -5,7 +5,7 @@ import './mobile.scss'
 
 import PlayStore from './assets/playstore.png'
 import AppleStore from './assets/applastore.png'
-import Phone from './assets/phone.gif'
+import Bailongo from './assets/bailongo.gif'
 import Nav from '../navbar/nav';
 
 const Mobile = () => {
@@ -23,7 +23,7 @@ const Mobile = () => {
                 <img src={AppleStore} className='Download' alt='AppleStore'/>
             </Link>
             </div>
-            <img src={Phone} id='Phone' alt='Phone'/>
+            <img src={Bailongo} id='Phone' alt='Phone'/>
         </div>
     )
 }

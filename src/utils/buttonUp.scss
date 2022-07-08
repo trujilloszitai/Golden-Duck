@@ -1,0 +1,22 @@
+#upButton{
+	padding: 1.3rem;
+	display:none;
+    position: fixed;
+    text-align: center;
+    bottom: 2rem;
+    left: 2rem;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    color: #ffffff;
+    font-size: 3rem;
+    z-index: 2000;
+    cursor: pointer;
+}
+
+/* Modo Oscuro */
+body.dark{
+    #upButton{
+        background-color: var(--primaryColorDark);
+        color: #000000;
+    }
+}

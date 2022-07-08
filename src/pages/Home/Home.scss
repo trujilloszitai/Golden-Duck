@@ -101,7 +101,7 @@ section.Home{
                     background-position: top;
                     background-size: cover;
                     transform: skew(7deg);
-                    animation: slide 50s linear infinite;
+                    animation: slide 20s linear infinite;
                 }
             }
             .text{
@@ -149,61 +149,14 @@ section.Home{
             font-size: 4rem;
             text-align: center;
             color: var(--backColor);
+            margin-bottom: 10rem;
             span{
                 color: var(--primaryColor);
             }
         }
-        .cardsContainer{
-            display: block;
-            inline-size: calc((28rem * 3) + (5rem * 2 * 3));
-            .card{
-                user-select: none;
-                background-color: #ECF0F1;
-                width: 28rem;
-                height: 28rem;
-                margin: 5rem;
-                display: inline-block;
-                text-align: center;
-                -webkit-box-shadow: 3px 3px 10px 7px #dddddd;
-                -moz-box-shadow: 3px 3px 10px 7px #dddddd;
-                box-shadow: 3px 3px 10px 7px #dddddd;
-                transition: all 300ms ease;
-                border-radius: 1rem;
-                cursor: pointer;
-                .textCard{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100%;
-                    span{
-                        font-size: 7rem;
-                        margin: 0;
-                        color: #797D7F;
-                        transition: all 300ms ease;
-                    }
-                    h2{
-                        font-size: 3rem;
-                        color: #797D7F;
-                        font-family: 'Poppins-Light';
-                        margin: 0;
-                        transition: all 300ms ease;
-                    }
-                }
-            }
-            .card:hover{
-                padding: 1rem 0 0 1rem;
-                margin: 5rem 4rem 4rem 5rem;
-                .textCard *{
-                    color: var(--primaryColor);
-                    margin: 0 1rem 1rem 0;
-                }
-            }
-        }
     }
     #Sedes{
-        margin-top: 65rem;
+        margin-top: 50rem;
         width: 100%;
         height: 70vh;
         display: grid;
@@ -353,25 +306,20 @@ body.dark{
                 color: var(--primaryColorDark);
             }
         }
-        .lineCards{
+        .cardsContainer{
             .card{
-                background-color: #414141;
-                -webkit-box-shadow: 3px 3px 10px -1.5px #9d9c9c;
-                -moz-box-shadow: 3px 3px 10px -1.5px #9d9c9c;
-                box-shadow: 3px 3px 10px -1.5px #9d9c9c;
-                cursor: pointer;
-                span{
-                    color: white;
+                .textCard{
+                    span{
+                        color: var(--colorCardsDark);
+                    }
+                    h2{
+                        color: var(--colorCardsDark);
+                    }
                 }
-                h2{
-                    color: white;
-                }
-            }
-            .card:hover{
-                padding: 1rem 0 0 1rem;
-                *{
-                    color: var(--primaryColorDark);
-                    margin: 0 1rem 1rem 0;
+                .textCard:hover{
+                    *{
+                        color: var(--primaryColorDark);
+                    }
                 }
             }
         }
