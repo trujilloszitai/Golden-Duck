@@ -39,15 +39,4 @@ const DarkMode = () => {
   );
 };
 
-/* 
-
-import React, { useEffect } from "react";
-
-Con useEffect(() => {
-        Funcion();
-      }, []);
-podes iniciar una funcion al cargar (efecto)
-
-*/
-
 export default DarkMode;
