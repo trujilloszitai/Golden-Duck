@@ -13,10 +13,14 @@ namespace LycokatConexion
     public partial class menuSupervisores : Form
     {
         public menuSupervisores() {InitializeComponent();}
+        private void pictureBox2_Click(object sender, EventArgs e) {}
+        private void button3_Click(object sender, EventArgs e) {}
+        private void reportes1_Load(object sender, EventArgs e) {}
+        private void estadisticas1_Load(object sender, EventArgs e) {}
+        private void menuSupervisores_Load(object sender, EventArgs e) {}
         private void usuarios2_Load(object sender, EventArgs e) {this.usuarios1.Hide();}
         private void button1_Click(object sender, EventArgs e)
         {
-            
             this.usuarios1.Show();
             this.estadisticas1.Hide();
             this.reportes1.Hide();
@@ -29,31 +33,24 @@ namespace LycokatConexion
             this.usuarios1.Hide();
             this.estadisticas1.Hide();
         }
-        private void estadisticas1_Load(object sender, EventArgs e){}
         private void button2_Click(object sender, EventArgs e)
         {
             this.estadisticas1.Show();
             this.usuarios1.Hide();
             this.reportes1.Hide();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             Form index = new index();
             index.Show();
             this.Close();
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e){}
-        private void button3_Click(object sender, EventArgs e){}
-        private void reportes1_Load(object sender, EventArgs e){}
         private void button3_Click_1(object sender, EventArgs e)
         {
             this.reportes1.Show();
             this.usuarios1.Hide();
             this.estadisticas1.Hide();
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();

@@ -17,14 +17,13 @@ namespace LycokatConexion
         SqlDataAdapter adapter;
         public ABM(){InitializeComponent();}
         private void ABM_Load(object sender, EventArgs e){}
-        private void button2_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             adapter = conexion.Consulta("Select * from tipos_de_tarjeta");
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
         }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e){}
         private void textBox1_TextChanged(object sender, EventArgs e){}
         private void button4_Click(object sender, EventArgs e)
         {

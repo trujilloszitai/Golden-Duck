@@ -166,20 +166,5 @@
   <ItemGroup>
     <None Include="Resources\GDicon.png" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1593219095573.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\descarga %2841%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WhatsApp Image 2022-06-20 at 9.39.47 PM.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fondos para proyecto 2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fondo para proyecto.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,22 +18,13 @@ namespace LycokatConexion
         SqlDataAdapter adapter;
         public usuarios(){ InitializeComponent(); }
         private void usuarios_Load(object sender, EventArgs e){}
+        private void pictureBox3_Click(object sender, EventArgs e) {}
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
         {
             adapter = conexion.Consulta("SELECT * FROM usuarios_banco "); //hacemos el query
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

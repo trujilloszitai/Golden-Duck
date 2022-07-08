@@ -63,59 +63,9 @@ namespace LycokatConexion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1593219095573 {
-            get {
-                object obj = ResourceManager.GetObject("1593219095573", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap descarga__41_ {
-            get {
-                object obj = ResourceManager.GetObject("descarga (41)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Fondo_para_proyecto {
-            get {
-                object obj = ResourceManager.GetObject("Fondo para proyecto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Fondos_para_proyecto_2 {
-            get {
-                object obj = ResourceManager.GetObject("Fondos para proyecto 2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap GDicon {
             get {
                 object obj = ResourceManager.GetObject("GDicon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap WhatsApp_Image_2022_06_20_at_9_39_47_PM {
-            get {
-                object obj = ResourceManager.GetObject("WhatsApp Image 2022-06-20 at 9.39.47 PM", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

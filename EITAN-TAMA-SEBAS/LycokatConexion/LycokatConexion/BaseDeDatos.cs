@@ -39,7 +39,11 @@ namespace LycokatConexion
         {
             SqlCommand comand = new SqlCommand(consulta, conexionBD);
             return comand;
-
+        }
+        public void cerrar()
+        {
+            conexionBD.Close();
+            Console.WriteLine("conexion cerrada");
         }
     }
 }

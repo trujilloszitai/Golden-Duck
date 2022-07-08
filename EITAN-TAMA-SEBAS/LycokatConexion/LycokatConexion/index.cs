@@ -18,14 +18,18 @@ namespace LycokatConexion
         SqlDataAdapter adapter;
         public index()=>InitializeComponent();
         private void index_Load(object sender, EventArgs e){}
+        private void textBox1_TextChanged(object sender, EventArgs e) {}
+        private void textBox2_TextChanged(object sender, EventArgs e) {}
         private void button2_Click(object sender, EventArgs e)
         {
+            conexion.cerrar();
             Form formulario = new menuSupervisores();
             formulario.Show();
             this.Hide();
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            conexion.cerrar();
             Form formulario = new menuGerentes();
             formulario.Show();
             this.Hide();
@@ -34,8 +38,6 @@ namespace LycokatConexion
         {
             Application.Exit();
         }
-        private void textBox1_TextChanged(object sender, EventArgs e){ }
-        private void textBox2_TextChanged(object sender, EventArgs e){}
         private void button1_Click(object sender, EventArgs e)
         {
             login();
@@ -50,20 +52,22 @@ namespace LycokatConexion
                     if (tabla.Rows.Count >= 1) {
                         if (tabla.Rows[0][1].ToString() == "gerente")//autentifica si es que en el lugar 0, 1 (email_us del comando en este caso) es gerente
                         {
+                            conexion.cerrar();
                             Form formulario = new menuGerentes();
                             formulario.Show();
                             this.Hide();
                         }
                         else if(tabla.Rows[0][1].ToString() == "supervisor")
                         {
+                            conexion.cerrar();
                             Form formulario = new menuSupervisores();
                             formulario.Show();
                             this.Hide();
                         }
-                        else
-                        {
-                            MessageBox.Show("Datos incorrectos");
-                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Datos incorrectos");
                     }
             }
             catch(Exception ex)

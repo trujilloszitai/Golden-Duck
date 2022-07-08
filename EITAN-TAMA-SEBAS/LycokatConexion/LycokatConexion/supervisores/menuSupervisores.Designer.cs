@@ -33,14 +33,12 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btnEstadisticas = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.MensajeDeAyuda = new System.Windows.Forms.ToolTip(this.components);
             this.reportes1 = new LycokatConexion.Reportes();
             this.estadisticas1 = new LycokatConexion.estadisticas();
             this.usuarios1 = new LycokatConexion.usuarios();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button4
@@ -99,18 +97,6 @@
             this.btnUsuarios.UseVisualStyleBackColor = false;
             this.btnUsuarios.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 450);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -168,7 +154,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.BackgroundImage = global::LycokatConexion.Properties.Resources.Fondos_para_proyecto_2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
@@ -180,14 +165,13 @@
             this.Controls.Add(this.btnEstadisticas);
             this.Controls.Add(this.usuarios1);
             this.Controls.Add(this.btnUsuarios);
-            this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "menuSupervisores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.Load += new System.EventHandler(this.menuSupervisores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,7 +181,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnEstadisticas;
         private System.Windows.Forms.Button btnUsuarios;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private usuarios usuarios1;
         private estadisticas estadisticas1;
         private System.Windows.Forms.Button button4;
