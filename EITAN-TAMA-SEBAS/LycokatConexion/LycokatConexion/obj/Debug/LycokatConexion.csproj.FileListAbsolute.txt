@@ -68,8 +68,6 @@ C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\Lycoka
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.ABM.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.estadisticas.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.index.resources
-C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuG.resources
-C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menu.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.Properties.Resources.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.reportes.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.usuarios.resources
@@ -79,6 +77,7 @@ C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\Lycoka
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.AssemblyReference.cache
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.SuggestedBindingRedirects.cache
-C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.progressbar.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuGerentes.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuSupervisores.resources
+C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuGerentes.resources
+C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuSupervisores.resources

@@ -23,6 +23,7 @@ namespace LycokatConexion
         private void button7_Click(object sender, EventArgs e) => chart1.Series["GRAFICO"].ChartType = SeriesChartType.Line;
         private void chart1_Click(object sender, EventArgs e)
         {
+            /*
             adapter = conexion.Consulta("Select * from tipos_de_tarjeta"); //hacemos el query
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -30,6 +31,25 @@ namespace LycokatConexion
             chart1.Series["GRAFICO"].XValueMember = "nombre";
             chart1.Series["GRAFICO"].YValueMembers = "id";
             chart1.Titles.Add("tipo de tarjetas");
+            */
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                adapter = conexion.Consulta("Select * from tipos_de_tarjeta"); //hacemos el query
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                chart1.DataSource = table;
+                chart1.Series["GRAFICO"].XValueMember = "nombre";
+                chart1.Series["GRAFICO"].YValueMembers = "id";
+                chart1.Titles.Add("tipo de tarjetas");
+            }
+            catch (Exception ex) //en caso de error se imprimira cual es la falla
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

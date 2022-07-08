@@ -21,10 +21,28 @@ namespace LycokatConexion
         private void pictureBox3_Click(object sender, EventArgs e) {}
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            /*
             adapter = conexion.Consulta("SELECT * FROM usuarios_banco "); //hacemos el query
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+            */
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            try 
+            {
+                adapter = conexion.Consulta("SELECT * FROM usuarios_banco "); //hacemos el query
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex) //en caso de error se imprimira cual es la falla
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

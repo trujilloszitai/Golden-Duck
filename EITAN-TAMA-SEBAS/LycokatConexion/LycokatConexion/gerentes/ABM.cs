@@ -19,10 +19,12 @@ namespace LycokatConexion
         private void ABM_Load(object sender, EventArgs e){}
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            /*
             adapter = conexion.Consulta("Select * from tipos_de_tarjeta");
             DataTable table = new DataTable();
             adapter.Fill(table);
             dataGridView1.DataSource = table;
+            */
         }
         private void textBox1_TextChanged(object sender, EventArgs e){}
         private void button4_Click(object sender, EventArgs e)
@@ -37,5 +39,20 @@ namespace LycokatConexion
             dataGridView1.DataSource = table;
         }
         private void pictureBox1_Click(object sender, EventArgs e){}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {  
+                adapter = conexion.Consulta("Select * from tipos_de_tarjeta");
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex) //en caso de error se imprimira cual es la falla
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }

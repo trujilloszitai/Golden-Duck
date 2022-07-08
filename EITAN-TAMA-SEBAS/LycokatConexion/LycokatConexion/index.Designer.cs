@@ -71,7 +71,7 @@
             this.button4.BackColor = System.Drawing.Color.DarkRed;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(811, 0);
+            this.button4.Location = new System.Drawing.Point(1006, -2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(48, 45);
             this.button4.TabIndex = 11;
