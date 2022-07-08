@@ -41,6 +41,8 @@ const DarkMode = () => {
 
 /* 
 
+import React, { useEffect } from "react";
+
 Con useEffect(() => {
         Funcion();
       }, []);
