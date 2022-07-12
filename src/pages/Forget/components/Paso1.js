@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import md5 from 'md5';
 
 import randomString from '../../../utils/randomString';

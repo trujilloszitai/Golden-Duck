@@ -9,7 +9,6 @@ import Login from './pages/Login/login.jsx';
 import Forget from './pages/Forget/forget.jsx';
 import Panel from './pages/Panel/panel.jsx';
 import Mobile from './components/mobile/mobile.jsx';
-import A from './pages/Register/components/PasswordStrenghtMeter';
 
 export default function App() {
     return(
@@ -19,11 +18,10 @@ export default function App() {
             <Route path="*" element={<NotFound/>} />
             <Route path="/" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />
-            <Route path="/Register" element={<Register/>} /> {/* Cambiar de pantallas juntando los form */}
+            <Route path="/Register" element={<Register/>} />
             <Route path="/Panel" element={<Panel/>} /> {/* Falta */}
             <Route path="/Mobile" element={<Mobile/>} />
-            <Route path="/Forget" element={<Forget/>} /> {/* Falta */}
-            <Route path="/a" element={<A/>} /> {/* Falta */}
+            <Route path="/Forget" element={<Forget/>} />
           </Routes>
       </Router>
     )

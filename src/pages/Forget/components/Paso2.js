@@ -6,7 +6,7 @@ const Paso2 = props =>{
     alert("repito")
   }
   let enviarBTN = () => {
-    if (sessionStorage.getItem("codeChange") == md5(props.values.codePhone)) {
+    if (sessionStorage.getItem("codeChange") === md5(props.values.codePhone)) {
       props.siguientePaso()
     }
     else{
