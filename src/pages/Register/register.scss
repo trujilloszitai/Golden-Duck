@@ -48,6 +48,7 @@ main.regSec{
                 justify-content: center;
                 font-weight: 700;
                 z-index: 10;
+                user-select: none;
             }
             span.pass{
                 background-color: rgb(162, 163, 164);
@@ -102,7 +103,7 @@ main.regSec{
                     justify-content: center;
                     background-color: #fff;
                     border-radius: .5rem;
-                    width: max-content;
+                    width: 25rem;
                     height: var(--inputHeight);
                     span{
                         width: calc(var(--inputHeight));
@@ -114,6 +115,7 @@ main.regSec{
                         text-align: center;
                         color: #909497;
                         order: 1;
+                        user-select: none;
                     }
                     input{
                         width: var(--inputSizeRegister);
@@ -121,16 +123,19 @@ main.regSec{
                         border-radius: .5rem;
                         height: calc(var(--inputHeight) / 2rem * 2);
                         border: none;
-                        padding: calc(var(--inputHeight) / 4);
+                        padding: 1rem;
                         font-size: calc(var(--inputHeight) / 2.75);
                         outline: none;
                         order: 2;
                     }
                     .passwordContainer{
                         order: 2;
-                        width: calc(var(--inputSizeRegister) + var(--inputHeight) / 2); // tamaño mas padding
+                        width: calc(var(--inputSizeRegister) + var(--inputHeight) / 4); // tamaño mas padding
                         span{
                             font-size: 3rem;
+                        }
+                        input{
+                            padding: 0;
                         }
                     }
                     input::placeholder{
@@ -141,14 +146,22 @@ main.regSec{
                         height: auto;
                         padding: 4px;
                     }
-                      
                     .progress {
                         height: 4px;
                     }
-                      
                     .progress-bar {
                         background-color: green;
                     }
+                }
+                #passwordShowBarContainer{
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                .progress{
+                    width: 25rem;
+                    height: .5rem;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
                 }
                 div.input input:focus{
                     color: var(--backColor);
