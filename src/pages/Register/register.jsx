@@ -11,7 +11,7 @@ import Paso3 from './components/Paso3';
 export default class Register extends Component {
     
     state = {
-        paso: 2, /* Hacer barra medir seguridad contraseña */
+        paso: 1, /* Hacer barra medir seguridad contraseña */
         name: '',
         surname: '',
         dni: '',
