@@ -1,26 +1,26 @@
 import React from 'react';
 import md5 from 'md5';
-  
-import './Paso3.scss';
 
 const Paso3 = props =>{
+  let handleAgainBTN = () => {
+    alert("repito")
+  }
   let enviarBTN = () => {
     if (sessionStorage.getItem("code") == md5(props.values.codePhone)) {
-      alert("si")
+      alert("successful")
       /* props.siguientePaso() */
     }
     else{
-      alert("no")
+      alert("Error: wrong code!")
     }
   }
   return (
     <div className="pasos code" id="Confirm">
       <small>Enviamos un codigo de confirmación al teléfono <span>{props.values.phoneNumber}</span></small>
       <div className="input" id='ConfirmInputContainer'>
+          <span className="material-icons-outlined" id='sendAgain' title='Enviar Código de nuevo' onClick={handleAgainBTN}>replay</span>
           <input type="text" name="codePhone" placeholder="### - ###" required minLength={6} maxLength={6} onChange={props.handleInputChange}/>
-          <span className="material-icons-outlined">tag</span>
       </div>
-      <a id='sendAgain'>Volver a Enviar</a> {/* Hacerlo boton */}
       <button id='Next' onClick={enviarBTN}>Enviar</button>
     </div>
   );

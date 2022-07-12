@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import Nav from '../../components/navbar/nav';
 import './register.scss';
 
-import Paso1 from './components/Paso1/Paso1';
-import Paso2 from './components/Paso2/Paso2';
-import Paso3 from './components/Paso3/Paso3';
+import Paso1 from './components/Paso1';
+import Paso2 from './components/Paso2';
+import Paso3 from './components/Paso3';
 
 export default class Register extends Component {
     
     state = {
-        paso: 1,
+        paso: 2,
         name: '',
         surname: '',
         dni: '',
@@ -73,8 +73,8 @@ export default class Register extends Component {
                         <Nav/>
                         <div className="progressBar">
                             <div className="line"></div>
-                            <span className="points active" id="1">1</span>
-                            <span className="points" id="2">2</span>
+                            <span className="points pass" id="1">1</span>
+                            <span className="points active" id="2">2</span>
                             <span className="points" id="3">3</span>
                         </div>
                         <section>
@@ -90,9 +90,9 @@ export default class Register extends Component {
                         <Nav/>
                         <div className="progressBar">
                             <div className="line"></div>
-                            <span className="points active" id="1">1</span>
-                            <span className="points" id="2">2</span>
-                            <span className="points" id="3">3</span>
+                            <span className="points pass" id="1">1</span>
+                            <span className="points pass" id="2">2</span>
+                            <span className="points active" id="3">3</span>
                         </div>
                         <section>
                             <button id='backBTN' className="material-icons-outlined" title='Anterior' onClick={this.anteriorPaso}>arrow_back</button>

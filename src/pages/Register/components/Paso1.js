@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-  
-import './Paso1.scss';
 
 const Paso1 = props =>{
   return (

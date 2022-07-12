@@ -8,6 +8,7 @@ main.regSec{
     --submitHeight: 5rem;
     --labelColor: #9E9E9E;
     --inputHeight: 5rem;
+    --inputSizeRegister: 20rem;
 }
 
 /* Estilo */
@@ -115,7 +116,7 @@ main.regSec{
                         order: 1;
                     }
                     input{
-                        width: max-content;
+                        width: var(--inputSizeRegister);
                         background-color: #fff;
                         border-radius: .5rem;
                         height: calc(var(--inputHeight) / 2rem * 2);
@@ -125,8 +126,28 @@ main.regSec{
                         outline: none;
                         order: 2;
                     }
+                    .passwordContainer{
+                        order: 2;
+                        width: calc(var(--inputSizeRegister) + var(--inputHeight) / 2); // tamaño mas padding
+                        span{
+                            font-size: 3rem;
+                        }
+                    }
                     input::placeholder{
                         color: #909497;
+                    }
+                    .input-group {
+                        width: 80%;
+                        height: auto;
+                        padding: 4px;
+                    }
+                      
+                    .progress {
+                        height: 4px;
+                    }
+                      
+                    .progress-bar {
+                        background-color: green;
                     }
                 }
                 div.input input:focus{
@@ -139,6 +160,7 @@ main.regSec{
                     }
                 }
                 div#ConfirmInputContainer{
+                    margin-bottom: 4rem;
                     input{
                         width: 15rem;
                         text-align: center;
@@ -155,8 +177,16 @@ main.regSec{
                     margin: 0; 
                     }
                 }
-                a#sendAgain{
-                    margin-bottom: 4rem;
+                span#sendAgain{
+                    cursor: pointer;
+                    background: transparent;
+                    order: 3;
+                    font-size: 3rem;
+                    transition: all 200ms ease;
+                    user-select: none;
+                }
+                span#sendAgain:hover{
+                    color: var(--backColor);
                 }
                 button#Next{ /* Submit */
                     background: var(--primaryColor);
@@ -203,6 +233,9 @@ main.regSec{
             }
             small a{
                 color: var(--primaryColorDark) !important;
+            }
+            button#backBTN{
+                color: #fff;
             }
         }    
     }

@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import md5 from 'md5';
-  
-import './Paso2.scss';
 
-import randomString from '../../../../utils/randomString';
+import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/inputPasswordShowBTN';
+import randomString from '../../../utils/randomString';
 
 const Paso2 = props =>{
   let siguienteClick = () => {
@@ -30,10 +29,10 @@ const Paso2 = props =>{
       
       <label>Contraseña:</label> {/* Contraseña */}
       <div className="input">
-          <input type="text" name="password" value={props.values.password} required onChange={props.handleInputChange}/>
+          <InputPasswordShowBTN name='password' value={props.values.password} required={true} onChange={props.handleInputChange}/>
           <span className="material-icons-outlined">person_outline</span>
       </div>
-        <small>Si ya tienes una cuenta, ingresa haciendo <Link to='/Login'>click aquí</Link></small>
+      <small>Si ya tienes una cuenta, ingresa haciendo <Link to='/Login'>click aquí</Link></small>
       <button id='Next' onClick={siguienteClick}>Siguiente</button>
     </div>
   );

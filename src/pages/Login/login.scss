@@ -195,6 +195,15 @@ body.dark{
             .background{
                 background-color: #1f1f1f;
             }
+            form{
+                div.input{
+                    .passwordContainer{
+                        input{
+                            background-color: #c8c8c8;
+                        }
+                    }
+                }
+            }
         }
         form{
             div.input{
