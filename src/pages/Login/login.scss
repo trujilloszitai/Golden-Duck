@@ -1,5 +1,12 @@
+:root{
+    --sizeInputs: 25rem;
+}
+
 main.logSec{
     display: flex;
+    .blue{
+        color: var(--backColor);
+    }
     #particles{
         position: fixed;
         width: 100%;
@@ -100,8 +107,8 @@ main.logSec{
                     order: 1;
                     user-select: none;
                 }
-                input{
-                    width: max-content;
+                .passwordContainer input, input{
+                    width: var(--sizeInputs);
                     background-color: #E5E7E9;
                     border-radius: .5rem;
                     height: 3rem;
@@ -111,8 +118,18 @@ main.logSec{
                     outline: none;
                     order: 2;
                 }
-                input::placeholder{
+                .passwordContainer input, input::placeholder{
                     color: #909497;
+                }
+                .passwordContainer{
+                    width: calc(var(--sizeInputs) + 1 * 2rem); // Multiplicado por el padding
+                    order: 2;
+                    span::before{
+                        font-size: 3rem;
+                    }
+                }
+                .passwordContainer:focus{
+                    background-color: red;
                 }
             }
             div.input:nth-child(4){

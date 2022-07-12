@@ -19,6 +19,7 @@ main.regSec{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     background-color: #e5e5e5;
         /* Barra de Progreso */
         .progressBar{
@@ -58,40 +59,37 @@ main.regSec{
                 color: white;
             }
         }
-        /* Titulo */
-        h1{
-            font-size: 5rem;
-            color: var(--titleColor);
-            margin-bottom: 0;
-        }
-        /* Distintos Formularios */
-        .pasos{
-            /* Desactivo y activo el primer formulario */
-            &#NAD{
-                display: flex;
-            }
-            &#TCC, &#Confirm{
-                display: none;
-            }
-            &.active{
-                display: flex !important;
-            }
-            /* --- */
-            small{
-                margin-top: 2rem;
-                font-size: var(--smallSize);
-            }
-            a{
-                font-weight: 600;
-                color: var(--primaryColor);
+        section{
+            width: 50%;
+            /* Volver */
+            button#backBTN{
+                position: absolute;
+                border: none;
+                background-color: transparent;
                 cursor: pointer;
             }
-
-            /* Estilo de Formulario */
-            form{
+            /* Titulo */
+            h1{
+                font-size: 5rem;
+                color: var(--titleColor);
+                margin-bottom: 0;
+                text-align: center;
+            }
+            /* Distintos Formularios */
+            .pasos{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                small{
+                    margin: 2rem auto;
+                    font-size: var(--smallSize);
+                }
+                a{
+                    font-weight: 600;
+                    color: var(--primaryColor);
+                    cursor: pointer;
+                }
+                /* Estilo de Formulario */
                 label{
                     font-size: 1.8rem;
                     color: var(--labelColor);
@@ -141,55 +139,50 @@ main.regSec{
                     }
                 }
                 div#ConfirmInputContainer{
-                    margin-bottom: 4rem;
                     input{
-                        width: 7rem;
+                        width: 15rem;
+                        text-align: center;
+                    }
+                    input:focus::placeholder{
+                        color: transparent;
+                    }
+                    input::placeholder{
+                        text-align: center;
                     }
                     input[type=number]::-webkit-inner-spin-button, 
                     input[type=number]::-webkit-outer-spin-button { 
                     -webkit-appearance: none; 
                     margin: 0; 
                     }
-                    input:nth-child(1){
-                        text-align: center;
-                        justify-content: end;
-                    }
-                    input::before{
-                        content: '-';
-                    }
-                    input:nth-child(3){
-                        display: flex;
-                        text-align: center;
-                    }
+                }
+                a#sendAgain{
+                    margin-bottom: 4rem;
+                }
+                button#Next{ /* Submit */
+                    background: var(--primaryColor);
+                    border: none;
+                    color: #fff;
+                    width: var(--submitWidth);
+                    height: var(--submitHeight);
+                    font-size: 2rem;
+                    border-radius: 2rem;
+                    margin: 0 auto;
+                    transition: all 300ms ease;
+                    transition: .25s ease all;
+                    cursor: pointer;
+                }
+                button[type='submit']:hover, input[type='submit']{
+                    background: var(--primaryColor);
+                    filter: contrast(80%);
                 }
             }
-            small{
-                margin: 2rem auto;
-            }
-            button[type='submit'], input[type='submit']{ /* Submit */
-                background: var(--primaryColor);
-                border: none;
-                color: #fff;
-                width: var(--submitWidth);
-                height: var(--submitHeight);
-                font-size: 2rem;
-                border-radius: 2rem;
-                margin: 0 auto;
-                transition: all 300ms ease;
-                transition: .25s ease all;
-                cursor: pointer;
-            }
-            button[type='submit']:hover, input[type='submit']{
-                background: var(--primaryColor);
-                filter: contrast(80%);
-            }
-        }
-        /* Pavada */
-        .pasos.code{
-            small span{
-                font-weight: 600;
-                color: var(--primaryColor);
-                cursor: help;
+            /* Pavada */
+            .pasos.code{
+                small span{
+                    font-weight: 600;
+                    color: var(--primaryColor);
+                    cursor: help;
+                }
             }
         }
     }

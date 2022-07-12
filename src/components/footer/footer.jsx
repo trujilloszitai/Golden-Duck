@@ -1,12 +1,14 @@
 import React from 'react';
 
+import LycokatLogo from './assets/Lycokat.png';
+
 import './footer.scss';
 
 const footer = () => {
     return(
         <footer>
             {/* <span id='top'>top</span> */}
-            <div className='LycoKatIco'/>
+            <img src={LycokatLogo} alt="LycokatLogo" />
             <div className='iconicaFrase'>
                 <p>Fortuna y seguridad, en un solo lugar.</p>
             </div>
@@ -17,7 +19,7 @@ const footer = () => {
                 <a href="https://www.linkedin.com/in/LycoKat" title="LinkedIn">L</a>
                 <a href="https://twitter.com/lycokat" title="Twitter">T</a>
             </div>
-            <small>Copyright © 2022 LycoKat, Co.</small>
+            <small>Lycokat™ 2022 | Todos los derechos reservados</small>
         </footer>
     )
 }

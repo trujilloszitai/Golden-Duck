@@ -30,7 +30,7 @@ const Home = () => {
                 <div id='LycoKat'>
                     <div className="LycoKatIco"/>
                     <p>
-                        <a href='https://lycokat.com.ar/' target='_blank' rel="noreferrer">Lycokat<span className="material-icons-outlined">open_in_new</span></a>
+                        <a href='https://lycokat.com.ar/' target='_blank' rel="noreferrer">Lycokat<span className="material-icons-outlined">open_in_new</span> </a>
                         es una empresa enfocada a la producción de software del más alto prestigio dentro del mercado de IT, en donde buscamos las necesidades del cliente y planificamos el proceso de elaboración del proyecto. Aplicamos la dosis justa y necesaria de personalidad propia, siempre cumpliendo las expectativas del cliente, e incluso superándolas.  Siempre contando con el apoyo y asistencia posterior para el mantenimiento del proyecto, teniendo contacto directo con nosotros, los desarrolladores directo; Una de las características que nos hace destacar por encima de los demás.</p>
                 </div>
                 <div id="AboutUs">

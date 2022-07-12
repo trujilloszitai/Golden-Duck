@@ -7,6 +7,7 @@ import Mobile from '../../components/mobile/mobile';
 
 import './login.scss';
 import Nav from '../../components/navbar/nav'
+import InputPasswordShowBTN from '../../components/InputPasswordShowBTN/inputPasswordShowBTN'
 
 const Login = () => {
     if (isMobile) {
@@ -36,7 +37,7 @@ const Login = () => {
                     </div>
                     <label>Contraseña</label>
                     <div className="input">
-                        <input type="password" name="password" placeholder="Contraseña" required/>
+                        <InputPasswordShowBTN name='password' placeholder='Contraseña' required={true}/>
                         <span className="material-icons-outlined">lock</span>
                     </div>
                     <div className='check'>

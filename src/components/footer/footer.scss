@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    height: 30rem;
+    height: max-content;
     transition: background .3s ease;
     background: var(--backColor);
     display: flex;
@@ -9,15 +9,9 @@ footer{
     justify-content: flex-end;
     align-items: center;
     color: white;
-    padding-top: 5rem;
-    .LycoKatIco{
-        height: 20rem;
-        width: 14rem;
-        background: url(assets/Lycokat.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0 auto;
+    padding-top: 2rem;
+    img{
+        height: 15rem;
     }
     .iconicaFrase{
         display: flex;
@@ -55,7 +49,7 @@ footer{
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            transition: all 300ms ease;
+            transition: all 200ms ease;
             font-size: 3rem;
             font-size: 0;
             color: transparent;
@@ -108,6 +102,8 @@ footer{
         justify-content: center;
         background-color: rgba(0, 0, 0, 0.3);
         pointer-events: none;
+        font-size: 1.2rem;
+        padding: .8rem;
         user-select: none;
     }
 }
@@ -222,3 +218,11 @@ footer{
       [tooltip][flow^="up"]:hover::after {
         animation: tooltips-vert 300ms ease-out forwards;
       }
+
+/* Responsive */
+
+@media screen and (max-width: 1001px){
+  footer{
+    padding-top: 5rem;
+  }
+}
