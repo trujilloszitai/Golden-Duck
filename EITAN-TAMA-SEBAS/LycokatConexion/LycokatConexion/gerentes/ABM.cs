@@ -42,7 +42,7 @@ namespace LycokatConexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         private void pictureBox1_Click(object sender, EventArgs e){}
@@ -57,7 +57,7 @@ namespace LycokatConexion
             }
             catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

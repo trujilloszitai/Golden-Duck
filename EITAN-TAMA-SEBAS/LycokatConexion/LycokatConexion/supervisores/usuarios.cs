@@ -39,7 +39,7 @@ namespace LycokatConexion
             }
             catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

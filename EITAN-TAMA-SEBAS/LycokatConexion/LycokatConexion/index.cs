@@ -67,12 +67,12 @@ namespace LycokatConexion
                     }
                     else
                     {
-                        MessageBox.Show("Datos incorrectos");
+                        MessageBox.Show("Datos incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
