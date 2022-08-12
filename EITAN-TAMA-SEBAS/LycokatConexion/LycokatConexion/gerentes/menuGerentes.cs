@@ -16,12 +16,21 @@ namespace LycokatConexion
         private void usuarios2_Load(object sender, EventArgs e) {}
         private void usuarios1_Load(object sender, EventArgs e) {}
         private void estadisticas1_Load(object sender, EventArgs e) {}
-        private void button2_Click(object sender, EventArgs e) {}
+        private void button2_Click(object sender, EventArgs e) 
+        {
+            this.usuariosVista1.Show();
+            this.abm1.Hide();
+        }
         private void abm1_Load(object sender, EventArgs e) {}
-        private void menuGerentes_Load(object sender, EventArgs e) {}
+        private void menuGerentes_Load(object sender, EventArgs e) 
+        {
+            this.abm1.Hide();
+            this.usuariosVista1.Hide();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             this.abm1.Show();
+            this.usuariosVista1.Hide();
         }
         private void button4_Click(object sender, EventArgs e)
         {
@@ -33,5 +42,6 @@ namespace LycokatConexion
         {
             Application.Exit();
         }
+        private void usuariosVista1_Load(object sender, EventArgs e){}
     }
 }

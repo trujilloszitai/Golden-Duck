@@ -69,6 +69,12 @@
       <DependentUpon>ABM.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="gerentes\UsuariosVista.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gerentes\UsuariosVista.Designer.cs">
+      <DependentUpon>UsuariosVista.cs</DependentUpon>
+    </Compile>
     <Compile Include="supervisores\Reportes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="gerentes\ABM.resx">
       <DependentUpon>ABM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerentes\UsuariosVista.resx">
+      <DependentUpon>UsuariosVista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supervisores\Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
