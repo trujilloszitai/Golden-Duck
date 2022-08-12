@@ -48,7 +48,7 @@ namespace LycokatConexion
             }
             catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
     }

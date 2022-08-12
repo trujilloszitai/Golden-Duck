@@ -33,13 +33,19 @@ namespace LycokatConexion
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            adapter = conexion.Consulta($"INSERT INTO tipos_de_tarjeta (nombre) VALUES ('{ textBox1.Text}')");
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dataGridView1.DataSource = table;
+            try
+            {
+                adapter = conexion.Consulta($"INSERT INTO tipos_de_tarjeta (nombre) VALUES ('{ textBox1.Text}')");
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void pictureBox1_Click(object sender, EventArgs e){}
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -51,7 +57,7 @@ namespace LycokatConexion
             }
             catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
     }

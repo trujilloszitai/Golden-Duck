@@ -75,9 +75,8 @@ C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\Lycoka
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
-C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.AssemblyReference.cache
-C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.SuggestedBindingRedirects.cache
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuGerentes.resources
 C:\Users\Eitan\source\repos\Golden-Duck-BD\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuSupervisores.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuGerentes.resources
 C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuSupervisores.resources
+C:\Users\Alumno\source\repos\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csprojAssemblyReference.cache

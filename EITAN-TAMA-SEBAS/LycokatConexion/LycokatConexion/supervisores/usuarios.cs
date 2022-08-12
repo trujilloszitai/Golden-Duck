@@ -28,10 +28,8 @@ namespace LycokatConexion
             dataGridView1.DataSource = table;
             */
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
             try 
             {
                 adapter = conexion.Consulta("SELECT * FROM usuarios_banco "); //hacemos el query
@@ -41,7 +39,7 @@ namespace LycokatConexion
             }
             catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
-                Console.WriteLine(ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
     }

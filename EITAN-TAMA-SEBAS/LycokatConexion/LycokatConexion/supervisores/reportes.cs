@@ -19,10 +19,17 @@ namespace LycokatConexion
         private void textBox1_TextChanged(object sender, EventArgs e){}
         private void button1_Click(object sender, EventArgs e)
         {
-            adapter = conexion.Consulta("");
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dataGridView1.DataSource = table;
+            try
+            {
+                adapter = conexion.Consulta("");
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void label1_Click(object sender, EventArgs e){}
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) {}
