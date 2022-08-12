@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnEstadisticas = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.MensajeDeAyuda = new System.Windows.Forms.ToolTip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.reportes1 = new LycokatConexion.Reportes();
             this.estadisticas1 = new LycokatConexion.estadisticas();
@@ -185,7 +183,6 @@
         private estadisticas estadisticas1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolTip MensajeDeAyuda;
         private Reportes reportes1;
         private System.Windows.Forms.Button button1;
     }

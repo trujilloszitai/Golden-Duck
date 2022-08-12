@@ -8,12 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;//neceario para las funciones de SQL
-
 namespace LycokatConexion
 {
     internal class BaseDeDatos
     {
-        
         public SqlConnection conexionBD; 
         public BaseDeDatos(string nombreBD)//nombreBD es para ponerle el nombre y asi el sqlconnection conecta con la BD.
         {

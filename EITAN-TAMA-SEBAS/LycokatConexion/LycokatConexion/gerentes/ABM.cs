@@ -42,7 +42,11 @@ namespace LycokatConexion
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                var resultado = MessageBox.Show("Hubo un error inesperado. Presione Yes si quiere saber mas informacion", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+                if (resultado == DialogResult.OK)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
         private void pictureBox1_Click(object sender, EventArgs e){}
@@ -57,7 +61,11 @@ namespace LycokatConexion
             }
             catch (Exception ex) //en caso de error se imprimira cual es la falla
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                var resultado = MessageBox.Show("Hubo un error inesperado. Presione Yes si quiere saber mas informacion", "Error", MessageBoxButtons.OKCancel , MessageBoxIcon.Warning);
+                if (resultado == DialogResult.OK)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
     }
