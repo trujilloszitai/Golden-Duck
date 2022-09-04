@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a5fbe79.css",
-    "main.js": "/static/js/main.462c9c10.js",
+    "main.css": "/static/css/main.18f1016a.css",
+    "main.js": "/static/js/main.8ad0539b.js",
     "static/js/787.a4a41570.chunk.js": "/static/js/787.a4a41570.chunk.js",
     "static/media/backgroundPhone.jfif": "/static/media/backgroundPhone.2d9a372ea79abc39539d.jfif",
     "static/media/Laptop.svg": "/static/media/Laptop.9149b40dd5414bd437d2ed6ea1a39dca.svg",
@@ -13,6 +13,7 @@
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.673ed42382ab264e0bf5.ttf",
     "static/media/fontIcon.woff2": "/static/media/fontIcon.73319595f421ef8247b1.woff2",
     "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/background-text.gif": "/static/media/background-text.85c0b48178b3646dbde8.gif",
     "static/media/particles.png": "/static/media/particles.ecc6f38f28b6982d4ff2.png",
     "static/media/Lycokat.png": "/static/media/Lycokat.4a90c53506f80c1f3499.png",
     "static/media/bailongo.gif": "/static/media/bailongo.5e85b4d55d743713d258.gif",
@@ -39,12 +40,12 @@
     "static/media/topWaveDark.svg": "/static/media/topWaveDark.a00033200775437246a5.svg",
     "static/media/bottomWave.svg": "/static/media/bottomWave.1f71afe095923dd1b380.svg",
     "static/media/bottomWaveDark.svg": "/static/media/bottomWaveDark.344a85ed494b767f5df0.svg",
-    "main.6a5fbe79.css.map": "/static/css/main.6a5fbe79.css.map",
-    "main.462c9c10.js.map": "/static/js/main.462c9c10.js.map",
+    "main.18f1016a.css.map": "/static/css/main.18f1016a.css.map",
+    "main.8ad0539b.js.map": "/static/js/main.8ad0539b.js.map",
     "787.a4a41570.chunk.js.map": "/static/js/787.a4a41570.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a5fbe79.css",
-    "static/js/main.462c9c10.js"
+    "static/css/main.18f1016a.css",
+    "static/js/main.8ad0539b.js"
   ]
 }
