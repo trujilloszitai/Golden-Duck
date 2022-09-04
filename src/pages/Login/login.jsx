@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import DarkMode from '../../utils/darkMode';
 import { isMobile} from 'react-device-detect';
 
 import Mobile from '../../components/mobile/mobile';
@@ -15,14 +14,12 @@ const Login = () => {
     }
     return(
         <main className='logSec'>
-            <DarkMode/>
             <div id="particles"/>
             <div id='bg'>
                 <Nav/>
                 <div className='text'>
                     <h1>¿No tienes una cuenta?</h1>
-                    <i>"El principio es la mitad del todo" - Pitágoras</i>
-                    <p>Si todavia no tienes una cuenta, puedes empezar a crearla haciendo un click</p>
+                    <i>Para no perderte de todos los beneficios que ofrece tener Golden Duck ¡Puedes empezar a registrarte aqui con solo un click!</i>
                     <Link to={'/Register'}>Aquí</Link>
                 </div>
             </div>
@@ -44,7 +41,7 @@ const Login = () => {
                         <input type="checkbox" />
                         <Link to={'/Forget'}>¿Olvidaste tu Contraseña?</Link>
                     </div>
-                    <Link to={'/Panel'}><input type="submit" /></Link>
+                    <Link to={'/Panel'}><input type="submit" value="Ingresar"/></Link>
                 </form>
             </div>
         </main>

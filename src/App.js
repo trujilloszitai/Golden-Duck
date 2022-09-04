@@ -10,7 +10,10 @@ import Forget from './pages/Forget/forget.jsx';
 import Panel from './pages/Panel/panel.jsx';
 import Mobile from './components/mobile/mobile.jsx';
 
+import DarkMode from './utils/darkMode';
+
 export default function App() {
+  DarkMode.DarkMode()
     return(
       <Router>
           <Routes>

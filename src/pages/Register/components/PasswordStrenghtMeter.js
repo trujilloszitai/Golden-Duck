@@ -23,15 +23,19 @@ const PasswordStrenghtMeter = props =>{
         }
     }
 
-    const changePasswordColor= () => ({
+    const changePasswordColor = () => ({
         width: num + '%',
         background: funcProgressColor(),
         height: '.5rem',
     })
 
+    const testInput = (e) => {
+        console.log('e.style.background')
+    }
+
   return (
     <div className='progress'>
-        <div className='progress-bar' style={changePasswordColor()}/>
+        <div id='progress-bar' style={changePasswordColor()}/>
     </div>
   );
 }

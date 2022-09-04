@@ -3,6 +3,8 @@ import $ from 'jquery'
 
 import './inputPasswordShowBTN.scss';
 
+import formFunctions from '../../utils/formFunctions';
+
 export default class inputPasswordShowBTN extends Component {
   render() {
     const clickInput = (e) => {
@@ -26,7 +28,10 @@ export default class inputPasswordShowBTN extends Component {
     return (
       <div className="passwordContainer">
         <span className="material-icons-outlined" id="showBTN" onClick={(e) => clickInput(e)}/>
-        <input type="password" id="passwordShowInput" name={this.props.name} onChange={this.props.onChange} value={this.props.value} placeholder={this.props.placeholder} autoComplete='off' required={this.props.required} onClick={(e) => {
+        <input type="password" id="passwordShowInput" name={this.props.name} onChange={e => {
+          this.props.onChange(e)
+          formFunctions.typingInput(e, 8)
+        }} value={this.props.value} placeholder={this.props.placeholder} autoComplete='off' required={this.props.required} onClick={(e) => {
           estoestunaexcepcionparaellogincaratriste(e);
         }} onBlur={(e) => {
           estoestunaexcepcionparaellogincaratriste_perofueradefocus(e);

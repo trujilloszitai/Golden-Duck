@@ -156,15 +156,14 @@ section.Home{
         }
     }
     #Sedes{
-        margin-top: 50rem;
+        margin: 60rem 0 20rem 0;
         width: 100%;
         height: 70vh;
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
         align-items: center;
         justify-content: center;
         .text{
-            width: 100%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -195,6 +194,7 @@ section.Home{
             display: flex;
             justify-content: right;
             padding-right: 2rem;
+            width: 50%;
             z-index: 20;
             iframe{
                 width: 70rem;
@@ -204,18 +204,18 @@ section.Home{
         }
         padding-bottom: 40rem;
     }
+    /* Animaciones */
+    
+    @keyframes color {
+        0%{
+            filter: invert(0%);
+        }
+        100%{
+            filter: invert(100%);
+        }
+    }
 }
 
-/* Animaciones */
-
-@keyframes color {
-    0%{
-        filter: invert(10%);
-    }
-    100%{
-        filter: invert(70%);
-    }
-}
 @keyframes slide {
     0%{
         background-position: center top;
@@ -284,7 +284,8 @@ body.dark{
             background: url(assets/topWaveDark.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center left;
+            background-position: top left;
+            background-size: 100%;
         }
         .text{
             h1{
@@ -331,6 +332,16 @@ body.dark{
     }
     footer{
         background: var(--backColorDark);
+    }
+    /* Animaciones */
+    
+    @keyframes color {
+        0%{
+            filter: invert(10%);
+        }
+        100%{
+            filter: invert(80%);
+        }
     }
 }
 

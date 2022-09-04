@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../../../assets/img/logo512.png';
 import './nav.scss';
 import DarkMode from '../../../../utils/darkMode';
+import darkMode from '../../../../utils/darkMode';
 
 const Navbar = (top) => {
     return(
@@ -16,7 +17,7 @@ const Navbar = (top) => {
                 <a href="#Sedes">Sedes</a>
             </div>
             <div className='finalOptions'>
-                <DarkMode/>
+                <span className=' material-icons-outlined'onClick={e => darkMode.switchTheme(e)}></span>
                 <Link to={'/Login'} href='#'>Unete</Link>
             </div>
         </nav>

@@ -8,7 +8,6 @@
 /* Tamaño de Fuente y Scroll Suave */
 
 html {
-    font-size: 9px;
     scroll-behavior: smooth;
 }
 
@@ -122,11 +121,6 @@ color: transparent;
 @media screen and (min-width: 1430px){
     html{
         font-size: 9px;
-    }
-}
-@media screen and (min-width: 1900px){
-    html{
-        font-size: 10px;
     }
 }
 @media screen and (min-width: 2560px){

@@ -6,6 +6,8 @@ import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/input
 import randomString from '../../../utils/randomString';
 import PasswordStrenghtMeter from './PasswordStrenghtMeter';
 
+import formFunctions from '../../../utils/formFunctions';
+
 const Paso2 = props =>{
   let siguienteClick = () => {
     var code = randomString(6);
@@ -18,20 +20,26 @@ const Paso2 = props =>{
     <div className="pasos" onKeyDown={props.handleEnterKey}>
       <label>Teléfono:</label> {/* Teléfono */}
       <div className="input">
-          <input type="text" name="phoneNumber" value={props.values.phoneNumber} required  onChange={props.handleInputChange}/>
-          <span className="material-icons-outlined">person_outline</span>
+          <input type="text" name="phoneNumber" value={props.values.phoneNumber} minLength={10} maxLength={10}  onChange={e => {
+              props.handleInputChange(e)
+              formFunctions.typingInput(e, 10, true, 'int')
+            }}/>
+          <span className="material-icons-outlined">phone</span>
       </div>
       
       <label>Email:</label> {/* Email */}
       <div className="input">
-          <input type="email" name="email" value={props.values.email} required onChange={props.handleInputChange}/>
-          <span className="material-icons-outlined">person_outline</span>
+          <input type="text" name="email" value={props.values.email} onChange={e => {
+              props.handleInputChange(e)
+              formFunctions.typingInput(e, 1, false, 'email')
+            }}/>
+          <span className="material-icons-outlined">alternate_email</span>
       </div>
       
       <label>Contraseña:</label> {/* Contraseña */}
       <div className="input" id='passwordShowBarContainer'>
-          <InputPasswordShowBTN name='password' value={props.values.password} required={true} onChange={props.handleInputChange}/>
-          <span className="material-icons-outlined">person_outline</span>
+          <InputPasswordShowBTN name='password' value={props.values.password} onChange={props.handleInputChange}/>
+          <span className="material-icons-outlined">lock</span>
       </div>
       <PasswordStrenghtMeter password={props.values.password}/>
       <small>Si ya tienes una cuenta, ingresa haciendo <Link to='/Login'>click aquí</Link></small>

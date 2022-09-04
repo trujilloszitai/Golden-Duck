@@ -3,6 +3,8 @@ import md5 from 'md5';
 
 import randomString from '../../../utils/randomString';
 
+import formFunctions from '../../../utils/formFunctions';
+
 const Paso1 = props =>{
   let siguienteClick = () => {
     var code = randomString(6);
@@ -15,15 +17,14 @@ const Paso1 = props =>{
     <div className="pasos" onKeyDown={props.handleEnterKey}>
         <label>Ingrese el Correo:</label> {/* Nombre */}
         <div className="input">
-            <input type="email" name="name" value={props.values.name} className="form-input" id="name" autoFocus required autoComplete="off" onChange={props.handleInputChange}/>
+            <input type="email" name="name" value={props.values.name} className="form-input" id="name" autoFocus autoComplete="off" onChange={e => {
+              props.handleInputChange(e)
+              formFunctions.typingInput(e, 1, false, 'email')
+            }}/>
             <span className="material-icons-outlined">person_outline</span>
         </div>
         <br/><br/><br/>
-        <button id='Next' onClick={() => {
-            props.siguientePaso();
-            siguienteClick();
-          }
-        }>Siguiente</button>
+        <button id='Next' onClick={siguienteClick}>Siguiente</button>
     </div>
   );
 }

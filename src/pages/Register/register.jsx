@@ -8,10 +8,12 @@ import Paso1 from './components/Paso1';
 import Paso2 from './components/Paso2';
 import Paso3 from './components/Paso3';
 
+import formFunctions from '../../utils/formFunctions';
+
 export default class Register extends Component {
     
     state = {
-        paso: 1, /* Hacer barra medir seguridad contraseña */
+        paso: 1,
         name: '',
         surname: '',
         dni: '',
@@ -28,10 +30,12 @@ export default class Register extends Component {
         })
     }
     siguientePaso = (event) => {
-        const {paso} = this.state
-        this.setState({
-            paso: paso + 1
-        })
+        if(formFunctions.checkNext()){
+            const {paso} = this.state
+            this.setState({
+                paso: paso + 1
+            })
+        }else alert('no')
     }
     anteriorPaso = (event) => {
         const {paso} = this.state

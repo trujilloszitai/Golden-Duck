@@ -1,12 +1,14 @@
 import React from 'react';
 import md5 from 'md5';
 
+import formFunctions from '../../../utils/formFunctions';
+
 const Paso2 = props =>{
   let handleAgainBTN = () => {
     alert("repito")
   }
   let enviarBTN = () => {
-    if (sessionStorage.getItem("codeChange") === md5(props.values.codePhone)) {
+    if (sessionStorage.getItem("codeChange") === md5(props.values.codeEmail)) {
       props.siguientePaso()
     }
     else{
@@ -18,7 +20,10 @@ const Paso2 = props =>{
       <small>Enviamos un codigo de confirmación al correo electronico</small>
       <div className="input" id='ConfirmInputContainer'>
           <span className="material-icons-outlined" id='sendAgain' title='Enviar Código de nuevo' onClick={handleAgainBTN}>replay</span>
-          <input type="text" name="codePhone" placeholder="### - ###" required minLength={6} maxLength={6} onChange={props.handleInputChange}/>
+          <input type="text" name="codeEmail" placeholder="### - ###" required minLength={6} maxLength={6} onChange={e => {
+            props.handleInputChange(e)
+            formFunctions.typingInput(e, 6, true)
+          }}/>
       </div>
       <button id='Next' onClick={enviarBTN}>Enviar</button>
     </div>

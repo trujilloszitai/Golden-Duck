@@ -1,42 +1,25 @@
-import React from "react";
-
 const DarkMode = () => {
-  let clickedClass = "clicked";
-  const body = document.body;
-  const lightTheme = "light";
-  const darkTheme = "dark";
   let theme;
-
   if (localStorage) {
     theme = localStorage.getItem("theme");
   }
-
-  if (theme === lightTheme || theme === darkTheme) {
-    body.classList.add(theme);
+  if (theme === "light" || theme === "dark") {
+    document.body.classList.add(theme);
   } else {
-    body.classList.add(lightTheme);
+    document.body.classList.add("light");
   }
+}
 
-  const switchTheme = (e) => {
-    if (theme === darkTheme) {
-      body.classList.replace(darkTheme, lightTheme);
-      e.target.classList.remove(clickedClass);
-      localStorage.setItem("theme", "light");
-      theme = lightTheme;
-    } else {
-      body.classList.replace(lightTheme, darkTheme);
-      e.target.classList.add(clickedClass);
-      localStorage.setItem("theme", "dark");
-      theme = darkTheme;
-    }
-  };
+const switchTheme = (e) => {
+  if (document.body.classList.contains("dark")) {
+    document.body.classList.replace("dark", "light");
+    e.target.classList.remove("clicked");
+    localStorage.setItem("theme", "light");
+  } else {
+    document.body.classList.replace("light", "dark");
+    e.target.classList.add("clicked");
+    localStorage.setItem("theme", "dark");
+  }
+}
 
-  return (
-    <span
-      className={(theme === "dark" ? clickedClass : "light") + ' material-icons-outlined'}
-      onClick={(e) => switchTheme(e)}
-    ></span>
-  );
-};
-
-export default DarkMode;
+export default {DarkMode, switchTheme};

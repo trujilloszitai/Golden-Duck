@@ -7,16 +7,15 @@ import Paso1 from './components/Paso1';
 import Paso2 from './components/Paso2';
 import Paso3 from './components/Paso3';
 
-export default class Register extends Component {
+import formFunctions from '../../utils/formFunctions';
+
+export default class Forget extends Component {
     state = {
         paso: 1,
-        name: '',
-        surname: '',
-        dni: '',
-        phoneNumber: '',
         email: '',
         password: '',
-        codePhone: '',
+        confirmPassword: '',
+        codeEmail: '',
         estado: ""
     }
 
@@ -26,10 +25,12 @@ export default class Register extends Component {
         })
     }
     siguientePaso = (event) => {
-        const {paso} = this.state
-        this.setState({
-            paso: paso + 1
-        })
+        if(formFunctions.checkNext()){
+            const {paso} = this.state
+            this.setState({
+                paso: paso + 1
+            })
+        }else alert('no')
     }
     anteriorPaso = (event) => {
         const {paso} = this.state
@@ -93,7 +94,6 @@ export default class Register extends Component {
                             <span className="points active" id="3">3</span>
                         </div>
                         <section>
-                            <button id='backBTN' className="material-icons-outlined" title='Anterior' onClick={this.anteriorPaso}>arrow_back</button>
                             <h1>Cambiar Contraseña</h1>
                             <Paso3 handleInputChange={this.handleInputChange} siguientePaso={this.siguientePaso} values={values}/>
                         </section>
