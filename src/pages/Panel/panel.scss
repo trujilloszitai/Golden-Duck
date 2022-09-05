@@ -62,6 +62,9 @@ section#Panel {
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+  p {
+    font-size: 1.4rem;
+  }
   a {
     color: var(--color-dark);
   }
