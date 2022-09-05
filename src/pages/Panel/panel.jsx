@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import $ from 'jquery'
 
 import './panel.scss'
 import GoldenDuckLogo from '../../assets/img/logo512.png'
