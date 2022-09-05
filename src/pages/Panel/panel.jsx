@@ -9,6 +9,11 @@ import profilePhoto from './assets/img/defaultProfilePhoto.jpg'
 import darkMode from '../../utils/darkMode';
 
 const Panel = () => {
+    $(document).ready(function () {
+        $("#Panel").on("contextmenu",function(e){
+            return false;
+        });
+    });
     return(
         <section id='Panel'>
                 {/* <!---------------------------------- AsideBar ----------------------------------> */}
