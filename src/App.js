@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import $ from 'jquery'
 
 import LOL from './components/LOL/LOL.jsx'; /* LOL */
 import NotFound from './pages/NotFound/notFound.jsx';
@@ -14,6 +15,12 @@ import DarkMode from './utils/darkMode';
 
 export default function App() {
   DarkMode.DarkMode()
+  useEffect(() => {
+    setTimeout(() => {
+      $('#root').addClass('loaded')
+      $('.App').css('display', 'block')
+    }, 500)
+  }, []);
     return(
       <Router>
           <Routes>

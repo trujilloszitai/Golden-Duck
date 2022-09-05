@@ -1,15 +1,22 @@
-import React from 'react';
+import React, {useState, Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
 import './index.scss';
 import './assets/font/fontIcon.css';
-import App from './App';
+const App = lazy(() => import('./App'))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App/>
+    <Suspense fallback={
+      <div id='loadingScreen'></div>}>
+      <div id='loadingScreen'>
+        <div className='leftPanel'></div>
+        <div className='rightPanel'></div>
+      </div>
+        <App/>
+    </Suspense>
   </React.StrictMode>
 );
 

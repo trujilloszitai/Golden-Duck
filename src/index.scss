@@ -4,6 +4,86 @@
 
 */
 
+/* Pantalla de Carga */
+
+#root:not(.loaded) #loadingScreen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--backColor);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    &::after{
+        content: '';
+        width: 10rem;
+        height: 10rem;
+        background: url(./assets/img/favicon.ico);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all 2s;
+    }
+}
+.loaded{
+    #loadingScreen{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        .leftPanel{
+            background-color: var(--backColor);
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            width: 50%;
+            height: 100%;
+            &::after{
+                content: '';
+                width: 10rem;
+                height: 10rem;
+                background: url(./assets/img/favicon.ico);
+                background-position: 5rem center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            transform: translateX(-100%);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000), background-color 0s;
+        }
+        .rightPanel{
+            background-color: var(--backColor);
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 50%;
+            height: 100%;
+            &::after{
+                content: '';
+                width: 10rem;
+                height: 10rem;
+                background: url(./assets/img/favicon.ico);
+                background-position: -5rem center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            visibility: hidden;
+            transform: translateX(100%);
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000), background-color 0s;
+        }
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: all 0.3s 1s ease-out;
+    }
+}
+
 
 /* Tamaño de Fuente y Scroll Suave */
 
