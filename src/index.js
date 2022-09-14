@@ -1,4 +1,4 @@
-import React, {useState, Suspense, lazy} from 'react';
+import React, {Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,8 +9,8 @@ const App = lazy(() => import('./App'))
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Suspense fallback={
-      <div id='loadingScreen'></div>}>
+    {/* Pantalla de Carga */}
+    <Suspense fallback={<div id='loadingScreen'></div>}>
       <div id='loadingScreen'>
         <div className='leftPanel'></div>
         <div className='rightPanel'></div>

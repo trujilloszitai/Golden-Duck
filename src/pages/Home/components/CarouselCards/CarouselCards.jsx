@@ -9,16 +9,16 @@ export default class PauseOnHover extends Component {
   render() {
     var settingsSlider = {
       className: "center",
-      centerMode: true,
       focusOnSelect: true,
       dots: true,
       infinite: true,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2000,
       pauseOnHover: true,
       initialSlide: 0,
+      swipeToSlide: true,
       responsive: [
         {
           breakpoint: 1024,

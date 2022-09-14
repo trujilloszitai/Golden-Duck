@@ -41,7 +41,7 @@ section#Panel {
   display: grid;
   margin: 0 auto;
   gap: 4.35556rem;
-  grid-template-columns: 21.77778rem auto 35.77778rem;
+  grid-template-columns: 21.77778rem auto;
 
   /* Global */
 
@@ -159,11 +159,14 @@ section#Panel {
       font-weight: 500;
     }
     .sidebar {
+      button,
       a {
         display: flex;
+        background: none;
         color: var(--color-info-dark);
         margin-left: 3.11111rem;
         gap: 1.55556rem;
+        cursor: pointer;
         align-items: center;
         position: relative;
         height: 5.75556rem;
@@ -203,7 +206,7 @@ section#Panel {
         background: var(--color-danger);
         color: var(--color-white);
         padding: 2px 16px;
-        font-size: 11px;
+        font-size: 1.2rem !important;
         border-radius: var(--border-radius-1);
       }
     }
@@ -211,94 +214,29 @@ section#Panel {
 
   /* ---------------------------------- main ---------------------------------- */
 
-  main#panelMain {
+  main.panelMain {
     margin-top: 1.55555555556rem;
     .saludo h1 span {
       text-decoration: underline;
     }
-    .moneyPanel {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1.55555555556rem;
-      margin: 3.11111111112rem 4.66666666668rem 1.55555555556rem 4.66666666668rem;
-      padding-bottom: 3.11111111112rem;
-      background-color: var(--color-white);
-      box-shadow: var(--box-shadow);
-      border-radius: 1.55555555556rem 1.55555555556rem 4.66666666668rem 4.66666666668rem;
-      border-top: 1.55555555556rem solid var(--color-money);
-    }
-    .moneyCont {
-      h2 {
-        margin: 3.11111111112rem 0 0 3.11111111112rem;
-      }
-      h1 {
-        margin: 0.31111111111rem 0 0 7.7777777778rem;
-        color: var(--color-money);
-      }
-    }
-    .moneyPanel span {
-      font-size: 7.7777777778rem;
-      margin: 3.11111111112rem 3.11111111112rem 0 0;
-      color: var(--color-money);
-    }
-
-    .graph-sec {
-      display: grid;
-      height: 50%;
-      margin: 3.11111111112rem 4.66666666668rem 4.66666666668rem;
-      padding-bottom: 3.11111111112rem;
-      background-color: var(--color-white);
-      box-shadow: var(--box-shadow);
-      border-radius: 1.55555555556rem 1.55555555556rem 4.66666666668rem 4.66666666668rem;
-      border-top: 1.55555555556rem solid var(--color-graph);
-      margin-top: 7.7777777778rem;
-      grid-template-columns: auto 60%;
-      .infoGasto {
-        .data {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin-top: 20%;
-        }
-        h2 {
-          margin: 3.11111111112rem 0 0 3.11111111112rem;
-        }
-        .data {
-          h3 {
-            font-size: 2.69111111112rem;
-            font-family: boldLetter;
-          }
-          small {
-            font-size: 1.55555555556rem;
-            &:first-of-type {
-              margin-bottom: 3.11111111112rem;
-            }
-          }
-        }
-      }
-      .graph {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1.55555555556rem;
-      }
+    .contentPanelMain {
+      margin-top: 3rem;
+      width: 100%;
+      height: calc(100% - 2.8rem - 1.55555555556rem - 3rem);
     }
   }
 
   /* ---------------------------------- Right ---------------------------------- */
 
-  .right {
-    margin-top: 2.17777777778rem;
-    .top {
-      display: flex;
-      justify-content: end;
-      gap: 3.11111111112rem;
-      button {
-        display: none;
-      }
+  .profileTop {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    justify-content: flex-end;
+    gap: 3.11111111112rem;
+    button {
+      display: none;
     }
     .theme-toggle {
       background: var(--color-light);
@@ -323,7 +261,7 @@ section#Panel {
         }
       }
     }
-    .top .profile {
+    .profile {
       display: flex;
       gap: 3.11111111112rem;
       text-align: right;
@@ -345,19 +283,17 @@ body.dark {
   section#Panel {
     background-color: #1b2631;
   }
-  .right {
-    .theme-toggle {
-      span {
-        &#lightButton {
-          background-color: unset !important;
-          color: var(--color-dark-variant) !important;
-          border-radius: none !important;
-        }
-        &#darkButton {
-          background-color: var(--color-primary);
-          color: white;
-          border-radius: var(--border-radius-1);
-        }
+  .theme-toggle {
+    span {
+      &#lightButton {
+        background-color: unset !important;
+        color: var(--color-dark-variant) !important;
+        border-radius: none !important;
+      }
+      &#darkButton {
+        background-color: var(--color-primary);
+        color: white;
+        border-radius: var(--border-radius-1);
       }
     }
   }

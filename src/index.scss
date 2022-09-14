@@ -84,7 +84,6 @@
     }
 }
 
-
 /* Tamaño de Fuente y Scroll Suave */
 
 html {
@@ -96,22 +95,27 @@ html {
 @font-face {
     font-family: Nevis;
     src: url(assets/font/nevis.ttf);
+    font-display:block;
 }
 @font-face {
     font-family: Poppins-ExtraLight;
     src: url(assets/font/Poppins-ExtraLight.ttf);
+    font-display:block;
 }
 @font-face {
     font-family: Poppins-Light;
     src: url(assets/font/Poppins-Light.ttf);
+    font-display:block;
 }
 @font-face {
     font-family: Poppins-Regular;
     src: url(assets/font/Poppins-Regular.ttf);
+    font-display:block;
 }
 @font-face {
     font-family: Poppins-Bold;
     src: url(assets/font/Poppins-Bold.ttf);
+    font-display:block;
 }
 *{
     font-family: 'Poppins-Light';

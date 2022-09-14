@@ -24,6 +24,7 @@ export default function App() {
       $('.App').css('display', 'block')
     }, 500)
   }, []);
+
     return(
       <Router>
           <Routes>
@@ -32,7 +33,7 @@ export default function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Register" element={<Register/>} />
-            <Route path="/Panel" element={<Panel/>} /> {/* Falta */}
+            <Route path="/Panel" element={<Panel/>} />
             <Route path="/Mobile" element={<Mobile/>} />
             <Route path="/Forget" element={<Forget/>} />
           </Routes>

@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.18f1016a.css",
-    "main.js": "/static/js/main.8ad0539b.js",
+    "main.css": "/static/css/main.afbe89ac.css",
+    "main.js": "/static/js/main.5a8e380a.js",
+    "static/css/510.a2cc51a4.chunk.css": "/static/css/510.a2cc51a4.chunk.css",
+    "static/js/510.9360ee4f.chunk.js": "/static/js/510.9360ee4f.chunk.js",
     "static/js/787.a4a41570.chunk.js": "/static/js/787.a4a41570.chunk.js",
+    "static/js/530.9947d7f3.chunk.js": "/static/js/530.9947d7f3.chunk.js",
     "static/media/backgroundPhone.jfif": "/static/media/backgroundPhone.2d9a372ea79abc39539d.jfif",
     "static/media/Laptop.svg": "/static/media/Laptop.9149b40dd5414bd437d2ed6ea1a39dca.svg",
     "static/media/laptopDark.svg": "/static/media/laptopDark.f4810c1c5e6460b54c0d2ecc6d0b6612.svg",
@@ -20,6 +23,7 @@
     "static/media/logo512.png": "/static/media/logo512.a06cd5e587d62947ac5b.png",
     "static/media/applastore.png": "/static/media/applastore.594b9f94efa90893a2fc.png",
     "static/media/playstore.png": "/static/media/playstore.3187f833ea28cd67d3fc.png",
+    "static/media/favicon.ico": "/static/media/favicon.a78263edfa381959aeee.ico",
     "static/media/Mail.webp": "/static/media/Mail.a85231ae9e71a760b839.webp",
     "static/media/Twitter.svg": "/static/media/Twitter.b1ec2956612bb69e8b85.svg",
     "static/media/Instagram.svg": "/static/media/Instagram.a75a098d473c09d56927.svg",
@@ -40,12 +44,15 @@
     "static/media/topWaveDark.svg": "/static/media/topWaveDark.a00033200775437246a5.svg",
     "static/media/bottomWave.svg": "/static/media/bottomWave.1f71afe095923dd1b380.svg",
     "static/media/bottomWaveDark.svg": "/static/media/bottomWaveDark.344a85ed494b767f5df0.svg",
-    "main.18f1016a.css.map": "/static/css/main.18f1016a.css.map",
-    "main.8ad0539b.js.map": "/static/js/main.8ad0539b.js.map",
-    "787.a4a41570.chunk.js.map": "/static/js/787.a4a41570.chunk.js.map"
+    "main.afbe89ac.css.map": "/static/css/main.afbe89ac.css.map",
+    "main.5a8e380a.js.map": "/static/js/main.5a8e380a.js.map",
+    "510.a2cc51a4.chunk.css.map": "/static/css/510.a2cc51a4.chunk.css.map",
+    "510.9360ee4f.chunk.js.map": "/static/js/510.9360ee4f.chunk.js.map",
+    "787.a4a41570.chunk.js.map": "/static/js/787.a4a41570.chunk.js.map",
+    "530.9947d7f3.chunk.js.map": "/static/js/530.9947d7f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18f1016a.css",
-    "static/js/main.8ad0539b.js"
+    "static/css/main.afbe89ac.css",
+    "static/js/main.5a8e380a.js"
   ]
 }

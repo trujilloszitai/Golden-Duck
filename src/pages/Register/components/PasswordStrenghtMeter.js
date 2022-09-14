@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import zxcvbn from 'zxcvbn';
 
 const PasswordStrenghtMeter = props =>{
@@ -28,10 +27,6 @@ const PasswordStrenghtMeter = props =>{
         background: funcProgressColor(),
         height: '.5rem',
     })
-
-    const testInput = (e) => {
-        console.log('e.style.background')
-    }
 
   return (
     <div className='progress'>

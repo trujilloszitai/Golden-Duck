@@ -28,7 +28,6 @@ const Paso3 = props =>{
           }}/>
           <span className="material-icons-outlined">person_outline</span>
       </div>
-      <br/><br/><br/>
       <button id='Next' onClick={Enviar}>Enviar</button>
     </div>
   );

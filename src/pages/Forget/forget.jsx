@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import Nav from '../../components/navbar/nav';
+import '../../components/generalStyles/form.scss'
 
 import Paso1 from './components/Paso1';
 import Paso2 from './components/Paso2';
@@ -43,8 +44,6 @@ export default class Forget extends Component {
             this.siguientePaso()
         }
     }
-
-    /* Poner que los value sean igual a los state */
 
     render(){
         let values = this.state

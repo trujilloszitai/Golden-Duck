@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import Nav from '../../components/navbar/nav';
-import './register.scss';
+import '../../components/generalStyles/form.scss'
 
 import Paso1 from './components/Paso1';
 import Paso2 from './components/Paso2';
