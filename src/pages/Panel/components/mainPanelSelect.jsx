@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+/*
+
 import { Link } from 'react-router-dom';
 import $ from 'jquery'
 
-import profilePhoto from "../assets/img/defaultProfilePhoto.jpg";
-import darkMode from "../../../utils/darkMode";
+*/
 
 const mainPanelSelect = props => {
     switch (props.values.panelNumber) {
