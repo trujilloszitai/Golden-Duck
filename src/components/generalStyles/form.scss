@@ -14,7 +14,7 @@ main.regSec{
 
 /* Estilo */
 
-main.regSec {
+main.regSec{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -22,271 +22,228 @@ main.regSec {
     align-items: center;
     position: relative;
     background-color: #e5e5e5;
-    /* Barra de Progreso */
-    .progressBar {
-        margin-top: 15vh;
-        width: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 2rem;
-
-        .line {
-            background-color: #9E9E9E;
+        /* Barra de Progreso */
+        .progressBar{
+            margin-top: 15vh;
             width: 60%;
-            height: 2px;
-            position: absolute;
-        }
-
-        span.points {
-            background-color: #fff;
-            border: 2px solid var(--backColor);
-            color: black;
-            width: var(--pointSize);
-            height: var(--pointSize);
-            font-size: calc(var(--pointSize) / 2);
-            border-radius: 50%;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            z-index: 10;
-            user-select: none;
-        }
-
-        span.pass {
-            background-color: rgb(162, 163, 164);
-            border: none;
-            color: white;
-        }
-
-        span.active {
-            background-color: var(--ColorBaseRegister);
-            border: none;
-            color: white;
-        }
-    }
-
-    section {
-        width: 50%;
-        margin-top: 3rem;
-        /* Volver */
-        button#backBTN {
-            position: absolute;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-        }
-        /* Titulo */
-        h1 {
-            font-size: 5rem;
-            color: var(--titleColor);
-            margin-bottom: 0;
-            text-align: center;
-        }
-        /* Distintos Formularios */
-        .pasos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            small {
-                margin: 2rem auto 0 auto;
-                font-size: var(--smallSize);
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            .line{
+                background-color: #9E9E9E;
+                width: 60%;
+                height: 2px;
+                position: absolute;
             }
-
-            small.infoTopForm {
-                margin: 2rem auto;
-            }
-
-            a {
-                font-weight: 600;
-                color: var(--ColorBaseRegister);
-                cursor: pointer;
-            }
-            /* Estilo de Formulario */
-            label {
-                font-size: 1.8rem;
-                color: var(--labelColor);
-                margin-top: 3rem;
-            }
-
-            div.input {
+            span.points{
+                background-color: #fff;
+                border: 2px solid var(--backColor);
+                color: black;
+                width: var(--pointSize);
+                height: var(--pointSize);
+                font-size: calc(var(--pointSize) / 2);
+                border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: #fff;
-                border-radius: .5rem;
-                width: 25rem;
-                height: var(--inputHeight);
-                transition: all 300ms ease;
-
-                span {
-                    width: calc(var(--inputHeight));
-                    height: calc(var(--inputHeight));
-                    font-size: calc(var(--inputHeight) - 1rem);
+                font-weight: 700;
+                z-index: 10;
+                user-select: none;
+            }
+            span.pass{
+                background-color: rgb(162, 163, 164);
+                border: none;
+                color: white;
+            }
+            span.active{
+                background-color: var(--ColorBaseRegister);
+                border: none;
+                color: white;
+            }
+        }
+        section{
+            width: 50%;
+            margin-top: 3rem;
+            /* Volver */
+            button#backBTN{
+                position: absolute;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+            /* Titulo */
+            h1{
+                font-size: 5rem;
+                color: var(--titleColor);
+                margin-bottom: 0;
+                text-align: center;
+            }
+            /* Distintos Formularios */
+            .pasos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                small{
+                    margin: 2rem auto;
+                    font-size: var(--smallSize);
+                }
+                a{
+                    font-weight: 600;
+                    color: var(--ColorBaseRegister);
+                    cursor: pointer;
+                }
+                /* Estilo de Formulario */
+                label{
+                    font-size: 1.8rem;
+                    color: var(--labelColor);
+                    margin-top: 3rem;
+                }
+                div.input{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    text-align: center;
-                    color: #909497;
-                    order: 1;
+                    background-color: #fff;
+                    border-radius: .5rem;
+                    width: 25rem;
+                    height: var(--inputHeight);
+                    transition: all 300ms ease;
+                    span{
+                        width: calc(var(--inputHeight));
+                        height: calc(var(--inputHeight));
+                        font-size: calc(var(--inputHeight) - 1rem);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        color: #909497;
+                        order: 1;
+                        user-select: none;
+                    }
+                    input{
+                        width: var(--inputSizeRegister);
+                        background-color: transparent;
+                        border-radius: .5rem;
+                        height: calc(var(--inputHeight) / 2rem * 2);
+                        border: none;
+                        padding: 1rem;
+                        font-size: calc(var(--inputHeight) / 2.75);
+                        outline: none;
+                        order: 2;
+                    }
+                    .passwordContainer{
+                        order: 2;
+                        width: calc(var(--inputSizeRegister) + var(--inputHeight) / 4); // tamaño mas padding
+                        span{
+                            font-size: 3rem;
+                        }
+                        input{
+                            padding: 0;
+                        }
+                    }
+                    input::placeholder{
+                        color: #909497;
+                    }
+                    .input-group {
+                        width: 80%;
+                        height: auto;
+                        padding: 4px;
+                    }
+                    .progress {
+                        height: 4px;
+                    }
+                }
+                div.input.wrong{
+                    border: .1rem red solid;
+                    transition: all 300ms ease;
+                }
+
+                #passwordShowBarContainer{
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+                .progress{
+                    width: 25rem;
+                    height: .5rem;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                }
+                div.input input:focus{
+                    color: var(--backColor);
+                    &::placeholder{
+                        color: var(--backColor);
+                    }
+                    & ~ span{
+                        color: var(--backColor);
+                    }
+                }
+                div#ConfirmInputContainer{
+                    input{
+                        width: 15rem;
+                        text-align: center;
+                    }
+                    input:focus::placeholder{
+                        color: transparent;
+                    }
+                    input::placeholder{
+                        text-align: center;
+                    }
+                    input[type=number]::-webkit-inner-spin-button, 
+                    input[type=number]::-webkit-outer-spin-button { 
+                    -webkit-appearance: none; 
+                    margin: 0; 
+                    }
+                }
+                div#PESTEL{
+                    margin: 1rem 0 4rem;
+                    height: fit-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    label{
+                        font-size: 1.4rem;
+                        margin: 0 0 0 .5rem;
+                    }
+                }
+                span#sendAgain{
+                    cursor: pointer;
+                    background: transparent;
+                    order: 3;
+                    font-size: 3rem;
+                    transition: all 200ms ease;
                     user-select: none;
                 }
-
-                input {
-                    width: var(--inputSizeRegister);
-                    background-color: transparent;
-                    border-radius: .5rem;
-                    height: calc(var(--inputHeight) / 2rem * 2);
+                span#sendAgain:hover{
+                    color: var(--backColor);
+                }
+                button#Next{ /* Submit */
+                    background-color: var(--ColorBaseRegister);
                     border: none;
-                    padding: 1rem;
-                    font-size: calc(var(--inputHeight) / 2.75);
-                    outline: none;
-                    order: 2;
+                    color: #fff;
+                    width: var(--submitWidth);
+                    height: var(--submitHeight);
+                    font-size: 2rem;
+                    border-radius: 2rem;
+                    margin: 0 auto;
+                    transition: all 300ms ease;
+                    transition: .25s ease all;
+                    cursor: pointer;
                 }
-
-                .passwordContainer {
-                    order: 2;
-                    width: calc(var(--inputSizeRegister) + var(--inputHeight) / 4); // tamaño mas padding
-                    span {
-                        font-size: 3rem;
-                    }
-
-                    input {
-                        padding: 0;
-                    }
-                }
-
-                input::placeholder {
-                    color: #909497;
-                }
-
-                .input-group {
-                    width: 80%;
-                    height: auto;
-                    padding: 4px;
-                }
-
-                .progress {
-                    height: 4px;
+                button[type='submit']:hover, input[type='submit']{
+                    background: var(--primaryColor);
+                    filter: contrast(80%);
                 }
             }
-
-            div.input.wrong {
-                border: .1rem red solid;
-                transition: all 300ms ease;
-            }
-
-            #passwordShowBarContainer {
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-            }
-
-            .progress {
-                width: 25rem;
-                height: .5rem;
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-            }
-
-            div.input input:focus {
-                color: var(--backColor);
-
-                &::placeholder {
-                    color: var(--backColor);
+            /* Pavada */
+            .pasos.code{
+                small span{
+                    font-weight: 600;
+                    color: var(--ColorBaseRegister);
+                    cursor: help;
                 }
-
-                & ~ span {
-                    color: var(--backColor);
-                }
-            }
-
-            div#ConfirmInputContainer {
-                input {
-                    width: 15rem;
-                    text-align: center;
-                }
-
-                input:focus::placeholder {
-                    color: transparent;
-                }
-
-                input::placeholder {
-                    text-align: center;
-                }
-
-                input[type=number]::-webkit-inner-spin-button,
-                input[type=number]::-webkit-outer-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
-                }
-            }
-
-            div#PESTEL {
-                margin: 1rem 0;
-                height: fit-content;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                label {
-                    font-size: 1.4rem;
-                    margin: 0 0 0 .5rem;
-                }
-            }
-
-            span#sendAgain {
-                cursor: pointer;
-                background: transparent;
-                order: 3;
-                font-size: 3rem;
-                transition: all 200ms ease;
-                user-select: none;
-            }
-
-            span#sendAgain:hover {
-                color: var(--backColor);
-            }
-
-            button#Next { /* Submit */
-                background-color: var(--ColorBaseRegister);
-                border: none;
-                color: #fff;
-                width: var(--submitWidth);
-                height: var(--submitHeight);
-                font-size: 2rem;
-                border-radius: 2rem;
-                margin: 2rem auto;
-                transition: all 300ms ease;
-                transition: .25s ease all;
-                cursor: pointer;
-            }
-
-            button[type='submit']:hover, input[type='submit'] {
-                background: var(--primaryColor);
-                filter: contrast(80%);
-            }
-        }
-        /* Pavada */
-        .pasos.code {
-            small span {
-                font-weight: 600;
-                color: var(--ColorBaseRegister);
-                cursor: help;
             }
         }
     }
-
-    .infoPassword {
-        color: var(--ColorBaseRegister);
-        filter: brightness(150%);
-        cursor: pointer;
-    }
-}
-.swal2-popup {
-    font-size: 2rem !important;
-}
 
     /* Modo oscuro */
 

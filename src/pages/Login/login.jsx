@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { isMobile} from 'react-device-detect';
 
-import Mobile from '../../components/mobile/mobile';
+import Mobile from '../../components/mobile/Mobile';
 
 import './login.scss';
-import Nav from '../../components/navbar/nav'
-import InputPasswordShowBTN from '../../components/InputPasswordShowBTN/inputPasswordShowBTN'
+import Nav from '../../components/navbar/Nav'
+import InputPasswordShowBTN from '../../components/InputPasswordShowBTN/InputPasswordShowBTN'
 
 const Login = () => {
     if (isMobile) {
@@ -39,9 +39,9 @@ const Login = () => {
                     </div>
                     <div className='check'>
                         <input type="checkbox" />
-                        <Link to={'/Forget'}>¿Olvidaste tu Contraseña?</Link>
+                        <Link to={'/forgot-my-password'}>¿Olvidaste tu Contraseña?</Link>
                     </div>
-                    <Link to={'/Panel'}><input type="submit" value="Ingresar"/></Link>
+                    <Link to={'/control-panel'}><input type="submit" value="Ingresar"/></Link>
                 </form>
             </div>
         </main>

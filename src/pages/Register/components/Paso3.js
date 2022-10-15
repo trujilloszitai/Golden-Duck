@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import md5 from 'md5';
-import Swal from 'sweetalert2';
 
 import formFunctions from '../../../utils/formFunctions';
 
@@ -11,32 +10,19 @@ const Paso3 = props =>{
   }
   let enviarBTN = () => {
     if (sessionStorage.getItem("code") === md5(props.values.codePhone) && formFunctions.checkNext() && document.getElementById("checkPESTEL").checked) {
-        Swal.fire({
-            title: "Registro Comleto",
-            text: "¡Te has registrado exitosamente!",
-            icon: "success",
-        }).then(() => {
-            window.location.href = "/"; // No me sorprenderia que falle (Usado en Register y Forget)
-        });
+      alert("successful")
+      /* props.siguientePaso() */
     }
-    else if (!document.getElementById("checkPESTEL").checked) {
-        Swal.fire({
-            title: "Error",
-            text: "Debes aceptar los terminos y condiciones",
-            icon: "error",
-        });
+    else if (!document.getElementById("checkPESTEL").checked){
+      alert("check")
     }
-    else {
-        Swal.fire({
-            title: "Error",
-            text: "Código erróneo",
-            icon: "error",
-        });
+    else{
+      alert("Error: wrong code!")
     }
   }
   return (
-      <div className="pasos code" id="Confirm">
-      <small className='infoTopForm'>Enviamos un código de confirmación al correo <span>{props.values.email}</span></small>
+    <div className="pasos code" id="Confirm">
+      <small>Enviamos un codigo de confirmación al correo <span>{props.values.email}</span></small>
       <div className="input" id='ConfirmInputContainer'>
           <span className="material-icons-outlined" id='sendAgain' title='Enviar Código de nuevo' onClick={handleAgainBTN}>replay</span>
           <input type="text" name="codePhone" placeholder="### - ###" required minLength={6} maxLength={6} onChange={e => {

@@ -34,32 +34,22 @@
         font-size: 3rem !important;
     }
 }
-.slick-next:before, .slick-prev:before {
-    color: black;
-}
 
 /* Modo Oscuro */
-body.dark {
-    #carouselCards {
+body.dark{
+    #carouselCards{
         color: var(--colorCardsDark);
     }
-
-    .slick-dots li button:before {
+    .slick-dots li button:before{
         color: white;
     }
-
-    .slick-center {
+    .slick-center{
         color: var(--primaryColorDark);
-
-        span {
+        span{
             font-size: 9rem !important;
         }
-
-        h2 {
+        h2{
             font-size: 3rem !important;
         }
-    }
-    .slick-next:before, .slick-prev:before {
-        color: #fff;
     }
 }

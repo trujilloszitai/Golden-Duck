@@ -28,9 +28,7 @@ const checkTypeInput = (valueInput, typeDato) => {
     if(typeDato === 'int' && !valueInput.match(/^[0-9]+$/)) return true;
     if(typeDato === 'text' && !valueInput.match(/^[a-zA-Z0-9]+$/)) return true;
     if(typeDato === 'string' && !valueInput.match(/^[a-zA-Z0-9]+$/)) return true;
-    if(typeDato === 'email' && !valueInput.match(/^([a-zA-Z0-9_.])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9)]{2,4})+$/)) return true;
+    if(typeDato === 'email' && !valueInput.match(/^([a-zA-Z0-9_.])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9)]{2,4})+$/)) return true;
 }
 
-const functionExport = {checkNext, typingInput};
-
-export default functionExport
+export default {checkNext, typingInput} 
