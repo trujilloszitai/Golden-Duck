@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import $ from 'jquery'
 
 import LOL from './components/LOL/LOL.jsx'; /* LOL */
-import NotFound from './pages/NotFound/NotFound.jsx';
+import NotFound from './pages/NotFound/notFound.jsx';
 import Home from './pages/Home/Home.jsx';
-import Register from './pages/Register/Register.jsx';
-import Login from './pages/Login/Login.jsx';
+import Register from './pages/Register/register.jsx';
+import Login from './pages/Login/login.jsx';
 import Forget from './pages/ForgotPassword/ForgotPassword.jsx';
 import ControlPanel from './pages/ControlPanel/ControlPanel.jsx';
-import Mobile from './components/mobile/Mobile.jsx';
+import Mobile from './components/mobile/mobile.jsx';
 import { Calendar, Editor, Expenses, FixedTerm, Investment, Loan, Money, Payment, Settings, Support, Transfer, Wallet } from './pages';
 import { Area, Bar, Financial, Line, Pie, Pyramid, Stacked} from './pages/Charts';
 

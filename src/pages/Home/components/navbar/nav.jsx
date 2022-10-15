@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../../../assets/img/logo512.png';
 import './nav.scss';
-import DarkMode from '../../../../utils/darkMode';
 import darkMode from '../../../../utils/darkMode';
 
 const Navbar = (top) => {

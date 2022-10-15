@@ -1,6 +1,6 @@
 {
   "name": "goldenduck",
-  "version": "1.0",
+  "version": "latest",
   "private": true,
   "dependencies": {
     "@syncfusion/ej2": "^19.4.48",
@@ -27,6 +27,7 @@
     "react-simple-typewriter": "^3.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.5.2",
     "web-vitals": "^2.1.4",
     "zxcvbn": "^4.4.2"
   },

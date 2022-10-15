@@ -22,4 +22,6 @@ const switchTheme = (e) => {
   }
 }
 
-export default {DarkMode, switchTheme};
+const functionExport = {DarkMode, switchTheme};
+
+export default functionExport;

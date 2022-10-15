@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import CarouselCards from "./components/CarouselCards/CarouselCards";
 
-import Navbar from './components/navbar/Nav';
-import Footer from '../../components/footer/Footer';
+import Navbar from './components/navbar/nav';
+import Footer from '../../components/footer/footer';
 import Header from './components/Header/Header';
 import QR from '../../assets/img/qr-code.png';
 

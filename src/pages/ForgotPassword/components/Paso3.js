@@ -1,13 +1,24 @@
 import React from 'react';
-import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/InputPasswordShowBTN';
-
+import Swal from 'sweetalert2';
+import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/inputPasswordShowBTN';
 import formFunctions from '../../../utils/formFunctions';
 
 const Paso3 = props =>{
   let Enviar = () => {
-    if(props.values.password === props.values.confirmPassword) alert('si')
-    else alert('no')
-  }
+    if (props.values.password === props.values.confirmPassword && formFunctions.checkNext())
+        Swal.fire({
+            title: "Cambio de Contraseña Comleto",
+            text: "¡Has cambiado la contraseña exitosamente!",
+            icon: "success",
+        }).then(() => {
+            window.location.href = "/"; // No me sorprenderia que falle (Usado en Register y Forget)
+        });
+    else Swal.fire({
+        title: "Error",
+        text: "Verifique los campos",
+        icon: "error",
+    });
+}
 
   return (
     <div className="pasos" onKeyDown={props.handleEnterKey}>

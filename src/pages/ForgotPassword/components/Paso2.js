@@ -1,6 +1,6 @@
 import React from 'react';
 import md5 from 'md5';
-
+import Swal from 'sweetalert2';
 import formFunctions from '../../../utils/formFunctions';
 
 const Paso2 = props =>{
@@ -11,8 +11,12 @@ const Paso2 = props =>{
     if (sessionStorage.getItem("codeChange") === md5(props.values.codeEmail)) {
       props.siguientePaso()
     }
-    else{
-      alert("Error: wrong code!")
+    else {
+      Swal.fire({
+          title: "Error",
+          text: "Código erróneo",
+          icon: "error",
+      });
     }
   }
   return (
