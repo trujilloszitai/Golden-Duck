@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { Link } from "react-router-dom";
@@ -9,6 +8,7 @@ import "./panel.scss";
 import GoldenDuckLogo from "../../assets/img/logo512.png";
 import profilePhoto from "./assets/img/defaultProfilePhoto.jpg";
 
+import { Sidebar, Navbar } from './components';
 import PanelOption from "./components/mainPanelSelect";
 import darkMode from "../../utils/darkMode";
 import { act } from "react-dom/test-utils";
@@ -33,7 +33,7 @@ export default class Register extends Component {
           </div>
           {activeMenu ? (
             <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
-              Sidebar
+              <Sidebar />
             </div>
           ) : (
             <div className="w-0 dark:bg-secondary-dark-bg">Sidebar w-0</div>
@@ -45,7 +45,7 @@ export default class Register extends Component {
           >
             <div className="flex">
               <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
-                Navbar
+                <Navbar />
               </div>
               <div>
                 
