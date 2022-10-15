@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import md5 from 'md5';
 
-import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/inputPasswordShowBTN';
+import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/InputPasswordShowBTN';
 import randomString from '../../../utils/randomString';
 import PasswordStrenghtMeter from './PasswordStrenghtMeter';
 

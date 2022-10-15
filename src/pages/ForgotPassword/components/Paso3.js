@@ -1,5 +1,5 @@
 import React from 'react';
-import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/inputPasswordShowBTN';
+import InputPasswordShowBTN from '../../../components/InputPasswordShowBTN/InputPasswordShowBTN';
 
 import formFunctions from '../../../utils/formFunctions';
 
