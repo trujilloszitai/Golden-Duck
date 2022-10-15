@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound/notFound.jsx';
 import Home from './pages/Home/Home.jsx';
 import Register from './pages/Register/register.jsx';
 import Login from './pages/Login/login.jsx';
+import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions.jsx';
 import Forget from './pages/Forget/forget.jsx';
 import Panel from './pages/Panel/panel.jsx';
 import Mobile from './components/mobile/mobile.jsx';
@@ -14,9 +15,9 @@ import Mobile from './components/mobile/mobile.jsx';
 import DarkMode from './utils/darkMode';
 
 export default function App() {
-  console.log('%c ¡NO USAR CONSOLA DE COMANDOS A MENOS DE LO QUE SEPAS QUE ESTAS HACIENDO, USAR UN COMANDO EQUIVOCADO PUEDE VULNERAR TU SEGURIDAD, GOLDEN DUCK NO SE HACE RESPONSABLE DE DICHOS ACTOS Y SUS CONSECUENCIAS! ', 'font-size:20px; background: #FF0000; color: #fff');
-  console.log('%c ¡NO USAR CONSOLA DE COMANDOS A MENOS DE LO QUE SEPAS QUE ESTAS HACIENDO, USAR UN COMANDO EQUIVOCADO PUEDE VULNERAR TU SEGURIDAD, GOLDEN DUCK NO SE HACE RESPONSABLE DE DICHOS ACTOS Y SUS CONSECUENCIAS! ', 'font-size:20px; background: #FF0000; color: #fff');
-  console.log('%c ¡NO USAR CONSOLA DE COMANDOS A MENOS DE LO QUE SEPAS QUE ESTAS HACIENDO, USAR UN COMANDO EQUIVOCADO PUEDE VULNERAR TU SEGURIDAD, GOLDEN DUCK NO SE HACE RESPONSABLE DE DICHOS ACTOS Y SUS CONSECUENCIAS! ', 'font-size:20px; background: #FF0000; color: #fff');
+  console.log('%c ¡NO USAR CONSOLA DE COMANDOS A MENOS DE LO QUE SEPAS QUE ESTAS HACIENDO, INTRODUCIR UN COMANDO DESCONOCIDO PUEDE VULNERAR TU SEGURIDAD, GOLDEN DUCK NO SE HACE RESPONSABLE DE DICHOS ACTOS Y SUS CONSECUENCIAS! ', 'font-size:20px; background: #FF0000; color: #fff');
+  console.log('%c ¡NO USAR CONSOLA DE COMANDOS A MENOS DE LO QUE SEPAS QUE ESTAS HACIENDO, INTRODUCIR UN COMANDO DESCONOCIDO PUEDE VULNERAR TU SEGURIDAD, GOLDEN DUCK NO SE HACE RESPONSABLE DE DICHOS ACTOS Y SUS CONSECUENCIAS! ', 'font-size:20px; background: #FF0000; color: #fff');
+  console.log('%c ¡NO USAR CONSOLA DE COMANDOS A MENOS DE LO QUE SEPAS QUE ESTAS HACIENDO, INTRODUCIR UN COMANDO DESCONOCIDO PUEDE VULNERAR TU SEGURIDAD, GOLDEN DUCK NO SE HACE RESPONSABLE DE DICHOS ACTOS Y SUS CONSECUENCIAS! ', 'font-size:20px; background: #FF0000; color: #fff');
   DarkMode.DarkMode()
   useEffect(() => {
     setTimeout(() => {
@@ -32,6 +33,7 @@ export default function App() {
             <Route path="*" element={<NotFound/>} />
             <Route path="/" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />
+            <Route path="/TermsAndConditions" element={<TermsAndConditions/>} />
             <Route path="/Register" element={<Register/>} />
             <Route path="/Panel" element={<Panel/>} />
             <Route path="/Mobile" element={<Mobile/>} />

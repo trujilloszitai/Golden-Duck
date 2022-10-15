@@ -151,8 +151,8 @@ body{
 
 /* Estilo para Scrollbar */
 
-html, body{
-    overflow: overlay;
+body{
+    overflow-y: scroll;
 }
 * {
 scrollbar-width: none;

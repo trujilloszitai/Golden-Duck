@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 import Nav from '../../components/navbar/nav';
 import '../../components/generalStyles/form.scss'
@@ -35,7 +36,11 @@ export default class Register extends Component {
             this.setState({
                 paso: paso + 1
             })
-        }else alert('no')
+        } else Swal.fire({
+                    title: "Error",
+                    text: "Verifique los campos",
+                    icon: "error",
+                });
     }
     anteriorPaso = (event) => {
         const {paso} = this.state

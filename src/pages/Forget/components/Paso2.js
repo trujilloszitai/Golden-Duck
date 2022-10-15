@@ -1,5 +1,6 @@
 import React from 'react';
 import md5 from 'md5';
+import Swal from 'sweetalert2';
 
 import formFunctions from '../../../utils/formFunctions';
 
@@ -11,13 +12,17 @@ const Paso2 = props =>{
     if (sessionStorage.getItem("codeChange") === md5(props.values.codeEmail)) {
       props.siguientePaso()
     }
-    else{
-      alert("Error: wrong code!")
+    else {
+        Swal.fire({
+            title: "Error",
+            text: "Código erróneo",
+            icon: "error",
+        });
     }
   }
   return (
     <div className="pasos code" id="Confirm">
-      <small>Enviamos un codigo de confirmación al correo electronico</small>
+      <small className='infoTopForm'>Enviamos un codigo de confirmación al correo electronico</small>
       <div className="input" id='ConfirmInputContainer'>
           <span className="material-icons-outlined" id='sendAgain' title='Enviar Código de nuevo' onClick={handleAgainBTN}>replay</span>
           <input type="text" name="codeEmail" placeholder="### - ###" required minLength={6} maxLength={6} onChange={e => {

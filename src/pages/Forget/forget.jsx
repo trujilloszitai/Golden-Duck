@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 import Nav from '../../components/navbar/nav';
 import '../../components/generalStyles/form.scss'
@@ -9,6 +10,15 @@ import Paso2 from './components/Paso2';
 import Paso3 from './components/Paso3';
 
 import formFunctions from '../../utils/formFunctions';
+
+let passwordRequirements = () => {
+    Swal.fire({
+        title: "Requisitos de Contraseña",
+        text: "Ingrese contraseña con mínimo 8 Caracteres, debe contener Letras, Números y Símbolos",
+        timer: 3000,
+        icon: "info",
+    });
+}
 
 export default class Forget extends Component {
     state = {
@@ -31,7 +41,11 @@ export default class Forget extends Component {
             this.setState({
                 paso: paso + 1
             })
-        }else alert('no')
+        }else  Swal.fire({
+                    title: "Error",
+                    text: "Verifique los campos",
+                    icon: "error",
+                });
     }
     anteriorPaso = (event) => {
         const {paso} = this.state
@@ -93,7 +107,7 @@ export default class Forget extends Component {
                             <span className="points active" id="3">3</span>
                         </div>
                         <section>
-                            <h1>Cambiar Contraseña</h1>
+                            <h1>Cambiar Contraseña <span class="material-icons-outlined infoPassword" onClick={passwordRequirements}>help</span></h1>
                             <Paso3 handleInputChange={this.handleInputChange} siguientePaso={this.siguientePaso} values={values}/>
                         </section>
                     </main>
