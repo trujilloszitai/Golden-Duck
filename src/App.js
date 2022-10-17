@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LOL from './components/LOL/LOL.jsx'; /* LOL */
 import NotFound from './pages/NotFound/notFound.jsx';
