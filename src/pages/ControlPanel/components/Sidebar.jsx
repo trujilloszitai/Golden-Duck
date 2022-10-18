@@ -11,8 +11,8 @@ import { contextMenuItems, links } from '../assets/img/dummy'
 const Sidebar = () => {
   const {activeMenu, setActiveMenu, screenSize} = useStateContext();
 
-  const activeClass = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2'
-  const unactiveClass = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2'
+  const activeClass = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-white text-md m-2 no-underline'
+  const unactiveClass = 'flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md text-gray-700 dark:text-gray-200 dark:hover:text-black hover:bg-light-gray m-2 no-underline'
 
   const handleAutoClose = () => {
     if(activeMenu && screenSize <= 900) {
@@ -30,7 +30,7 @@ const Sidebar = () => {
               <Link to="/control-panel" onClick={()=>{
                 setActiveMenu(false);
               }} 
-              className='items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate 900'>
+              className='items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900 no-underline'>
                 <img src={GoldenDuckLogo} width='64' alt='Golden Duck logo' /><span>Golden Duck</span>
               </Link>
               <TooltipComponent content="Menu" position='BottomCenter'>

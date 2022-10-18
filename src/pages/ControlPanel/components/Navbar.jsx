@@ -32,7 +32,7 @@ const Navbar = () => {
   }, [screenSize]);
 
   return (
-    <div className='flex justify-between p-2 md:mx-6 relative'>
+    <div className='flex relative w-full justify-between p-2 md:mx-6'>
       <NavbarButton
         title="Menú"
         customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
@@ -77,7 +77,7 @@ const Navbar = () => {
                 className='rounded-full w-8 h-8'
                 alt='Profile'
               />
-              <p>
+              <p className='mb-0.5'>
                 <span className='text-gray-400 text-14'>Hola, </span> {' '}
                 <span className='text-gray-400 text-14 font-bold ml-1'>Omar</span>
               </p>
