@@ -3,6 +3,8 @@
   "version": "1.0",
   "private": true,
   "dependencies": {
+    "@mui/material": "^5.10.9",
+    "@mui/styled-engine-sc": "^5.10.6",
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
     "@syncfusion/ej2-react-charts": "^19.4.50",
@@ -27,6 +29,7 @@
     "react-simple-typewriter": "^3.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4",
     "zxcvbn": "^4.4.2"
   },
@@ -55,6 +58,8 @@
     ]
   },
   "devDependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
     "autoprefixer": "^10.4.12",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.18",

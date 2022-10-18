@@ -1,6 +1,7 @@
 import React, {Suspense, lazy} from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
+import { ContextProvider } from './contexts/ContextProvider';
 
 import './index.scss';
 import './assets/font/fontIcon.css';
@@ -15,7 +16,9 @@ root.render(
         <div className='leftPanel'></div>
         <div className='rightPanel'></div>
       </div>
+      <ContextProvider>
         <App/>
+      </ContextProvider>
     </Suspense>
   </React.StrictMode>
 );

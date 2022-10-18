@@ -10,7 +10,7 @@ import Login from './pages/Login/Login.jsx';
 import Forget from './pages/ForgotPassword/ForgotPassword.jsx';
 import ControlPanel from './pages/ControlPanel/ControlPanel.jsx';
 import Mobile from './components/mobile/Mobile.jsx';
-import { Calendar, Editor, Expenses, FixedTerm, Investment, Loan, Money, Payment, Settings, Support, Transfer, Wallet } from './pages';
+import { AutoDebit, Calendar, Cards, Claims, Editor, Expenses, FixedTerm, Insurances, Investment, Loan, Money, Payment, Settings, Support, Transfer, Wallet } from './pages';
 import { Area, Bar, Financial, Line, Pie, Pyramid, Stacked} from './pages/Charts';
 
 import DarkMode from './utils/darkMode';
@@ -41,12 +41,16 @@ export default function App() {
             <Route path="/control-panel" element={<ControlPanel/>} />
 
             {/* Control panel routes  */}
+            <Route path="/control-panel/auto-debit" element={ <AutoDebit /> } /> 
             <Route path="/control-panel/calendar" element={ <Calendar /> } /> 
+            <Route path="/control-panel/cards" element={ <Cards /> } /> 
+            <Route path="/control-panel/claims" element={ <Claims /> } /> 
             <Route path="/control-panel/editor" element={ <Editor /> } />
-            <Route path="/control-panel/expense" element={ <Expenses /> } /> 
+            <Route path="/control-panel/expenses" element={ <Expenses /> } /> 
             <Route path="/control-panel/fixed-term" element={ <FixedTerm /> } /> 
-            <Route path="/control-panel/investment" element={ <Investment /> } /> 
-            <Route path="/control-panel/loan" element={ <Loan /> } /> 
+            <Route path="/control-panel/insurances" element={ <Insurances /> } /> 
+            <Route path="/control-panel/investments" element={ <Investment /> } /> 
+            <Route path="/control-panel/loans" element={ <Loan /> } /> 
             <Route path="/control-panel/money" element={ <Money /> } /> 
             <Route path="/control-panel/payment" element={ <Payment /> } /> 
             <Route path="/control-panel/settings" element={ <Settings /> } /> 
@@ -55,7 +59,7 @@ export default function App() {
             <Route path="/control-panel/wallet" element={ <Wallet /> } /> 
 
 
-            {/* Charts */}
+            {/* Testing charts */}
             <Route path="/control-panel/charts/area" element={ < Area /> } /> 
             <Route path="/control-panel/charts/bar" element={ < Bar /> } /> 
             <Route path="/control-panel/charts/financial" element={ < Financial /> } /> 

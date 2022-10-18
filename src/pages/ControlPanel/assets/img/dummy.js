@@ -1,14 +1,16 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
+import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock, AiOutlineThunderbolt } from 'react-icons/ai';
 import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+import { FaRegMoneyBillAlt, FaRegCreditCard, FaRegHandshake } from 'react-icons/fa';
+import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft, BsPiggyBank } from 'react-icons/bs';
+import { BiColorFill, BiTransferAlt } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
-import { MdOutlineSupervisorAccount } from 'react-icons/md';
+import { RiContactsLine, RiStockLine, RiHandHeartLine } from 'react-icons/ri';
+import { MdOutlineSupervisorAccount, MdOutlinePayments } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
+import { TbReportMoney, TbMessageReport } from 'react-icons/tb';
+import { GiLouvrePyramid, GiReceiveMoney } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -22,6 +24,8 @@ import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
+
+/* Gran parte del contenido de este archivo es información para pruebas */
 
 export const gridOrderImage = (props) => (
   <div>
@@ -471,55 +475,78 @@ export const employeesGrid = [
 
 export const links = [
   {
-    title: 'Dashboard',
+    title: 'Panel de control',
     links: [
       {
-        name: 'ecommerce',
-        icon: <FiShoppingBag />,
+        name: 'Tu dinero',
+        link: 'money',
+        icon: <FaRegMoneyBillAlt />,
+      },
+      {
+        name: 'Gastos',
+        link: 'expenses',
+        icon: <TbReportMoney />,
+      },
+      {
+        name: 'Tus tarjetas',
+        link: 'cards',
+        icon: <FaRegCreditCard />,
       },
     ],
   },
 
   {
-    title: 'Pages',
+    title: 'Funciones',
     links: [
       {
-        name: 'orders',
-        icon: <AiOutlineShoppingCart />,
+        name: 'Inversiones',
+        link: 'investments',
+        icon: <GiReceiveMoney />,
       },
       {
-        name: 'employees',
-        icon: <IoMdContacts />,
+        name: 'Pagar',
+        link: 'payment',
+        icon: <MdOutlinePayments />,
       },
       {
-        name: 'customers',
-        icon: <RiContactsLine />,
+        name: 'Transferencia',
+        link: 'transfer',
+        icon: <BiTransferAlt />,
       },
     ],
   },
   {
-    title: 'Apps',
+    title: 'Déjanoslo a nosotros',
     links: [
       {
-        name: 'calendar',
-        icon: <AiOutlineCalendar />,
+        name: 'Préstamos',
+        link: 'loans',
+        icon: <FaRegHandshake />,
       },
       {
-        name: 'kanban',
-        icon: <BsKanban />,
+        name: 'Plazos fijos',
+        link: 'fixed-term',
+        icon: <BsPiggyBank />,
       },
       {
-        name: 'editor',
-        icon: <FiEdit />,
+        name: 'Débito automático',
+        link: 'auto-debit',
+        icon: <AiOutlineThunderbolt />,
       },
       {
-        name: 'color-picker',
-        icon: <BiColorFill />,
+        name: 'Seguros',
+        link: 'insurances',
+        icon: <RiHandHeartLine />,
+      },
+      {
+        name: 'Reclamos online',
+        link: 'claims',
+        icon: <TbMessageReport />,
       },
     ],
   },
   {
-    title: 'Charts',
+    title: 'Testing charts & apps',
     links: [
       {
         name: 'line',
@@ -553,6 +580,10 @@ export const links = [
       {
         name: 'stacked',
         icon: <AiOutlineBarChart />,
+      },
+      {
+        name: 'color-picker',
+        icon: <BiColorFill />,
       },
     ],
   },

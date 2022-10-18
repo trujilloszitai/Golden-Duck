@@ -1,6 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css";
 /* 
 
     Estilos generales para la web
@@ -199,76 +209,74 @@ body{
     --fontWhite: #E5E7E9;
 }
 
-/* Estilo para Scrollbar */
-
-html, body{
-    overflow: overlay;
-}
-* {
-scrollbar-width: none;
-scrollbar-color: #b3b6b7 transparent;
-}
-*::-webkit-scrollbar {
-width: 10px;
-height: 100%;
-}
-*::-webkit-scrollbar-track {
-background: transparent;
-}
-*::-webkit-scrollbar-thumb {
-background-color: #b3b6b7;
-border-radius: 10px;
-border: none;
+    /* Estilo para Scrollbar */
+    html, body{
+        overflow: overlay;
+    }
+    * {
+        scrollbar-width: none;
+        scrollbar-color: #b3b6b7 transparent;
+    }
+    *::-webkit-scrollbar {
+        width: 10px;
+        height: 100%;
+    }
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    *::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 216, 216);
+    border-radius: 40px;
+    border: none;
 }
 *::-webkit-scrollbar-track-piece{
-background-color: transparent;
-color: transparent;
+    background-color: transparent;
+    color: transparent;
 }
-
 /* Responsive */
 
-@media screen and (min-width: 320px){
-    html{
-        font-size: 5px;
+/*     @media screen and (min-width: 320px){
+        html{
+            font-size: 5px;
+        }
     }
-}
-@media screen and (min-width: 370px){
-    html{
-        font-size: 5.3px;
+    @media screen and (min-width: 370px){
+        html{
+            font-size: 5.3px;
+        }
     }
-}
-@media screen and (min-width: 420px){
-    html{
-        font-size: 6.4px;
+    @media screen and (min-width: 420px){
+        html{
+            font-size: 6.4px;
+        }
     }
-}
-@media screen and (min-width: 760px){
-    html{
-        font-size: 8px;
+    @media screen and (min-width: 760px){
+        html{
+            font-size: 8px;
+        }
     }
-}
-@media screen and (min-width: 1020px){
-    html{
-        font-size: 7px;
+    @media screen and (min-width: 1020px){
+        html{
+            font-size: 7px;
+        }
     }
-}
-@media screen and (min-width: 1430px){
-    html{
-        font-size: 9px;
+    @media screen and (min-width: 1430px){
+        html{
+            font-size: 9px;
+        }
     }
-}
-@media screen and (min-width: 2560px){
-    html{
-        font-size: 16px;
+    @media screen and (min-width: 2560px){
+        html{
+            font-size: 16px;
+        }
     }
-}
-@media screen and (min-width: 3000px){
-    html{
-        font-size: 20px;
+    @media screen and (min-width: 3000px){
+        html{
+            font-size: 20px;
+        }
     }
-}
-@media screen and (min-width: 4000px){
-    html{
-        font-size: 30px;
-    }
-}
+    @media screen and (min-width: 4000px){
+        html{
+            font-size: 30px;
+        }
+    } */

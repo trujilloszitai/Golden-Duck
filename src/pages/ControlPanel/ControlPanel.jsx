@@ -1,22 +1,20 @@
 import React, { Component } from "react";
 import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
-import { Link } from "react-router-dom";
-import $ from "jquery";
+import { useStateContext } from "../../contexts/ContextProvider";
 
 import "./panel.scss";
-import GoldenDuckLogo from "../../assets/img/logo512.png";
-import profilePhoto from "./assets/img/defaultProfilePhoto.jpg";
+/* import GoldenDuckLogo from "../../assets/img/logo512.png";
+import profilePhoto from "./assets/img/defaultProfilePhoto.jpg"; */
 
 import { Sidebar, Navbar } from './components';
-import PanelOption from "./components/mainPanelSelect";
+/* import PanelOption from "./components/mainPanelSelect";
 import darkMode from "../../utils/darkMode";
-import { act } from "react-dom/test-utils";
+import { act } from "react-dom/test-utils"; */
 
-export default class Register extends Component {
-  render() {
-    let activeMenu = true;
-
+const ControlPanel = () => {
+    const { activeMenu } = useStateContext();
+    
     return (
       <div>
         <div className="flex relative dark:bg-main-dark-bg">
@@ -39,9 +37,9 @@ export default class Register extends Component {
             <div className="w-0 dark:bg-secondary-dark-bg">Sidebar w-0</div>
           )}
           <div
-            className={`dark:bg-main-bg bg-main-bg min-h-screen w-full ${
-              activeMenu ? "md:ml-72" : "flex-2"
-            }`}
+            className={
+              activeMenu ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full' : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2'
+            }
           >
             <div className="flex">
               <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
@@ -55,5 +53,6 @@ export default class Register extends Component {
         </div>
       </div>
     );
-  }
 }
+
+export default ControlPanel;
