@@ -6,7 +6,7 @@ import './mobile.scss'
 import PlayStore from './assets/playstore.png'
 import AppleStore from './assets/applastore.png'
 import Bailongo from './assets/bailongo.gif'
-import Nav from '../navbar/nav';
+import Nav from '../navbar/Nav';
 
 const Mobile = () => {
     return(

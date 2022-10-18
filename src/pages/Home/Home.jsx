@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 import CarouselCards from "./components/CarouselCards/CarouselCards";
 
-import Navbar from './components/navbar/nav';
-import Footer from '../../components/footer/footer';
+import Nav from './components/navbar/Nav';
+import Footer from '../../components/footer/Footer';
 import Header from './components/Header/Header';
 import QR from '../../assets/img/qr-code.png';
 
@@ -15,7 +15,7 @@ import './Home.scss';
 const Home = () => {
     return(
         <main className='Home'>
-            <Navbar/>
+            <Nav/>
             <Header/>
             <section className='Home'>
                 <div id='LycoKat'>
