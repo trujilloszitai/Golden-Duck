@@ -7,10 +7,17 @@ import Laptop from '../../assets/Laptop.svg';
 import LaptopDark from '../../assets/laptopDark.svg';
 
 const Home = () => {
+    
+    // En react: {text} 
+    // asp.net [text]
     const {text} = useTypewriter({
         words: [' Confianza', ' Tranferencias', ' Seguridad', ' Confort', ' Inversiones', ' Servicios', ' Todos', ' Plazos Fijos', ' Prestamos', ' Ingresos', ' Agilidad', ' Rapidez', ' Emprendedores', ' Productividad'],
-        loop: 0
-      })
+        autoStart: true,
+        loop: 0,
+        typeSpeed:50,
+        deleteSpeed:30,
+        delaySpeed:1000
+      });
     return(
         <header>
             <div className='Header'>

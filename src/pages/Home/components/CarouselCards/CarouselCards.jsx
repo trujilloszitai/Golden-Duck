@@ -9,6 +9,7 @@ export default class PauseOnHover extends Component {
   render() {
     var settingsSlider = {
       className: "center",
+      centerMode: true,
       focusOnSelect: true,
       dots: true,
       infinite: true,
@@ -24,7 +25,7 @@ export default class PauseOnHover extends Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 2,
             infinite: true,
             dots: true
           }

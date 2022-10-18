@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import $ from 'jquery'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import LOL from './components/LOL/LOL.jsx'; /* LOL */
-import NotFound from './pages/NotFound/NotFound.jsx';
+import NotFound from './pages/NotFound/notFound.jsx';
 import Home from './pages/Home/Home.jsx';
-import Register from './pages/Register/Register.jsx';
-import Login from './pages/Login/Login.jsx';
+import Register from './pages/Register/register.jsx';
+import Login from './pages/Login/login.jsx';
 import Forget from './pages/ForgotPassword/ForgotPassword.jsx';
 import ControlPanel from './pages/ControlPanel/ControlPanel.jsx';
 import Mobile from './components/mobile/Mobile.jsx';
