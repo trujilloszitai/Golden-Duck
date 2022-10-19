@@ -1,23 +1,23 @@
-import React, {Suspense, lazy} from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
-import { ContextProvider } from './contexts/ContextProvider';
+import React, { Suspense, lazy } from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { ContextProvider } from "./contexts/ContextProvider";
 
-import './index.scss';
-import './assets/font/fontIcon.css';
-const App = lazy(() => import('./App'))
+import "./index.scss";
+import "./assets/font/fontIcon.css";
+const App = lazy(() => import("./App"));
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* Pantalla de Carga */}
-    <Suspense fallback={<div id='loadingScreen'></div>}>
-      <div id='loadingScreen'>
-        <div className='leftPanel'></div>
-        <div className='rightPanel'></div>
+    <Suspense fallback={<div id="loadingScreen"></div>}>
+      <div id="loadingScreen">
+        <div className="leftPanel"></div>
+        <div className="rightPanel"></div>
       </div>
       <ContextProvider>
-        <App/>
+        <App />
       </ContextProvider>
     </Suspense>
   </React.StrictMode>

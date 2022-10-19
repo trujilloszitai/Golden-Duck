@@ -1,33 +1,33 @@
-import React from 'react';
-import $ from 'jquery'
-  
-import './buttonUp.scss';
+import React from "react";
+import $ from "jquery";
 
-const ScrollButton = () =>{
-  
-  $(document).ready(function(){
+import "./buttonUp.scss";
 
-    $('#upButton').click(function(){
-      $('body, html').animate({
-        scrollTop: '0px'
-      }, 0);
+const ScrollButton = () => {
+  $(document).ready(function () {
+    $("#upButton").click(function () {
+      $("body, html").animate(
+        {
+          scrollTop: "0px",
+        },
+        0
+      );
     });
-  
-    $(window).scroll(function(){
-      if( $(this).scrollTop() > 0 ){
-        $('#upButton').slideDown(300);
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 0) {
+        $("#upButton").slideDown(300);
       } else {
-        $('#upButton').slideUp(300);
+        $("#upButton").slideUp(300);
       }
     });
-  
   });
 
   return (
-    <div id='upButton' className='material-icons-outlined'>
+    <div id="upButton" className="material-icons-outlined">
       arrow_upward
     </div>
   );
-}
+};
 
 export default ScrollButton;
