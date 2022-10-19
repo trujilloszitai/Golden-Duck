@@ -5,7 +5,6 @@ import { useStateContext } from "../../contexts/ContextProvider";
 /* import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; */
 import { Outlet } from 'react-router-dom';
 
-import "./panel.scss";
 /* import GoldenDuckLogo from "../../assets/img/logo512.png";
 import profilePhoto from "./assets/img/defaultProfilePhoto.jpg"; */
 import { AutoDebit, Calendar, Cards, Claims, Editor, Expenses, FixedTerm, Insurances, Investment, Loan, Money, Payment, Settings, Support, Transfer, Wallet } from '../';

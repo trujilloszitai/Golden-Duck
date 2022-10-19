@@ -70,9 +70,7 @@ const Home = () => {
                 de eficiencia, lleva tu cartera online a donde sea que vayas
                 para pagar servicios o incluso tomar un café.
               </p>
-              <Link to={"/Mobile"}>
-                <img src={QR} alt="AppQR" />
-              </Link>
+              <img src={QR} alt="AppQR" />
             </div>
           </div>
           <div className="bottomWave" />

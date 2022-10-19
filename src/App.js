@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import $ from "jquery";
+
 import "./App.scss";
+import "./assets/rootList.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import LOL from "./components/LOL/LOL"; /* LOL */
 import NotFound from "./pages/NotFound/NotFound";
 import Home from "./pages/Home/Home";
 import Register from "./pages/Register/Register";
@@ -66,8 +67,6 @@ export default function App() {
     <Router>
       <Routes>
         {/* Main routes */}
-        <Route path="/lol" element={<LOL />} />
-        {/* LOL */}
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
