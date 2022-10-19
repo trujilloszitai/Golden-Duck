@@ -41,7 +41,7 @@ const Login = () => {
                         <input type="checkbox" />
                         <Link to={'/forgot-my-password'}>¿Olvidaste tu Contraseña?</Link>
                     </div>
-                    <Link to={'/control-panel'}><input type="submit" value="Ingresar"/></Link>
+                    <Link to={'/dashboard'}><input type="submit" value="Ingresar"/></Link>
                 </form>
             </div>
         </main>

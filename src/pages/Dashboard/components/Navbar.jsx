@@ -68,7 +68,7 @@ const Navbar = () => {
         />
         <Tooltip
           title="Perfil"
-          placement='bottom'
+          arrow
           >
             <div className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
             onClick={() => handleClick("profile")}>
@@ -99,7 +99,7 @@ const Navbar = () => {
 
 // Additional components
 const NavbarButton = ({ title, customFunc, icon, color, dotColor }) => (
-  <Tooltip title={title} placement='bottom'>
+  <Tooltip title={title} arrow>
     <button 
       type='button' 
       onClick={customFunc} 
