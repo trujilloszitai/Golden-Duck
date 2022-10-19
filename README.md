@@ -26,7 +26,7 @@ Con este comando descargamos las dependencias y las instalamos.
 Con este comando iniciamos GoldenDuck.
 
 ### `npm run build`
-con este comando creamos una build optimizada lista para ser implementada a nivel producción.
+Con este comando creamos una build optimizada lista para ser implementada a nivel producción.
 
 
 (falta pasos para base de datos e instalación de laravel)
