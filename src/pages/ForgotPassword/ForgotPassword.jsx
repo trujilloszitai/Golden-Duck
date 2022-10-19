@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import Swal from 'sweetalert2';
-import Nav from '../../components/navbar/nav';
-import '../../components/generalStyles/form.scss'
+import Nav from '../../components/Navbar/Nav';
+import '../../components/GeneralStyles/form.scss'
 
 import Paso1 from './components/Paso1';
 import Paso2 from './components/Paso2';

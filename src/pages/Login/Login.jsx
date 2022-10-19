@@ -1,17 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { isMobile} from 'react-device-detect';
-
-import Mobile from '../../components/mobile/Mobile';
 
 import './login.scss';
-import Nav from '../../components/navbar/Nav'
+import Nav from '../../components/Navbar/Nav'
 import InputPasswordShowBTN from '../../components/InputPasswordShowBTN/InputPasswordShowBTN'
 
 const Login = () => {
-    if (isMobile) {
-        return <Mobile/>;
-    }
     return(
         <main className='logSec'>
             <div id="particles"/>

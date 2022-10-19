@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LycokatLogo from './assets/Lycokat.png';
+import LycokatLogo from '../../assets/img/LycokatLogo.png';
 
 import './footer.scss';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../../../assets/img/logo512.png';
+import Logo from '../../../../assets/img/GoldenDuckLogo.png';
 import './nav.scss';
 import darkMode from '../../../../utils/darkMode';
 

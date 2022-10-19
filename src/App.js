@@ -11,7 +11,6 @@ import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import Forget from "./pages/ForgotPassword/ForgotPassword";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Mobile from "./components/mobile/Mobile";
 import {
   AutoDebit,
   Calendar,
@@ -73,7 +72,6 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signin" element={<Register />} />
-        <Route path="/mobile-app" element={<Mobile />} />
         <Route path="/forgot-my-password" element={<Forget />} />
         <Route path="/dashboard" element={<Dashboard />}>
           {/* Control panel routes  */}
