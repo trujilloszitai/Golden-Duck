@@ -7,25 +7,25 @@ Para ejecutar GoldenDuck se requiere de los siguientes programas:
     - SQL Server
     - Composer
 
-### Node.JS
+### `Node.JS`
 Se utiliza para utilizar Laravel con React.js
 
-### SQL Server
+### `SQL Server`
 Se utiliza para la implementación de una base de datos.
 
-### Composer
+### `Composer`
 Importante para la implementación de Laravel.
 
-## ¿Como iniciar GoldenDuck?
+### ¿Como iniciar GoldenDuck?
 Luego de instalar todos los programas correspondientes, para iniciar GoldenDuck necesitamos abrir una consola y introducir los siguientes comandos:
 
-### npm ci
+### `npm ci`
 Con este comando descargamos las dependencias y las instalamos.
 
-### npm start 
+### `npm start`
 Con este comando iniciamos GoldenDuck.
 
-### npm run build
+#### npm run build
 con este comando creamos una build optimizada lista para ser implementada a nivel producción.
 
 
