@@ -25,7 +25,7 @@ Con este comando descargamos las dependencias y las instalamos.
 ### `npm start`
 Con este comando iniciamos GoldenDuck.
 
-#### npm run build
+### `npm run build`
 con este comando creamos una build optimizada lista para ser implementada a nivel producción.
 
 
