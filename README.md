@@ -3,9 +3,6 @@ Proyecto con fines educativos e ilustrativos, proyecto no comercial. No se reali
 
 ## Instrucciones
 Para ejecutar GoldenDuck se requiere de los siguientes programas:
-    - Node.JS
-    - SQL Server
-    - Composer
 
 ### `Node.JS`
 Se utiliza para utilizar Laravel con React.js
