@@ -25,5 +25,6 @@ With this command we start GoldenDuck.
 ### `npm run build`
 With this command we create an optimized build ready to be deployed at production level.
 
+[Watch GoldenDuck live](https://goldenduck.netlify.app/)
 
-(falta pasos para base de datos e instalación de laravel)
+# (falta pasos para base de datos e instalación de laravel)
