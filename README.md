@@ -1,29 +1,30 @@
 # GoldenDuck
-Proyecto con fines educativos e ilustrativos, proyecto no comercial. No se realiza ni se autoriza el uso del mismo con fines de lucro por cuestiones de copyright y licencias no autorizadas.
+Project for educational and illustrative purposes, non-commercial project. No use is made or authorized for profit due to copyright and unauthorized licensing issues.
 
-## Instrucciones
-Para ejecutar GoldenDuck se requiere de los siguientes programas:
+## Instructions
+The following programs are required to run GoldenDuck:
 
 ### `Node.JS`
-Se utiliza para utilizar Laravel con React.js
+Used to use Laravel with React.js
 
 ### `SQL Server`
-Se utiliza para la implementación de una base de datos.
+Used for implementing a database.
 
 ### `Composer`
-Importante para la implementación de Laravel.
+Important for Laravel implementation.
 
-### ¿Como iniciar GoldenDuck?
-Luego de instalar todos los programas correspondientes, para iniciar GoldenDuck necesitamos abrir una consola y introducir los siguientes comandos:
+### How to start GoldenDuck?
+After installing all the corresponding programs, to start GoldenDuck we need to open a console and enter the following commands:
 
 ### `npm ci`
-Con este comando descargamos las dependencias y las instalamos.
+With this command we download the dependencies and install them.
 
 ### `npm start`
-Con este comando iniciamos GoldenDuck.
+With this command we start GoldenDuck.
 
 ### `npm run build`
-Con este comando creamos una build optimizada lista para ser implementada a nivel producción.
+With this command we create an optimized build ready to be deployed at production level.
 
+Translated with www.DeepL.com/Translator (free version)
 
 (falta pasos para base de datos e instalación de laravel)
