@@ -25,6 +25,5 @@ With this command we start GoldenDuck.
 ### `npm run build`
 With this command we create an optimized build ready to be deployed at production level.
 
-Translated with www.DeepL.com/Translator (free version)
 
 (falta pasos para base de datos e instalación de laravel)
