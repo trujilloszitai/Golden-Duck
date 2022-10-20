@@ -1,6 +1,6 @@
 import React from "react";
 import Swal from "sweetalert2";
-import InputPasswordShowBTN from "../../../components/InputPasswordShowBTN/InputPasswordShowBTN";
+import InputPasswordShowBTN from "../../../components/InputPasswordShowBTN/inputPasswordShowBTN";
 import formFunctions from "../../../utils/formFunctions";
 
 const Paso3 = (props) => {
