@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./login.scss";
 import Nav from "../../components/Navbar/Nav";
-import InputPasswordShowBTN from "../../components/InputPasswordShowBTN/InputPasswordShowBTN";
+import InputPasswordShowBTN from "../../components/InputPasswordShowBTN/inputPasswordShowBTN";
 
 const Login = () => {
   return (
