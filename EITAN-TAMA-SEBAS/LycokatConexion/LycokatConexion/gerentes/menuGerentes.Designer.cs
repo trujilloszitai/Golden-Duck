@@ -119,9 +119,9 @@
             // usuariosVista1
             // 
             this.usuariosVista1.BackColor = System.Drawing.Color.Transparent;
-            this.usuariosVista1.Location = new System.Drawing.Point(231, 83);
+            this.usuariosVista1.Location = new System.Drawing.Point(201, 67);
             this.usuariosVista1.Name = "usuariosVista1";
-            this.usuariosVista1.Size = new System.Drawing.Size(547, 265);
+            this.usuariosVista1.Size = new System.Drawing.Size(626, 309);
             this.usuariosVista1.TabIndex = 7;
             this.usuariosVista1.Load += new System.EventHandler(this.usuariosVista1_Load);
             // 
@@ -129,7 +129,7 @@
             // 
             this.abm1.BackColor = System.Drawing.Color.Transparent;
             this.abm1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.abm1.Location = new System.Drawing.Point(162, 64);
+            this.abm1.Location = new System.Drawing.Point(201, 67);
             this.abm1.Name = "abm1";
             this.abm1.Size = new System.Drawing.Size(626, 309);
             this.abm1.TabIndex = 4;

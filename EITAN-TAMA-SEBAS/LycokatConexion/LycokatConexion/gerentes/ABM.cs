@@ -13,7 +13,7 @@ namespace LycokatConexion
 {
     public partial class ABM : UserControl
     {
-        BaseDeDatos conexion = new BaseDeDatos("Data Source = BABYFACE\\SQLEXPRESS; Initial Catalog = Homebanking2; Integrated Security = True");
+        BaseDeDatos conexion = new BaseDeDatos("Data Source = DESKTOP-Q3RKHA9\\SQLEXPRESS; Initial Catalog = HomebankingUSAR; Integrated Security = True");
         SqlDataAdapter adapter;
         public ABM(){InitializeComponent();}
         private void ABM_Load(object sender, EventArgs e){}
@@ -35,7 +35,7 @@ namespace LycokatConexion
         {
             try
             {
-                adapter = conexion.Consulta($"INSERT INTO tipos_de_tarjeta (nombre) VALUES ('{ textBox1.Text}')");
+                adapter = conexion.Consulta($"exec AddSupger '{textBox1.Text}', '{textBox2.Text}', '{textBox3.Text}'");
                 DataTable table = new DataTable();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
@@ -67,6 +67,21 @@ namespace LycokatConexion
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

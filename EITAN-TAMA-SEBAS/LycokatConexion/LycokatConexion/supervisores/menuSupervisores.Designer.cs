@@ -127,26 +127,26 @@
             // 
             this.reportes1.BackColor = System.Drawing.Color.Transparent;
             this.reportes1.ForeColor = System.Drawing.Color.Transparent;
-            this.reportes1.Location = new System.Drawing.Point(197, 105);
+            this.reportes1.Location = new System.Drawing.Point(197, 51);
             this.reportes1.Name = "reportes1";
-            this.reportes1.Size = new System.Drawing.Size(603, 224);
+            this.reportes1.Size = new System.Drawing.Size(626, 363);
             this.reportes1.TabIndex = 8;
             // 
             // estadisticas1
             // 
             this.estadisticas1.BackColor = System.Drawing.Color.Transparent;
-            this.estadisticas1.Location = new System.Drawing.Point(238, 35);
+            this.estadisticas1.Location = new System.Drawing.Point(226, 51);
             this.estadisticas1.Name = "estadisticas1";
-            this.estadisticas1.Size = new System.Drawing.Size(562, 403);
+            this.estadisticas1.Size = new System.Drawing.Size(597, 363);
             this.estadisticas1.TabIndex = 5;
             this.estadisticas1.Load += new System.EventHandler(this.estadisticas1_Load);
             // 
             // usuarios1
             // 
             this.usuarios1.BackColor = System.Drawing.Color.Transparent;
-            this.usuarios1.Location = new System.Drawing.Point(226, 29);
+            this.usuarios1.Location = new System.Drawing.Point(197, 51);
             this.usuarios1.Name = "usuarios1";
-            this.usuarios1.Size = new System.Drawing.Size(562, 385);
+            this.usuarios1.Size = new System.Drawing.Size(626, 363);
             this.usuarios1.TabIndex = 4;
             this.usuarios1.Load += new System.EventHandler(this.usuarios1_Load);
             // 
