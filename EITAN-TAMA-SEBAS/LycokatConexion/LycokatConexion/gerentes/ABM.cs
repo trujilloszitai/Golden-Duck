@@ -29,13 +29,14 @@ namespace LycokatConexion
         private void textBox1_TextChanged(object sender, EventArgs e){}
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox1.Text = String.Empty;
+            textBox2.Text = String.Empty;
+            textBox3.Text = String.Empty;
         }
         private void button3_Click(object sender, EventArgs e)
         {
             try
             {
-                adapter = conexion.Consulta($"exec AddSupger '{textBox1.Text}', '{textBox2.Text}', '{textBox3.Text}'");
+                adapter = conexion.Consulta($"exec AddSupger 'gerente', '{textBox2.Text}', '{textBox3.Text}'");
                 DataTable table = new DataTable();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;
@@ -54,7 +55,7 @@ namespace LycokatConexion
         {
             try
             {  
-                adapter = conexion.Consulta("Select * from tipos_de_tarjeta");
+                adapter = conexion.Consulta("Select * from supger");
                 DataTable table = new DataTable();
                 adapter.Fill(table);
                 dataGridView1.DataSource = table;

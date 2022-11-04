@@ -63,6 +63,16 @@ namespace LycokatConexion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _128_1281855_buy_online_transparent_white_x_png {
+            get {
+                object obj = ResourceManager.GetObject("128-1281855_buy-online-transparent-white-x-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap azul_aña {
             get {
                 object obj = ResourceManager.GetObject("azul aña", resourceCulture);
@@ -86,6 +96,16 @@ namespace LycokatConexion.Properties {
         internal static System.Drawing.Bitmap GDicon {
             get {
                 object obj = ResourceManager.GetObject("GDicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heather_linea {
+            get {
+                object obj = ResourceManager.GetObject("heather-linea", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

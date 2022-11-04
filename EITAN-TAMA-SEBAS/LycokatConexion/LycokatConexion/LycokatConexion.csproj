@@ -178,5 +178,11 @@
   <ItemGroup>
     <None Include="Resources\azul aña.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128-1281855_buy-online-transparent-white-x-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heather-linea.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
