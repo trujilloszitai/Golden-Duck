@@ -100,3 +100,7 @@ D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\Lycoka
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.LogIn.resources
+D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.AñadirSupervisor.resources
+D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.EliminarSupervisor.resources
+D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.VistaSupervisores.resources
+D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.ModificarSupervisor.resources

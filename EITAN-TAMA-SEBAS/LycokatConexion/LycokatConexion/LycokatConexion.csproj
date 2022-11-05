@@ -62,10 +62,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="gerentes\ABM.cs">
+    <Compile Include="gerentes\ABM\AñadirSupervisor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="gerentes\ABM.Designer.cs">
+    <Compile Include="gerentes\ABM\AñadirSupervisor.Designer.cs">
+      <DependentUpon>AñadirSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerentes\ABM\EliminarSupervisor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gerentes\ABM\EliminarSupervisor.Designer.cs">
+      <DependentUpon>EliminarSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerentes\ABM\ABM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gerentes\ABM\ABM.Designer.cs">
       <DependentUpon>ABM.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseDeDatos.cs" />
@@ -80,6 +92,12 @@
     </Compile>
     <Compile Include="LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gerentes\ABM\ModificarSupervisor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gerentes\ABM\ModificarSupervisor.Designer.cs">
+      <DependentUpon>ModificarSupervisor.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -118,8 +136,23 @@
     <Compile Include="supervisores\usuarios.Designer.cs">
       <DependentUpon>usuarios.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="gerentes\ABM.resx">
+    <Compile Include="gerentes\ABM\VistaSupervisores.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gerentes\ABM\VistaSupervisores.Designer.cs">
+      <DependentUpon>VistaSupervisores.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="gerentes\ABM\AñadirSupervisor.resx">
+      <DependentUpon>AñadirSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerentes\ABM\EliminarSupervisor.resx">
+      <DependentUpon>EliminarSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerentes\ABM\ABM.resx">
       <DependentUpon>ABM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerentes\ABM\ModificarSupervisor.resx">
+      <DependentUpon>ModificarSupervisor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerentes\UsuariosVista.resx">
       <DependentUpon>UsuariosVista.cs</DependentUpon>
@@ -146,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="supervisores\usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gerentes\ABM\VistaSupervisores.resx">
+      <DependentUpon>VistaSupervisores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

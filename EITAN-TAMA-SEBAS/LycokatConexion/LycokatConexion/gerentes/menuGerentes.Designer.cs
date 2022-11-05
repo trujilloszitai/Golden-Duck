@@ -29,36 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menuGerentes));
-            this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.abm1 = new LycokatConexion.ABM();
-            this.usuariosVista1 = new LycokatConexion.gerentes.UsuariosVista();
-            this.button7 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.usuariosVista1 = new LycokatConexion.gerentes.UsuariosVista();
+            this.abm1 = new LycokatConexion.ABM();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1121, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(36, 33);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel2
             // 
@@ -69,44 +52,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1014, 507);
             this.panel2.TabIndex = 9;
-            // 
-            // abm1
-            // 
-            this.abm1.BackColor = System.Drawing.Color.Transparent;
-            this.abm1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.abm1.Location = new System.Drawing.Point(201, 105);
-            this.abm1.Name = "abm1";
-            this.abm1.Size = new System.Drawing.Size(626, 309);
-            this.abm1.TabIndex = 4;
-            this.abm1.Load += new System.EventHandler(this.abm1_Load);
-            // 
-            // usuariosVista1
-            // 
-            this.usuariosVista1.BackColor = System.Drawing.Color.Transparent;
-            this.usuariosVista1.Location = new System.Drawing.Point(201, 105);
-            this.usuariosVista1.Name = "usuariosVista1";
-            this.usuariosVista1.Size = new System.Drawing.Size(626, 309);
-            this.usuariosVista1.TabIndex = 7;
-            this.usuariosVista1.Load += new System.EventHandler(this.usuariosVista1_Load);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(1)))));
-            this.button7.FlatAppearance.BorderSize = 4;
-            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button7.Location = new System.Drawing.Point(3, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(58, 51);
-            this.button7.TabIndex = 4;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label1
             // 
@@ -178,6 +123,61 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1157, 576);
             this.panel1.TabIndex = 10;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightCoral;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(1121, 0);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(36, 33);
+            this.button5.TabIndex = 5;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(191)))), ((int)(((byte)(1)))));
+            this.button7.FlatAppearance.BorderSize = 4;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button7.Location = new System.Drawing.Point(3, 3);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(58, 51);
+            this.button7.TabIndex = 4;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // usuariosVista1
+            // 
+            this.usuariosVista1.BackColor = System.Drawing.Color.Transparent;
+            this.usuariosVista1.Location = new System.Drawing.Point(390, 92);
+            this.usuariosVista1.Name = "usuariosVista1";
+            this.usuariosVista1.Size = new System.Drawing.Size(523, 309);
+            this.usuariosVista1.TabIndex = 7;
+            this.usuariosVista1.Load += new System.EventHandler(this.usuariosVista1_Load);
+            // 
+            // abm1
+            // 
+            this.abm1.BackColor = System.Drawing.Color.Transparent;
+            this.abm1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.abm1.Location = new System.Drawing.Point(54, 36);
+            this.abm1.Name = "abm1";
+            this.abm1.Size = new System.Drawing.Size(913, 414);
+            this.abm1.TabIndex = 4;
+            this.abm1.Load += new System.EventHandler(this.abm1_Load);
             // 
             // menuGerentes
             // 
