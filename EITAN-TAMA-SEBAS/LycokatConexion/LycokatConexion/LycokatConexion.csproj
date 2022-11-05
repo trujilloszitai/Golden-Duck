@@ -75,6 +75,17 @@
     <Compile Include="gerentes\UsuariosVista.Designer.cs">
       <DependentUpon>UsuariosVista.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="supervisores\Reportes.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,12 +97,6 @@
     </Compile>
     <Compile Include="supervisores\estadisticas.Designer.cs">
       <DependentUpon>estadisticas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="index.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="index.Designer.cs">
-      <DependentUpon>index.cs</DependentUpon>
     </Compile>
     <Compile Include="gerentes\menuGerentes.cs">
       <SubType>Form</SubType>
@@ -119,14 +124,14 @@
     <EmbeddedResource Include="gerentes\UsuariosVista.resx">
       <DependentUpon>UsuariosVista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="supervisores\Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="supervisores\estadisticas.resx">
       <DependentUpon>estadisticas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="index.resx">
-      <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="gerentes\menuGerentes.resx">
       <DependentUpon>menuGerentes.cs</DependentUpon>
@@ -136,14 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="supervisores\usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,17 +172,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\GDicon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\azul aña.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\128-1281855_buy-online-transparent-white-x-png.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\heather-linea.png" />
+    <None Include="Resources\Captura de pantalla %287%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

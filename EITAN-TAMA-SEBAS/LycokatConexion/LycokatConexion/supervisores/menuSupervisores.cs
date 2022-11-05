@@ -29,6 +29,7 @@ namespace LycokatConexion
             var mensajeDeAyuda = new ToolTip(); //la herramienta para generar nubes de ayudas
             mensajeDeAyuda.SetToolTip(btnUsuarios, "Te dirigira a la seccion para ver los usuarios");
             mensajeDeAyuda.SetToolTip(btnEstadisticas, "Te dirigira a la seccion de vista de estadisticas de usuarios");
+            mensajeDeAyuda.SetToolTip(button4, "Te dirigira al apartado de Log In");
             this.reportes1.Hide();
             this.usuarios1.Hide();
             this.estadisticas1.Hide();
@@ -41,8 +42,9 @@ namespace LycokatConexion
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            Form index = new index();
-            index.Show();
+            
+            Form LogIn = new LogIn();
+            LogIn.Show();
             this.Close();
         }
         private void button3_Click_1(object sender, EventArgs e)
@@ -67,6 +69,26 @@ namespace LycokatConexion
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void reportes1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
         {
             Application.Exit();
         }

@@ -14,8 +14,6 @@ namespace LycokatConexion
     {
         public menuGerentes() {InitializeComponent();}
         private void usuarios2_Load(object sender, EventArgs e) {}
-        private void usuarios1_Load(object sender, EventArgs e) {}
-        private void estadisticas1_Load(object sender, EventArgs e) {}
         private void button2_Click(object sender, EventArgs e) 
         {
             this.usuariosVista1.Show();
@@ -24,6 +22,8 @@ namespace LycokatConexion
         private void abm1_Load(object sender, EventArgs e) {}
         private void menuGerentes_Load(object sender, EventArgs e) 
         {
+            var mensajeDeAyuda = new ToolTip();
+            mensajeDeAyuda.SetToolTip(button7, "Te dirigira al apartado de Log In");
             this.abm1.Hide();
             this.usuariosVista1.Hide();
         }
@@ -34,8 +34,8 @@ namespace LycokatConexion
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            Form index = new index();
-            index.Show();
+            Form LogIn = new LogIn();
+            LogIn.Show();
             this.Close();
         }
         private void button5_Click(object sender, EventArgs e)
@@ -47,6 +47,13 @@ namespace LycokatConexion
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form LogIn = new LogIn();
+            LogIn.Show();
+            this.Close();
         }
     }
 }

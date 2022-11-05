@@ -2,42 +2,39 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.Configuration;
 
 namespace LycokatConexion
 {
-    public partial class index : Form
+    public partial class LogIn : Form
     {
         BaseDeDatos conexion = new BaseDeDatos("Data Source = DESKTOP-Q3RKHA9\\SQLEXPRESS; Initial Catalog = HomebankingUSAR; Integrated Security = True"); //le ponemos el nombre de la BD
         SqlDataAdapter adapter;
-        public index()=>InitializeComponent();
-        private void index_Load(object sender, EventArgs e){}
-        private void textBox1_TextChanged(object sender, EventArgs e) {}
-        private void textBox2_TextChanged(object sender, EventArgs e) {}
-        private void button2_Click(object sender, EventArgs e)
+        public LogIn()
         {
-            conexion.cerrar();
-            Form formulario = new menuSupervisores();
-            formulario.Show();
-            this.Hide();
+            InitializeComponent();
         }
-        private void button3_Click(object sender, EventArgs e)
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
-            conexion.cerrar();
-            Form formulario = new menuGerentes();
-            formulario.Show();
-            this.Hide();
+
         }
-        private void button4_Click(object sender, EventArgs e)
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             login();
@@ -49,9 +46,11 @@ namespace LycokatConexion
                 adapter = conexion.Consulta($"exec LogInSupger '{textBox1.Text}', '{textBox2.Text}'");//si les sale un error del tipo de valor (ntext) es pq el sql no lo reconoce. solucion: cambiarlo por un nvarchar y ya
                 DataTable tabla = new DataTable();
                 adapter.Fill(tabla);
-                    if (tabla.Rows.Count >= 1) {
+                if (tabla.Rows.Count >= 1)
+                {
                     MessageBox.Show(tabla.Rows[0]["Rango"].ToString());
-                    try { 
+                    try
+                    {
                         if (tabla.Rows[0]["Rango"].ToString() == "gerente")//autentifica si es que en el lugar 0, 1 (email_us del comando en este caso) es gerente
                         {
                             conexion.cerrar();
@@ -75,13 +74,13 @@ namespace LycokatConexion
                     {
                         MessageBox.Show("Datos incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Datos incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Datos incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 var resultado = MessageBox.Show("Hubo un error inesperado. Presione Yes si quiere saber mas informacion", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
                 if (resultado == DialogResult.OK)
@@ -91,22 +90,41 @@ namespace LycokatConexion
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            conexion.cerrar();
+            Form formulario = new menuSupervisores();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            conexion.cerrar();
+            Form formulario = new menuGerentes();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+        }
+        private void button5_Click_2(object sender, EventArgs e)
         {
             Application.Exit();
         }

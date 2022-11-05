@@ -91,7 +91,6 @@ D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\Lycoka
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.gerentes.UsuariosVista.resources
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.Reportes.resources
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.estadisticas.resources
-D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.index.resources
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuGerentes.resources
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.menuSupervisores.resources
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.Properties.Resources.resources
@@ -100,3 +99,4 @@ D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\Lycoka
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.csproj.CoreCompileInputs.cache
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.exe
 D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.pdb
+D:\Golden-Duck\EITAN-TAMA-SEBAS\LycokatConexion\LycokatConexion\obj\Debug\LycokatConexion.LogIn.resources
